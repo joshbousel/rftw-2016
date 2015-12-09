@@ -1,0 +1,24 @@
+.rftw-nav__item {
+	color: #fff;
+	display: inline-block;
+	font-family: @font-brandon;
+	font-size: .95rem;
+	letter-spacing: 3px;
+	margin: 0 0 0 35px;
+	text-decoration: none;
+	text-transform: uppercase;
+	-webkit-font-smoothing: antialiased;
+	
+	&::after {
+		border-bottom: 1px solid #fff;
+		content: "";
+		display: block;
+		margin: 3px auto 0;
+		transition: width 0.15s ease-out;
+		width: 0;
+	}
+	
+	&:hover::after {
+		width: 35px;
+	}
+}
