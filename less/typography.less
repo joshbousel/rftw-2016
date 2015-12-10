@@ -1,24 +1,40 @@
-.rftw-nav__item {
-	color: #fff;
-	display: inline-block;
-	font-family: @font-brandon;
-	font-size: .95rem;
-	letter-spacing: 3px;
-	margin: 0 0 0 35px;
+.rftw-content a {
+	color: @blue-base;
 	text-decoration: none;
+	transition: @default-transition;
+	
+	&:hover {
+		color: #11dfcd;
+	} 
+}
+
+.rftw-content p {
+	color: @blue-dark;
+	font-family: @font-lato;
+	font-size: 1rem;
+	line-height: 1.75rem;
+	margin: 0 auto 30px;
+	max-width: 750px;
+	text-align: left;
+}
+
+.rftw-page-header {
+	color: @green-base;
+	font-family: @font-brandon;
+	font-size: 2.8125rem;
+	font-style: italic;
+	font-weight: normal;
+	line-height: 2.8125rem;
+	letter-spacing: 5px;
+	margin: 0 0 30px;
 	text-transform: uppercase;
+	transition: @default-transition;
 	-webkit-font-smoothing: antialiased;
 	
-	&::after {
-		border-bottom: 1px solid #fff;
-		content: "";
-		display: block;
-		margin: 3px auto 0;
-		transition: width 0.15s ease-out;
-		width: 0;
-	}
-	
-	&:hover::after {
-		width: 35px;
+	@media all and (max-width:@break-mobile) {
+		font-size: 1.875rem;
+		letter-spacing: 3px;
+		line-height: 1.875rem;
+		margin: 0 0 20px;
 	}
 }

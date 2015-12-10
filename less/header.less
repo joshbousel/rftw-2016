@@ -1,0 +1,48 @@
+.rftw-header {
+	background: url('@{image-path}bg-stone-teal.png');
+	width: 100%;
+	
+	@media all and (max-width:@break-desktop) {
+		text-align: center;
+	}
+}
+
+.rftw-logo {
+	display: inline-block;
+	height: 55px;
+	margin: 10px 0;
+	vertical-align: bottom;
+	
+	&__image {
+		height: 100%;
+		transition: @default-transition;
+		width: auto;
+		
+		@media all and (max-width:@break-tablet) {
+			height: 45px;
+		}
+	}
+	
+	@media all and (max-width:@break-desktop) {
+		display: block;
+		margin: 0;
+		position: relative;
+		top: 10px;
+	}
+	
+	@media all and (max-width:@break-tablet) {
+		margin: 0 0 7px;
+		top: 7px; 
+	}
+}
+
+.rftw-header__menu-button {
+	display: none;
+	position: absolute;
+	right: 20px;
+	top: 22px;
+	
+	@media all and (max-width:@break-tablet) {
+		display: block;
+	}
+}

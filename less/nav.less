@@ -1,0 +1,107 @@
+.rftw-nav {
+	display: inline-block;
+	margin: 30px 0 0;
+	vertical-align: top;
+	
+	@media all and (max-width:@break-desktop) {
+		margin: 25px 0 15px;
+	}
+	
+	@media all and (max-width:@break-tablet) {
+		display: none;
+	}
+}
+
+.rftw-nav__item {
+	color: #fff;
+	display: inline-block;
+	font-family: @font-brandon;
+	font-size: .95rem;
+	letter-spacing: 3px;
+	line-height: .95rem;
+	margin: 0 0 0 35px;
+	text-decoration: none;
+	text-transform: uppercase;
+	-webkit-font-smoothing: antialiased;
+	
+	&::after {
+		border-bottom: 1px solid #fff;
+		content: "";
+		display: block;
+		margin: 3px auto 0;
+		transition: width 0.15s ease-out;
+		width: 0;
+	}
+	
+	&:hover::after {
+		width: 35px;
+	}
+	
+	&--login {
+		position: absolute;
+		right: 4px;
+		top: 20px;
+		
+		@media all and (max-width:@break-desktop) {
+			right: 20px;
+		}
+	}
+	
+	&:first-of-type {
+		@media all and (max-width:@break-desktop) {
+			margin: 0;
+		}
+	}
+}
+
+.rftw-sub-nav {
+	font-size: 0;
+	margin: 0 0 45px;
+	
+	@media all and (max-width:@break-tablet) {
+		display: none;
+	}
+}
+
+.rftw-sub-nav__item {
+	border-bottom: 1px solid #eee;
+	border-right: 1px solid #eee;
+	border-top: 1px solid #eee;
+	color: @blue-dark !important;
+	display: inline-block;
+	font-family: @font-brandon;
+	font-size: .9375rem;
+	letter-spacing: 2px;
+	padding: 5px 15px;
+	transition: @default-transition;
+	text-decoration: none;
+	text-transform: uppercase;
+	-webkit-font-smoothing: antialiased;
+	
+	&:hover {
+		background: #eee;
+	}
+	
+	&:first-of-type {
+		border-left: 1px solid #eee;
+		border-radius: 3px 0 0 3px;
+	}
+	
+	&:last-of-type {
+		border-radius: 0 2px 2px 0;
+	}
+	
+	&--active { 
+	    background-color: @blue-dark;
+	    color: #fff !important;
+	    border-color: @blue-dark;
+	    
+	    &:hover {
+		    background: @blue-dark;
+		}
+	}
+	
+	@media all and (max-width:@break-desktop) {
+		font-size: .8125rem;
+	}
+}
