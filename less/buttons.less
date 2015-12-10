@@ -1,0 +1,79 @@
+.rftw-button {
+	background-image: url('@{image-path}button-blue-bg.png');
+	background-position: right center;
+	background-size: auto 100%;
+	color: #fff !important;
+	display: inline-block;
+	font-family: @font-brandon;
+	font-size: .75rem;
+	font-style: italic;
+	height: 31px;
+	letter-spacing: 2px;
+	line-height: .75rem;
+	margin: 0 0 0 4px;
+	padding: 0 6px 0 0;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	vertical-align: top;
+	
+	&::before {
+		background-image: url('@{image-path}button-blue-left.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		content: "";
+		display: block;
+		height: 31px;
+		float: left;
+		left: -4px;
+		position: relative;
+		width: 4px;
+	}
+	
+	&__action {
+		padding: 0 7px;	
+		position: relative;
+		top: 10px;
+	}
+}
+
+.rftw-button--double {
+	height: 49px;
+	margin: 0 0 0 6px;
+	padding: 0 10px 0 0;
+		
+	&::after,
+	&::before {
+		height: 49px;
+		width: 6px;
+	}
+	
+	&::after {
+		left: 6px;
+	}
+	
+	&::before {
+		left: -6px;
+	}
+}
+
+.rftw-button__action--second-line {
+	display: block;
+	font-size: 1.25rem;
+	line-height: 1.25rem;
+}
+
+.rftw-button--white {
+	background-image: url('@{image-path}button-white-bg.png');
+	color: @blue-base !important;
+	
+	&::after {
+		background-image: url('@{image-path}button-white-right.png');
+		left: 4px;
+	}
+	
+	&::before {
+		background-image: url('@{image-path}button-white-left.png');
+		left: -4px;
+	}
+}
