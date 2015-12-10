@@ -1,5 +1,6 @@
 body, html {
 	font-size: 16px;
+	line-height: 16px;
 	width: 100%;
 }
 
@@ -14,31 +15,43 @@ body, html {
 	position: relative;
 }
 
-.rftw-header {
-	background: url('@{image-path}bg-stone-teal.png');
-	height: 75px;
-	width: 100%;
-}
-
-.rftw-logo {
-	display: inline-block;
-	height: 73.33%;
-	vertical-align: bottom;
+.rftw-content {
+	font-size: 0px;
+	padding: 55px 5%;
+	text-align: center;
+	transition: @default-transition;
+	width: 90%;
 	
-	&__image {
-		height: 100%;
-		margin: 9px 0;
-		width: auto;
+	@media all and (max-width:@break-tablet) {
+		padding: 25px 5%;
+	}
+	
+	@media all and (max-width:@break-mobile) {
+		padding: 20px 5%;
 	}
 }
 
-.rftw-nav {
-	display: inline-block;
-	vertical-align: super;
-}
-
-.rftw-nav__item--login {
-	position: absolute;
-	right: 0;
-	top: 28px;
+.rftw-page-photo {
+	margin: 0 0 30px;
+	position: relative;
+	width: 100%;
+	
+	&__copyright {
+		border-radius: 3px;
+		background: rgba(0,0,0,.35);
+		color: rgba(255,255,255,.5);
+		display: block;
+		bottom: 7px;
+		font-family: @font-lato;
+		font-size: .5625rem;
+		padding: 3px 7px;
+		position: absolute;
+		right: 4px;
+		text-transform: uppercase;
+	}
+	
+	&__image {
+		height: auto;
+		width: 100%;
+	}
 }
