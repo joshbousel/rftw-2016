@@ -1,3 +1,56 @@
+.rftw-mobile-nav {
+	background-image: url('@{image-path}/bg-stone-green.png');
+	min-height: 100%;
+	left: -100%;
+	position: absolute;
+	text-align: center;
+	transition: left .15s ease-out;
+	top: 62px;
+	width: 100%;
+	-webkit-transform: translateZ(0);
+	
+	&--is-open {
+		left: 0;
+		
+		.rftw-mobile-nav__item {
+			opacity: 1;
+			transition: all .2.5s ease-out;
+		}
+		
+		@media all and (min-width:@break-tablet) {
+			left: -100%;
+		}
+	}
+	
+	&__item {
+		color: #aeeed3;
+		display: block;
+		font-family: @font-brandon;
+		font-size: .875rem;
+		font-weight: bold;
+		letter-spacing: 3px;
+		line-height: .875rem;
+		margin: 0 auto 15px;
+		opacity: 0;
+		transition: all .25s ease-out;
+		text-decoration: none;
+		text-transform: uppercase;
+		-webkit-font-smoothing: antialiased;
+		
+		&--top-level {
+			color: #fff;
+			font-size: 1.125rem;
+			font-weight: bold;
+			line-height: 1.125rem;
+			margin: 30px auto 20px;
+		}
+		
+		&--login {
+			margin: 25px 0 0 5px;
+		}
+	}
+}
+
 .rftw-nav {
 	display: inline-block;
 	margin: 30px 0 0;
@@ -17,6 +70,7 @@
 	display: inline-block;
 	font-family: @font-brandon;
 	font-size: .95rem;
+	font-weight: bold;
 	letter-spacing: 3px;
 	line-height: .95rem;
 	margin: 0 0 0 35px;
@@ -28,7 +82,7 @@
 		border-bottom: 1px solid #fff;
 		content: "";
 		display: block;
-		margin: 3px auto 0;
+		margin: 7px auto 0;
 		transition: width 0.15s ease-out;
 		width: 0;
 	}
@@ -71,6 +125,7 @@
 	display: inline-block;
 	font-family: @font-brandon;
 	font-size: .9375rem;
+	font-weight: bold;
 	letter-spacing: 2px;
 	padding: 5px 15px;
 	transition: @default-transition;

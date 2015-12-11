@@ -1,0 +1,56 @@
+.rftw-footer__partners {
+	background-color: #f7f8f8;
+	background-image: url('@{image-path}bg-paper.png');
+	padding: 25px 0;
+	text-align: center;
+
+	&__group {
+		display: inline-block;
+		margin: 15px 50px;
+		text-align: center;
+		vertical-align: top;
+		
+		&--featured {
+			.rftw-footer__partners__group__logo {
+				width: 140px;
+				
+				@media all and (max-width:@break-mobile) {
+					width: 120px;
+				}
+			}
+		}
+		
+		&--presenting {
+			.rftw-footer__partners__group__logo {
+				width: 90px;
+				
+				@media all and (max-width:@break-mobile) {
+					width: 80px;
+				}
+			}
+		}
+		
+		&--supporting {
+			.rftw-footer__partners__group__logo {
+				width: 100px;
+				
+				@media all and (max-width:@break-mobile) {
+					width: 80px;
+				}
+			}
+		}
+		
+		&__logo {
+			height: auto;
+		}
+		
+		&__partner {
+			float: left;
+			margin: 0 15px 20px;
+			
+			&:nth-of-type(3) {
+					clear: both;
+				}
+		}
+	}
+}

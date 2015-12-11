@@ -57,6 +57,33 @@
 	}
 }
 
+.rftw-button--large {
+	height: 40px;
+	font-size: .9375rem;
+	line-height: .9375rem;
+	margin: 0 0 0 5px;
+	padding: 0 10px 0 0;
+		
+	&::after,
+	&::before {
+		height: 40px;
+		width: 5px;
+	}
+	
+	&::after {
+		left: 5px;
+	}
+	
+	&::before {
+		left: -5px;
+	}
+	
+	.rftw-button__action {
+		padding: 0 10px;	
+		top: 13px;
+	}
+}
+
 .rftw-button__action--second-line {
 	display: block;
 	font-size: 1.25rem;
