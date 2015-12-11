@@ -1,4 +1,15 @@
 *, body, html {
 	margin: 0;
 	padding: 0;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+img {
+	border: 0px;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	img[src*=".svg"] {
+		height: 100%; 
+	}
 }
