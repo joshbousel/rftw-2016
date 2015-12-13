@@ -1,8 +1,11 @@
 .rftw-button {
+	border: 0;
+	background-color: transparent;
 	background-image: url('@{image-path}button-blue-bg.png');
 	background-position: right center;
 	background-size: auto 100%;
 	color: #fff !important;
+	cursor: pointer;
 	display: inline-block;
 	font-family: @font-brandon;
 	font-size: .75rem;
@@ -29,7 +32,16 @@
 		position: relative;
 		width: 4px;
 	}
+
+	&::-moz-focus-inner {
+		border: none;
+		padding:0;
+	}
 	
+	&:focus {
+		outline: none;
+	}
+		
 	&__action {
 		padding: 0 7px;	
 		position: relative;

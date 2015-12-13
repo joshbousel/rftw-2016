@@ -1,0 +1,85 @@
+.rftw-form {
+	margin: 0 auto;
+	max-width: 750px;
+	text-align: left;
+	
+	&__error {
+		background-color: #ffe0e0;
+		color: @red-base !important;
+		display: none;
+		padding: 5px 15px 7px;
+	}
+	
+	&__field {
+		&:focus {
+			border: 1px solid @blue-dark !important;
+			box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.25) !important;
+			outline: none;
+			transition: all 0.15s ease-out;
+		}
+	}
+	
+	&__fieldset {
+		display: block;
+		margin: 0 0 25px;
+	}
+	
+	&__label {
+		color: @blue-dark;
+		display: inline-block;
+		font-family: @font-lato;
+		font-size: 1rem;
+		line-height: 1.25rem;
+		width: 200px;
+		text-align: left;
+		
+		@media all and (max-width:@break-tablet) {
+			display: block;
+			margin: 0 0 10px;
+			width: 100%;
+		}
+		
+		&__note {
+			color: #706c65;
+			display: block;
+			font-size: .875rem;
+			line-height: .875rem;
+			margin: 5px 0 0 0;
+		}
+		
+		&__required {
+			color: @red-base;
+		}
+	}
+}
+
+.rftw-form __field,
+div.responsive input[type="text"], 
+div.responsive input[type="number"], 
+div.responsive input[type="password"], 
+div.responsive textarea {
+	background: #FBFBFB;
+    border: 1px solid #AFB4C3;
+    border-radius: 2px;
+    box-shadow: 0 0;
+    color: @blue-dark;
+    font-family: @font-lato;
+	font-size: 1rem;
+	line-height: 1rem;
+	margin: 0 10px 0 0;
+    padding: 6px 12px;
+    
+    @media all and (max-width:@break-mobile) {
+			display: block;
+			margin: 0 0 10px;
+			width: calc(~'100% - 26px');
+		}
+}
+
+.rftw-form__field--has-error {
+    border: 1px solid @red-base !important;
+}
+
+.rftw-form--volunteer {
+	margin: 35px auto 0;
+}
