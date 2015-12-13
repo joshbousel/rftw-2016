@@ -1,0 +1,1463 @@
+<style>
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*---------Typography------------*/
+html, html a, html a:hover {
+    -webkit-font-smoothing: antialiased !important;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004) !important;
+}
+*, p, ul, ol, ul, li, table, tr, th, td, span, a, .footer, strong  {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+} 
+.ObjTitle, input, button {
+  font-family:"franklin-gothic-urw-cond";
+}
+
+h1, .nav .navBtn a, .Explicit h3, #fr_html_container h3 {
+  font-size: 55px !important; 
+  font-family:"franklin-gothic-ext-comp-urw" !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #032425;
+  margin-bottom: 10px;
+}
+
+h2 { 
+  font-size: 35px; 
+  margin: 0 0 5px 0;
+  font-family:"franklin-gothic-ext-comp-urw";
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #032426;
+}
+h3, p.cstmTitle {
+  font-size: 30px; 
+  margin: 0 0 5px 0;
+  font-family:"franklin-gothic-ext-comp-urw";
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #032426;
+}
+h4 {
+  color: #032426;
+  text-transform: uppercase;
+  font-family:"franklin-gothic-urw-cond";
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0 0 5px 0;
+}
+h5 {
+  color: #032426;
+  text-transform: uppercase;
+  font-family:"franklin-gothic-urw-cond";
+  font-weight: 700;
+  font-size: 15px;
+  margin: 0 0 5px 0;
+}
+
+.nav .navBtn a:hover, #subnav ul li a:hover {
+  color: #007f7b;
+  text-decoration: none;
+}
+#subnav ul li a {
+  font-size: 28px; 
+  display: block;
+  height: 38px;
+  font-family:"franklin-gothic-ext-comp-urw";
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+.full h1 {
+  font-size: 45px;
+}
+.sideBar h1 {
+  margin: 0 0 15px 0;
+}
+.loginWrap h2 {
+  color: #fff;
+  font-size: 20px;
+  margin: 10px 0 0 0;
+}
+.loginWrap p {
+  line-height: 12px;
+  margin: 0;
+  font-size: 12px;
+}
+.loginWrap a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+p, .appArea ul, .appArea li {
+  font-size: 14px;
+  margin: 0 0 20px 0;
+  line-height: 20px;
+}
+.eventInfo a {
+  color: #88d046;
+}
+.eventInfo h1 {
+  font-size: 65px !important;
+  color: #88d046;
+  margin-top: -20px;
+  margin-bottom: 5px;
+}
+.eventInfo p {
+  text-transform: uppercase;
+  font-family:"franklin-gothic-urw-cond";
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 25px;
+  color: #fff;
+}
+.eventInfo .small {
+  text-transform: uppercase;
+  font-family:"franklin-gothic-urw-cond";
+  font-weight: 400;
+  font-size: 20px;
+}
+.eventInfo a, .eventInfo a:link {
+  text-transform: uppercase;
+  font-family:"franklin-gothic-urw-cond";
+  font-weight: 700;
+  font-size: 17px;
+  color: #88d046;
+}
+a, a:link, a:visited, div.responsive a, div.responsive a:link, div.responsive a:visited, #login-div-content a {
+  color: #007f7b;
+  text-decoration: none;
+}
+a:hover, div.responsive a:hover, #login-div-content a:hover {
+  text-decoration: none;
+  color: #032426;
+}
+.footer a:hover {
+  text-decoration: underline;
+  color: inherit;
+}
+.button a {
+  color: #fff;
+}
+.button a:hover, #regBtn a:hover, .button:hover {
+  color: #032426;
+}
+.thirds a, .sideBar a {
+  font-weight: bold;
+}
+strong {
+  font-weight: bold;
+}
+.footer {
+  font-size: 13px;
+}
+.footer ul li, .sponsorLogos ul li, #mobile_nav ul li, .nav ul li, #subnav ul li {
+  list-style: none;
+}
+.appArea ul li {
+  list-style: disc inside none;
+  margin: 0 0 10px 15px;
+  font-size: 14px;
+}
+.defaultHeader .logIn .welcome p,
+.splashHeader .logIn .welcome p,
+.defaultHeader .logIn .welcome a {
+  font-size: 16px;
+  line-height: 20px;
+  font-family:"franklin-gothic-urw-cond";
+}
+/*---------General------------*/
+.hide { 
+    display:none;
+}
+.right {
+    float: right;
+}
+.left {
+    float: left;
+}
+.clear {
+  clear: both;
+}
+.extendfull, .extendright {
+  margin-right: -3000px;
+  padding-right: 3000px;
+}
+.extendfull, .extendleft {
+  margin-left: -3000px;
+  padding-left: 3000px;
+}
+.last {
+  margin: 0;
+}
+.grey {
+  background-color: #223B3C;
+}
+.dark {
+  color: #032426 !important;
+}
+/*
+.arrow {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #fff;
+}*/
+.arrow {
+  font-size: 50%;
+  vertical-align: 5px;
+}
+#regBtn .arrow{
+  vertical-align: 10px;
+}
+/*
+.ltBkrd {
+  background-color: #f4efdd;
+  padding: 25px 10px;
+}*/
+
+
+/*---------
+Layout
+------------*/
+table, tr, td {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+img {
+  max-width: 100%;
+}
+.trPage {
+    overflow: hidden;
+    width: 100%;
+}
+div.responsive {
+    background-color: #FFFFFF;
+    margin: 20px 0 0;
+    padding: 20px;
+    width: 95%;
+    border-radius: 0;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #eee7cb;
+}
+[[?[[?xx[[S8]]xx::xxhttp://e.wcs.org/site/PageNavigator/RFTW_homepage.htmlxx::T::]][[?xx[[S334:pagename]]xx::xxRFTW_homepagexx::T::]]::T::
+.wrapper{max-width: 100%;}
+::
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+]]
+.pad {
+  padding: 0 6%;
+  overflow: hidden;
+}
+.defaultHeader {
+  padding: 0 6%;
+}
+[[?[[?xx[[S8]]xx::xxhttp://e.wcs.org/site/PageNavigator/RFTW_homepage.htmlxx::T::]][[?xx[[S334:pagename]]xx::xxRFTW_homepagexx::T::]]::T::
+.intWrapper{
+  max-width: 1200px;
+  margin: 30px 0;
+  overflow:hidden;
+  clear: both;
+  padding: 0 0 0 6%;
+  margin-left: auto;
+  margin-right: auto;
+}
+::
+.intWrapper {
+  max-width: 1200px;
+  margin: 30px 0;
+  overflow: hidden;
+  padding: 0 0 0 6%;
+  clear: both;
+}
+]]
+[[?[[?xx[[S8]]xx::xxhttp://e.wcs.org/site/PageNavigator/RFTW_homepage.htmlxx::T::]][[?xx[[S334:pagename]]xx::xxRFTW_homepagexx::T::]]::T::
+.header {max-width: 100%;}
+::
+.header {max-width: 1440px;}
+]]
+.splashHeader {
+  background: url('https://secure3.convio.net/wcs/images/content/pagebuilder/rftw2015-splashBkrd.jpg') no-repeat scroll center 0 transparent;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+  padding: 49% 0 0 0;
+}
+.splashHeader .pad {
+  width: 26%;
+  position: absolute;
+  top: 25px;
+}
+.splashHeader .eventLogo {
+  margin-bottom: 15%;
+}
+.splashHeader img {
+  margin: 0 0 20px;
+}
+.splashHeader .cta {
+  margin: 10% 0 0 0;
+}
+.defaultHeader .eventLogo {
+  max-width: 365px;
+  width: 30%;
+  margin: 15px 0 0 0;
+}
+.defaultHeader .logIn {
+  margin: 0 0 30px 0;
+}
+.defaultHeader .logIn h2 {
+  margin: 30px 0 0 0;
+  font-size: 20px;
+}
+.defaultHeader .logIn p {
+  font-size: 12px;
+  line-height: 12px;
+}
+.defaultHeader form {
+  margin: 15px 0 0 0;
+}
+.defaultHeader #menu_toggle form {
+  margin: 5px 0;
+}
+.loginWrap {
+  background-color: #032426;
+  height: 50px;
+}
+.loginWrap .right {
+  width: 100%;
+  max-width: 500px;
+  color: #fff;
+}
+.loginWrap .welcome {
+  margin-top: 10px; 
+}
+.loginWrap input, .logIn input {
+  border-radius: 0;
+  border: 0 none;
+  float: left;
+  height: 20px;
+  margin: 15px 5px;
+  width: 85px;
+  color: #444;
+  padding-left: 5px;
+}
+.logIn #lLogonForm {
+  float: right;
+}
+.main-content ul, .contet ul {
+  margin-left: 30px;
+  }
+.main-content ul li, .content ul li {
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 20px;
+  }
+.navWrap .welcome {
+  margin: 25px 0 0 0;
+}
+[[?[[?xx[[S4]]xx::xx9xx::T::]][[?xx[[S4]]xx::xx27xx::T::]][[?xx[[S334:pagename]]xx::xxrftw2015_pcxx::T::]]::T::
+.content {
+  width: 100%;
+}
+::
+.content {
+  float: left;
+  width: 72%;
+}
+]]
+.sideBar {
+  float: left;
+  width: 22.5%;
+  margin: 20px 0 0 3%;
+}
+.sideBar .req, 
+.sideBar .share, 
+.sideBar .register,
+.sideBar .list {
+  margin: 0 0 50px 0;
+}
+.sideBar div.addthis_toolbox {
+  float: none;
+  margin: 0;
+  padding:0;
+  width: 100%;
+}
+.share img {
+  margin: 0 5px 0 0;
+}
+.sponsorLogos {
+  background-color: #e3d7a9;
+  overflow: hidden;
+  padding-top: 35px;
+  padding-bottom: 35px;
+} 
+.sponsorLogos h4 {
+  text-align: center; 
+  margin-bottom: 15px;
+}
+.sponsorLogos ul {
+  float: left;
+  width: 100%;
+}
+.sponsorLogos ul li {
+  float: left;
+  margin-right: 5%;
+  text-align: center;
+}
+.sponsorLogos ul li:last-child {
+  margin-right: 0;
+}
+.sponsorLogos ul li img {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.footer {
+  background-color: #032426;
+  color: #ffffff;
+  clear: both;
+}
+.sitemap {
+  overflow: hidden;
+  margin: 25px 0 0 0;
+}
+.footer ul {
+  margin-right: 5%;
+  float: left;
+}
+.footer ul li {
+  margin: 0 0 5px 0;
+}
+.footer ul li a {
+  color: #ffffff;
+}
+.footer #logo {
+  clear: both;
+  margin-top: 50px;
+}
+.footer #logo img {
+  float: left;
+  margin: 0 10px 0 0;
+}
+.footer #logo p {
+  font-size: 12px;
+  line-height: 14px;
+  margin: 0 0 5px;
+}
+
+.participant-find-search-container.pending-progressive-enhancement {
+  display: block;
+  }
+
+#search_team {
+  display: none;  
+  }
+
+#search_mode_link_basic,
+#search_mode_link_advanced,
+#search_mode_link_basic_team,
+#search_mode_link_advanced_team {
+  display: none;  
+  }
+
+#find_participant div.participant-find-search-container {
+  width: 100%;
+  }
+
+#first_name_search_field,
+#last_name_search_field,
+#team_search_field_team {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  }
+
+#part_search_container {
+  color: #032426;
+  }
+
+div#find_participant button.search-button {
+  float: none;
+  }
+
+div.form-content {
+  margin-top: 10px !important;
+  }
+
+.survey-question-container {
+  margin-top: 15px !important;
+  } 
+  
+.form-content select, 
+.form-content input {
+  margin-top: 5px;
+  }
+
+#s_rememberMe,
+.AutoOptInWarningMessage {
+  display: none;
+  }
+
+a#sidebar_donate_button {
+  font-size: 30px;  
+}
+
+/*---------------- 
+nav 
+--------------*/
+.nav {
+  clear: both;
+}
+.navWrap {
+  width: 100%;
+  max-width: 700px;
+}
+.nav ul li {
+  float: left;
+  margin: 0 5% 5px 0;
+}
+#subnav ul li {
+  float: left;
+  margin: 0 5% 0 0;
+}
+.nav ul li:last-child, #subnav ul li:last-child {
+  margin: 0;
+}
+#subnav-wrapper {
+  clear: both;
+  background-color: #032425;
+  overflow: hidden;
+  height: 38px;
+  line-height: 35px;
+}
+ul li span.navBtn a.active {
+    background: url("../images/content/pagebuilder/rftw2014-navArrow.png") no-repeat scroll 50% 99% rgba(0, 0, 0, 0);
+}
+#subnav ul {
+  width: 100%;
+  overflow: hidden;
+}
+#subnav ul li span.navBtn a.on {
+  background: url("../images/content/pagebuilder/rftw2014-navArrow2.png") no-repeat scroll 50% 100% rgba(0, 0, 0, 0);
+}
+
+
+/*---------------------
+content boxes
+--------------------*/
+.boxContainer {
+  width: 100%;
+}
+.box {
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.full {
+  padding: 25px;
+  margin: 0 0 30px;
+}
+.thirds {
+  width: 26%;
+  padding: 20px 2.2% 0 2.2%;
+  float: left;
+  margin: 0 4.3% 30px 0;
+  min-height: 325px;
+}
+.thirds:last-child {
+  margin: 0;
+}
+.thirds p {
+  margin: 0;
+}
+.full img {
+  float: left;
+  max-width: 375px;
+  width: 48%;
+}
+.full div {
+  float: right;
+  width: 50%;
+}
+
+
+/*----------
+buttons
+--------------*/
+.button {
+  background-color: #88d046;
+  color: #032426;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-family: "franklin-gothic-ext-comp-urw";
+  font-weight: 700;
+  /*padding: 1px 15px;*/
+  cursor: pointer;
+  font-size: 30px;
+  line-height: 30px;
+  max-width: 150px;
+  text-align: center;
+  padding-bottom: 2px;
+}
+.button:hover {
+  background-color: #91e940;
+}
+.register-block .button{
+  /*max-width: 125px;*/
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+#login, 
+#logBtn, 
+#logBtn:link,  
+#qf_go, 
+input#donor_matching_employersearchBtn,
+a.logout {
+  font-family:"franklin-gothic-urw-cond";
+  background: #88d046;
+  color: #032426;
+  border-radius: 5px;
+  text-transform: uppercase;
+  width: 55px;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 0 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+#login:hover, 
+#logBtn:hover,   
+#qf_go:hover, 
+input#donor_matching_employersearchBtn:hover,
+.logout:hover {
+  background: #91e940;
+}
+div.responsive a.step-button, 
+div.responsive button.step-button,
+div.responsive a#previous_step.step-button, 
+div.responsive button#previous_step.step-button,
+div.responsive a#cancel_button.step-button, 
+div.responsive button#cancel_button.step-button,
+div.responsive button#pstep_cancel.step-button,
+.Button, 
+div#team_find_search_results_container div.list-component-cell-column-join-link a,
+div.responsive a#part_ctr_container, 
+div.responsive a#part_ctr_container_step,
+.NextButton, 
+.FinishButton,
+.CancelButton,
+#login-div-content input.uc-button, 
+#login-div-content button, 
+#login-div-content .ft button {
+  background: #88d046;
+  color: #032426;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-family: "franklin-gothic-ext-comp-urw";
+  font-weight: 700;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  border: 0 none;
+  text-decoration: none;
+}
+div.responsive button.step-button span {
+  font-family:"franklin-gothic-urw-cond";
+}
+div.responsive button.step-button:hover,
+div.responsive a#previous_step.step-button:hover, 
+div.responsive button#previous_step.step-button:hover,
+div.responsive a#cancel_button.step-button:hover, 
+div.responsive button#cancel_button.step-button:hover,
+.Button:hover,
+div.responsive button.cancel-step:hover, 
+div.responsive button.cancel-step:focus, 
+div.responsive button.cancel-step:active,
+div#team_find_search_results_container div.list-component-cell-column-join-link a:hover,
+div.responsive a#part_ctr_container:hover,
+div.responsive a#part_ctr_container_step:hover,
+.NextButton:hover, 
+.FinishButton:hover,
+#qf_go:hover,
+.CancelButton:hover,
+#login-div-content input.uc-button:hover, 
+#login-div-content button:hover, 
+#login-div-content .ft button:hover,
+div.responsive a.next-step:hover, 
+div.responsive button.next-step:hover,
+div.responsive a.secondary-step:hover, 
+div.responsive button.secondary-step:hover {
+  background: #91e940;
+  color: #032426;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 25px;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#dcddde',GradientType=0 ); /* IE6-8 */
+  text-decoration: none;
+  text-align: center;
+  color: #032426;
+}
+.full div.button {
+  float: left;
+  max-width: 160px;
+}
+.loginWrap input#login {
+  border: none;
+  filter: none;
+  font-family:"franklin-gothic-urw-cond";
+  font-weight: 700;
+  width: 55px;
+}
+#regBtn {
+  font-size: 4rem;
+  line-height: 4rem;
+  max-width: 230px;
+  margin: 0 0 15px;
+}
+#supportBtn {
+  font-size: 2rem;
+  line-height: 2rem;
+  max-width: 206px;
+}
+
+
+/*-----------------
+Donation
+-------------------*/
+div.donation-level-container, 
+div.responsive div.form-content {
+    margin: 0;
+}
+
+/*-----------------
+Greeting Page
+-------------------*/
+div.tr-page-container div.main-content {
+  width: 100%;
+}
+div.tr-page-container #entry_page_custom_html {
+  padding: 0;
+}
+div.tr-page-container div.section-sub-header, div.tr-page-container div.header-container {
+  display: none;
+}
+div#entry div.side-bar {
+  display: none;
+}
+.prizesInfo {
+  float: right;
+  margin: 10px 0 0 10px;
+}
+.perksInfo {
+  float: left;
+  width: 50%;
+}
+.registerNow {
+  clear: both;
+}
+/*Reg Page*/
+#registration-list li {
+    float: left;
+    list-style: none outside none;
+    margin-bottom: 20px;
+}
+#registration-list li.reg-button a.start-a-new-team {
+    background: url("https://secure3.convio.net/wcs/images/content/pagebuilder/button-new-team.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+#registration-list li.reg-button a.join-an-existing-team {
+    background: url("https://secure3.convio.net/wcs/images/content/pagebuilder/button-existing-team.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+#registration-list li.reg-button a.register-as-an-individual {
+    background: url("https://secure3.convio.net/wcs/images/content/pagebuilder/button-individual.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+#registration-list li.reg-button a.participate-as-a-virtual-runner {
+    background: url("https://secure3.convio.net/wcs/images/content/pagebuilder/button-virtual-runner.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+#registration-list li.reg-button a:hover {
+  background-position: bottom;
+}
+#registration-list li.reg-button {
+    padding-top: 7px;
+    width: 25%;
+}
+#registration-list li.reg-button a {
+    display: block;
+    height: 63px;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 205px;
+}
+#registration-list li.reg-desc {
+    margin-right: 20px;
+    width: 65%;
+    clear:left;
+}
+/*Status Indicator*/
+.vScroll {
+  border: none;
+  background-color: #f4efdd;
+  width: 200px;
+  margin: 0px;  
+}
+.vScroll .scrollContent {
+  background-color: transparent;
+  margin: 0px;  
+}
+.addBorder {
+  background-color: transparent;
+  border: 0 none;
+  width: 75%;
+}
+.controlArea strong {
+  display: none;
+}
+.controlArea {
+  padding: 0;
+  background-color: transparent;
+}
+.scrollingBack {
+  background-color: #F4EFDD;
+  width: 100%;
+  padding: 0 0 0 10px;
+}
+.scrollingArea {
+  background-color: transparent;
+}
+
+/*Volunteer Page*/
+.volunteer-list {
+  margin-left: 25px; 
+  margin-bottom: 15px;
+  }
+  
+.volunteer-list li {
+  font-size: 14px;
+  margin-bottom: 5px;
+  }
+
+.volunteerForm #ACTION_SUBMIT_SURVEY_RESPONSE {
+  width: 91px;
+  height: 38px;
+  border: none;
+  background: url(https://secure3.convio.net/wcs/rftw2014bz/images/button-submit.png);
+  font-size: 0px;
+  text-indent: -9999px;
+  overflow: hidden;
+  cursor: pointer;
+  cursor: hand;
+  }
+
+.volunteerForm input, textarea {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 12px;
+  padding: 2px;
+  width: 150px;
+  }
+
+.volunteerForm input.gray {
+  color: #afafaf;
+  }
+
+.volunteerForm textarea {
+  width: 310px;
+  height: 100px;
+  border: 1px solid #a89c6f;
+  }
+
+.volunteerForm #error {
+  font-weight: bold !important;
+  color: red !important;
+  }
+
+.volunteerForm .grey {
+  color: #afafaf !important;
+  }
+
+.volunteerForm .note {
+  font-size: 10px;
+  font-style: italic;
+  font-weight: normal;
+  }
+
+.volunteerForm span.required {
+  color: red;
+  }
+
+.volunteerForm ul {
+  clear: both;
+  }
+
+.volunteerForm ul li {
+  list-style: none;
+  float: left;
+  vertical-align: top;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  }
+
+.volunteerForm ul li.label {
+  font-weight: bold;
+  width: 185px;
+  }
+
+
+/*------------------------
+Personal & Team Pages
+-------------------------*/
+[[?[[?xx[[S334:pg]]xx::xxpersonalxx::T::]][[?xx[[S334:pg]]xx::xxteamxx::T::]]::T::
+div.tr-page-main-content,
+div#team_page_main_content {
+  width: 55%;
+}
+@media all and (max-width: 800px) {
+  div.tr-page-container div.side-bar {
+    float: left;
+  }
+
+}
+::
+]]
+
+
+
+/*------------------------------------------------
+Mobile Styles
+------------------------------------------------*/
+[[?xx[[S8]]xx::xxhttp://e.wcs.org/site/PageNavigator/rftw2014.htmlxx::
+@media all and (min-width: 1441px) {
+  /*.splashHeader {
+    background: #E3D7A9;
+  }*/
+  .wrapper, .header {
+    max-width: 100%;
+  }
+}
+::
+]]
+
+@media all and (max-width: 1300px) {
+  .splashHeader .eventLogo {
+    margin: 0;
+  }
+  .splashHeader .pad {
+    width: 30%;
+  }
+  .eventInfo h1 {
+  margin-top: -5px;
+  }
+  .eventInfo p {
+    font-size: 1.2em;
+    line-height: 1em;
+    margin: 0 0 5px 0;
+  }
+  .eventInfo .small {
+    font-size: 1em;
+  }
+  .eventInfo img {
+    margin: 0;
+  }
+  .eventLogo {
+    margin-bottom: 2%;
+  }
+  .splashHeader .cta {
+    margin: 3% 0 0;
+  }
+  .loginWrap .right {
+    max-width: 445px;
+  }
+}
+@media all and (max-width: 1150px) {
+  .defaultHeader .logIn {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  } 
+  .defaultHeader .eventLogo {
+    width: 25%;
+  }
+  .eventInfo h1 {
+  font-size: 60px !important;
+  }
+  .nav ul li {
+    margin: 0 3% 1% 0;
+  }
+  .nav .navBtn a {
+    font-size: 40px !important;
+    line-height: 38px;
+  }
+  .navWrap {
+    width: 65%;
+    margin-top: 70px;
+  }
+  #subnav ul li a {
+    font-size: 24px;
+    height: 32px;
+  }
+  #subnav-wrapper {
+    height: 32px;
+    line-height: 30px;
+  }
+  #subnav ul li {
+    margin: 0 3% 0 0;
+  }
+  .addthis_32x32_style .addthis_counter.addthis_bubble_style {
+    padding: 0;
+  }
+  .addthis_32x32_style .addthis_counter.addthis_bubble_style,
+  .addthis_32x32_style .addthis_counter.addthis_bubble_style a.addthis_button_expanded {
+    width: 30px !important;
+  }
+  .addthis_counter.addthis_bubble_style {
+    margin-left: -4px;
+  }  
+}
+@media all and (max-width: 1024px) {
+  #supportBtn {
+    font-size: 1.5rem;
+    max-width: 160px;
+  }
+  #regBtn {
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+    max-width: 170px;
+    margin: 0 0 10px;
+  } 
+  .eventInfo p {
+    font-size: 1em;
+  }
+  .eventInfo h1 {
+  font-size: 45px !important;
+  }
+  .splashHeader .pad {
+    top: 10px;
+  }
+  .splashHeader img {
+    margin: 0 0 10px;
+  }
+  .defaultHeader .logIn {
+    position: absolute;
+    right: 25px;
+    top: 0;
+  }
+  .navWrap {
+    width: 70%;
+  }
+  
+  .intWrapper { 
+    padding: 0 2%;
+  }
+  .content, .sideBar {
+    clear: both;
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+  .sideBar div {
+    float: left;
+    margin: 0 4.3% 30px 0;
+    padding: 20px 2.2% 0;
+    width: 28%;
+  }
+
+  .sideBar div:last-child {
+    margin: 0;
+  }
+  .sideBar div .button {
+    padding:0;
+    width: 100%;
+  }
+  .req, .list, .partners {
+    display: none;
+  }
+  .sponsorLogos ul li {
+    margin: 0;
+    width: 30%;
+  }
+  .sponsorLogos ul li:nth-child(4) {
+    clear: both;
+    margin: 25px 0 0 10%;
+  }
+  .sponsorLogos ul li:nth-child(5) {
+    margin: 25px 0 0 0;
+  }
+  div#personal_page_main_content.tr-page-main-content {
+    width: 100%;
+  }
+  div.tr-page-container div#personal_page_sidebar.side-bar {
+    float: left;
+  }
+  
+  .addthis_32x32_style .addthis_counter.addthis_bubble_style {
+    padding: inherit;
+  }
+  .addthis_32x32_style .addthis_counter.addthis_bubble_style,
+  .addthis_32x32_style .addthis_counter.addthis_bubble_style a.addthis_button_expanded {
+    width: inherit;
+  }
+  .addthis_counter.addthis_bubble_style {
+    margin-left: inherit;
+  }
+}
+@media all and (max-width: 800px) {
+    h1, .Explicit h3, #fr_html_container h3 {font-size: 50px !important;}
+    h2 {font-size: 30px;}
+    h3, p.cstmTitle {font-size: 25px;}
+    
+    .extendfull {
+    margin-left:0;
+    margin-right:0;
+    padding-left: 0;
+    padding-right:0;
+  }
+  .intWrapper {
+    margin: 0 0 30px 0;
+  }
+  .eventInfo h1 {
+  font-size: 65px !important;
+  }
+  .header {
+    overflow: hidden;
+    border-bottom: 5px solid #032426;
+  }
+  div.responsive {
+    padding: 5px;
+  }
+  #mobile_nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
+  }
+  #menu_toggle ul {
+    display: none;
+    float: right;
+    background-color: #032426;
+    height: 1000px;
+    z-index: 999;
+  }
+  #menu_toggle img {
+    max-width: 50px;
+    padding: 20px 20px 0 0;
+  }
+  #menu_toggle ul input {
+    max-width: 65px;
+    height: 18px;
+  }
+  #menu_toggle ul input#login {
+    font-family:"franklin-gothic-urw-cond";
+    font-size: 15px;
+    border: none;
+    padding: 0 3px;
+    height: inherit;
+    clear: both;
+    margin: 5px 0;
+  }
+  #menu_toggle ul li {
+    padding: 10px 0 10px 5px;
+    margin: 0;
+    border-bottom: 1px outset #000;
+  }
+  #menu_toggle ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family:"franklin-gothic-ext-comp-urw";
+    font-weight: 700;
+  }
+  #menu_toggle ul li.grey h2 {
+    color: #fff;
+    font-size: 15px;
+    margin: 10px 0 0 0;
+    font-family:"franklin-gothic-urw-cond";
+  }
+  #menu_toggle ul li.grey p a {
+    font-size: 14px;
+    text-transform: none;
+    color: #88d046;
+    font-family:"franklin-gothic-urw-cond";
+  }
+  #menu_toggle ul li.grey .welcome p a {
+    color: #fff;
+  }
+  #menu_toggle ul.submenu {
+    display: block;
+    float: none;
+    height: auto;
+  } 
+  #menu_toggle ul.submenu li {
+    padding: 10px 5px 10px 20px;
+    margin: 0;
+  }
+  #menu_toggle .submenu a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-family:"franklin-gothic-ext-comp-urw";
+    font-weight: 500;
+  }
+  .loginWrap {
+    height: auto;
+  }
+  .eventInfo {
+    margin: 15px 0;
+    overflow: hidden;
+  }
+  .eventInfo p {
+    color: #fff;
+    font-size: 1.2em;
+  }
+  .eventInfo img {
+    margin: 7px 0;
+    overflow: hidden;
+  }
+  .defaultHeader .eventLogo {
+    margin: 5px 0;
+    width: 40%;
+  }
+  .cta {
+    margin: 15px 0 0 0;
+  }
+  .cta div {
+    float: left;
+  }
+  #regBtn {
+    margin: 0 5% 0 0;
+  }
+  #supportBtn {
+    margin: 12px 0 0;
+  }
+  #regBtn, #supportBtn {
+    padding: 5px 10px;
+  }
+  .intWrapper {
+    background: #fff;
+    overflow:hidden;
+  }
+  .full img {
+    width: 100%;
+    float: none;
+  }
+  .full div {
+    width: 100%;
+    clear: both;
+  }
+  .thirds {
+    margin: 0 0 30px;
+    min-height: 0;
+    padding: 20px 2.5%;
+    width: 95%;
+  }
+  .thirds img {
+    float: left;
+    margin-right: 10px;
+  }
+  .sideBar {
+    padding: 0 2%;
+    width: 95%;
+    margin-bottom: 25px;
+  }
+  .sideBar div {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
+  .sideBar h1 {
+    width: 100%;
+  }
+  .sideBar div .button {
+    float: left;
+  }
+  .sideBar .register {
+    margin: 0 0 50px 0;
+  }
+  .sponsorLogos ul {
+    text-align: center;
+  }
+  .sponsorLogos ul li {
+    width: 50%;
+  }
+  .sponsorLogos ul li:nth-child(1) {
+    float: left;
+  }
+  .sponsorLogos ul li:nth-child(2) {
+    float: right;
+  }
+  .sponsorLogos ul li:nth-child(3) {
+    clear: both;
+    margin: 25px 0 0 0;
+    width: 100%;
+  }
+  .sponsorLogos ul li:nth-child(4) {
+    clear: both;
+    margin: 25px 0 0 0;
+  }
+  .desk {
+    display: none;
+  }
+  .hide {
+    display: block;
+    overflow: hidden;
+  }
+  .prizesInfo {
+    float: left;
+    clear: both;
+    margin:0;
+  }
+  .perksInfo {
+  width: 100%;
+}
+div#cons_info_component_container div#personal_info_section_one, div#cons_info_component_container div#personal_info_section_two, div#cons_info_component_container div#contact_info_section_one, div#cons_info_component_container div#contact_info_section_two, div#registration_options_page div#user_name_pword_container, div#registration_options_page div#privacy_opts_container, div#registration_options_page div#tribute_component_section_one, div#registration_options_page div#tribute_component_section_two, div#emergency_contact_container, div#gift_notice_optin, div#email_optin {
+  width: inherit;
+}
+.footer #logo {
+  margin: 20px 0 30px;
+}
+#registration-list li.reg-desc {
+  width: 100%;
+  margin:0;
+}
+}
+
+@media all and (max-width: 568px) {
+  [[?xx[[S8]]xx::xxhttp://e.wcs.org/site/PageNavigator/rftw2014.htmlxx::
+  #menu_toggle img {
+    max-width: 35px;
+    padding: 10px 10px 0 0;
+  }
+  ::
+  #menu_toggle img {
+    max-width: 35px;
+    padding: 15px 15px 0 0;
+  }
+  ]]
+  .pad {
+    padding: 0 2%;
+  }
+  .splashHeader .pad {
+    width: 34%;
+  }
+  .full {
+    padding: 20px 0;
+  }
+  .thirds {
+    padding: 20px 0;
+  }
+  .defaultHeader .eventLogo {
+    width: 35%;
+  }
+  div.reg-summary-thanks-common-container div.action-button-container {
+    width: 70%;
+  }
+  
+}
+
+@media all and (max-width: 400px) {
+  h1, .Explicit h3, #fr_html_container h3 {font-size: 35px !important;}
+    h2 {font-size: 27px;}
+    h3, p.cstmTitle {font-size: 20px;}
+    h4 {font-size: 16px;}
+
+    .box p {
+    clear: left;
+    margin-top: 10px;
+  }
+  div.responsive button.step-button {
+    float: left;
+    clear: both;
+  }
+  div.reg-summary-thanks-common-container div.reg-summary-address-info {
+    display: block;
+  }
+  div.responsive a.next-step, 
+  div.responsive button.next-step, 
+  div.responsive button.finish-step,
+  div.responsive button.step-button {
+    float: none;
+    clear: both;
+    width: 100%;
+  }
+  div.reg-summary-thanks-common-container div.action-button-container {
+    width: 100%;
+  }
+  div.reg-summary-thanks-common-container div.reg-summary-address-info,
+  div.reg-summary-thanks-common-container div.reg-summary-name-info {
+    width: inherit;
+  }
+}
+
+
+
+
+/*----------------------------
+2015 fixes wg Charity Dynamics
+------------------------------*/
+.sideBar .donor-list-indicator-container .indicator-title, .vScroll .title{display: none;}
+.ltBkrd div.indicator-container {border:0 none;background-color: #f4efdd;}
+div.team-honor-list-name{margin:0 0 10px 0;}
+div.indicator-container a.indicator-link{color: #007f7b; font-size: 14px; }
+div.team-honor-list-value{ font-family: helvetica, arial, sans-serif; font-size: 14px; }
+</style>
