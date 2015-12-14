@@ -1,0 +1,591 @@
+/*v5*/
+
+/*-------typography--------*/
+html, html a, html a:hover {
+    -webkit-font-smoothing: antialiased !important;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004) !important;
+}
+*, p, ul, ol, ul, table, tr, th, td, span, a, .footer, strong  {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+} 
+.ObjTitle, input, button, .yui-skin-ux .tiny-block span {
+  font-family:"franklin-gothic-urw-cond";
+}
+.yui-skin-ux h1, .yui-skin-ux h2 { 
+  font-size: 35px; 
+  margin: 0 0 10px 0;
+  font-family:"franklin-gothic-ext-comp-urw";
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #032425;
+  padding: 0;
+}
+h1#msg_cat_overview_label {
+  display: block;
+  font-size: 55px;
+  margin: 0;
+}
+.yui-skin-ux .bd-progress h3, 
+.yui-skin-ux .bd-progress h3 .progressType {
+  font-size: 40px;
+  font-family:"franklin-gothic-ext-comp-urw";
+  font-weight: normal;
+}
+.yui-skin-ux #msg_cat_what_next_question {
+  font-size: 40px;
+  width: 100%;
+}
+.yui-skin-ux #what-next-answer {
+  margin-left: 0;
+  color: #007F7B;
+  text-decoration: none;
+}
+.yui-skin-ux #what-next-answer:hover {
+  color: #032425;
+}
+.yui-skin-ux h3, 
+.yui-skin-ux #top-donors h3, 
+.yui-skin-ux #top-team-donors h3,
+.yui-skin-ux #sidebar h3 {
+  font-size: 30px; 
+  margin: 0 0 5px 0;
+  font-family:"franklin-gothic-ext-comp-urw";
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #032425;
+}
+.yui-skin-ux h4 {
+  color: #032425;
+  text-transform: uppercase;
+  font-family:"franklin-gothic-urw-cond";
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0 0 5px 0;
+}
+.yui-skin-ux h5 {
+  color: #032425;
+  text-transform: uppercase;
+  font-family:"franklin-gothic-urw-cond";
+  font-weight: 700;
+  font-size: 15px;
+  margin: 0 0 5px 0;
+}
+ul.utilityNav li a, ul.utilityNav li  {
+  font-family: "franklin-gothic-ext-comp-urw";
+}
+
+.yui-skin-ux #hd-nav a, 
+.yui-skin-ux #hd-nav a:link, 
+.yui-skin-ux #hd-nav a:visited, 
+.yui-skin-ux .tiny-block, 
+.yui-skin-ux a, 
+.yui-skin-ux a:link, 
+h3#msg_cat_recent_activity_header, 
+#bd, .yui-skin-ux .big-block, 
+.utilityNavMobile li, 
+.utilityNav li, 
+li#menu_toggle ul li a, 
+.yui-skin-ux .utilityNavMobile ul li a {
+  font-family:"franklin-gothic-urw-cond";
+}
+h3#msg_cat_recent_activity_header {
+  font-size: 40px;
+  color: #032425;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  font-family: "franklin-gothic-ext-comp-urw";
+  font-weight: normal;
+}
+.yui-skin-ux .ux-block2 p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #032425;
+  margin-bottom: 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+ul.utilityNav li {
+  line-height: 30px;
+  margin-right: 15px;
+  text-decoration: none;
+  color: #032425;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+ul.utilityNav li:last-child {
+  margin-right: 0;
+}
+.utilityNav li a {
+  text-decoration: none;
+}
+.utilityNav li a:hover, .yui-skin-ux a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+ul.utilityNav li.bull, .utilityNavMobile li.bull   {
+  color: #dbdbdb;
+}
+.yui-skin-ux .big-block {
+  font-size: 22px;
+  color: #032425;
+}
+.yui-skin-ux .tiny-block {
+  font-size: 12px;
+  color: #032425;
+}
+.yui-skin-ux #msg_cat_personal_page_photo_video_select_label {
+  font-size: 1.2em;
+}
+.yui-skin-ux h1#msg_cat_personal_page_photos_label {
+  margin-bottom: 0;
+}
+#personalpage-media-content #msg_cat_personal_page_content_label, 
+#personalpage-media-content #view_shortcut, 
+#personalpage-components-content #msg_cat_personal_page_content_label, 
+#personalpage-components-content #view_shortcut{
+  font-size: 1.5em;
+}
+#msg_cat_personal_page_content_label {
+  color: #777;
+}
+.yui-skin-ux .yui-panel .hd {
+  font-family:"franklin-gothic-urw-cond";
+}
+
+a#sidebar_donate_button {
+	font-size: 30px;	
+}
+
+/*------------Nav--------------*/
+.yui-skin-ux ul.subnav li.selected, .yui-skin-ux ul.subnav li.selected a {
+background: none repeat scroll 0 0 #032425; /* SIDEBAR SELECTED */
+filter: none !important; /* FOR DUMB IE */
+}
+.yui-skin-ux #hd-nav .selected a, 
+.yui-skin-ux #hd-nav .selected a:link, 
+.yui-skin-ux #hd-nav .selected a:visited {
+background: url("https://secure3.convio.net/wcs/images/content/pagebuilder/pcArrow.png") no-repeat bottom center scroll; /* TOP NAV SELECTED */
+filter: none !important; /* FOR the lovely IE */
+color: #fff;
+}
+.yui-skin-ux #hd-nav a, .yui-skin-ux #hd-nav a:link, .yui-skin-ux #hd-nav a:visited {
+color: #fff; /* TOP NAV text color*/
+font-family: "franklin-gothic-ext-comp-urw";
+font-size: 25px;
+}
+.yui-skin-ux #hd-nav a, .yui-skin-ux #hd-nav a:link, .yui-skin-ux #hd-nav a:visited {
+padding: .05em 1em; /* hover size */
+} 
+.yui-skin-ux #hd-nav a:hover, .yui-skin-ux #hd-nav a:active {
+background-color: transparent; /* TOP NAV HOVER background */
+color: #007F7B;
+}
+.yui-skin-ux ol.subnav li.selected, .yui-skin-ux ol.subnav li.selected a, .yui-skin-ux ol.subnav li.selected span {
+background: none repeat scroll 0 0 #032425; /* IMPORT CONTACTS CURRENT STEP */
+border-color: transparent;
+}
+.yui-skin-ux ol.subnav li.wizard-next.selected {
+color: #FFFFFF; /* IMPORT CONTACTS CURRENT STEP */
+}
+.yui-skin-ux .big-button-on {
+background: none repeat scroll 0 0 #FFFFFF; /* IMPORT CONTACTS SERVICE SELECTED */
+border-color: #032425;
+}
+.yui-skin-ux a, .yui-skin-ux a:link {
+color: #007F7B; /* TEXT LINKS */
+text-decoration: none;
+}
+.yui-skin-ux a:hover {
+  text-decoration: none;
+  color: #032425;
+}
+.yui-skin-ux ul.subnav li a {
+  color:  #007F7B;
+}
+.yui-skin-ux #hd-nav {
+  background-color: #032425;
+  margin: 0;
+  width: 100%;
+
+}
+
+/*----------LOADING BAR------------*/
+.yui-skin-ux .ui-progressbar .ui-progressbar-value {
+background: none repeat scroll 0 0 #007F7B; /* loading bar */
+}
+.yui-skin-ux .ui-widget-header {
+border: 1px solid transparent; /* loading bar border */
+}
+.yui-skin-ux .ui-corner-left {
+border-bottom-left-radius: 0;
+border-top-left-radius: 0;
+}
+.yui-skin-ux .ui-corner-right {
+border-bottom-right-radius: 0;
+border-top-right-radius: 0;
+}
+.yui-skin-ux .ui-progressbar {
+background: none repeat scroll 0 0 #FFFFFF; /* LOADING BAR BACKGROUND */
+border-color: #b32f2b;
+}
+.yui-skin-ux .ui-corner-all {
+border-radius: 0 0 0 0;
+}
+.yui-skin-ux .mask {
+background-color: #cccccc; /* BACKGROUND FADE MASK */
+opacity: 0.8;
+}
+#wait {
+  margin: 0 auto;
+}
+#wait_c {
+  background: url("http://e.wcs.org/images/content/pagebuilder/rftw2015-logo.png") no-repeat scroll center 120px #FFFFFF !important;
+  background-size: 75% !important;
+  border: 3px solid #007F7B;
+  height: 280px;
+  top: 20px !important;
+  width: 340px;
+  border-radius:5px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  -o-border-radius:5px;
+  -ms-border-radius:5px;
+ -webkit-box-shadow: 0px 0px 25px rgba(50, 50, 50, 1);
+-moz-box-shadow: 0px 0px 25px rgba(50, 50, 50, 1);
+-ms-box-shadow: 0px 0px 25px rgba(50, 50, 50, 1);
+box-shadow:0px 0px 25px rgba(50, 50, 50, 1);
+}
+#wait_c .underlay{
+  display:none;
+}
+
+
+/*---------------Color Reset--------------------*/
+/* MAKE ALL THE LIGHT BLUE (#D7FCFD) THINGS WHITE (#FFF) */
+.yui-skin-ux .content-header .search {
+background: none repeat scroll 0 0 #FFF;
+}
+.yui-skin-ux .ux-link a:hover, .yui-skin-ux .ux-link a:active {
+color: #FFF;
+}
+.yui-skin-ux #email-groups-actions {
+background: none repeat scroll 0 0 #fff;
+}
+.yui-skin-ux #layout-list li.selected a {
+background: none repeat scroll 0 0 #fff;
+}
+.yui-skin-ux .yui-panel .hd {
+background-color: #fff;
+}
+.yui-skin-ux .yui-panel .ft {
+background-color: #fff;
+}
+.yui-skin-ux .yui-panel .ft-right {
+background-color: #fff;
+}
+.yui-skin-ux #preview-block .hd {
+background-color: #fff;
+}
+.yui-skin-ux #preview-block .ft {
+background-color: #FFF;
+}
+.yui-skin-ux #draft-info-block {
+background: none repeat scroll 0 0 #FFF;
+}
+.yui-skin-ux .header {
+background: none repeat scroll 0 0 #FFF;
+}
+.newsitem-new-image {
+background-color: #FFF;
+}
+#carousel-paginator .yui-pg-page.new {
+background-color: #FFF;
+}
+#tooltip.pc2Tooltip {
+border: 10px solid #fff;
+}
+.yui-skin-ux .yui-panel {
+background: none repeat scroll 0 0 #fff;
+}
+
+/* MAKE LIGHT BLUE BACKGROUNDS on non pop-up elements TRANSPARENT */
+.yui-skin-ux h1, .yui-skin-ux div.h1-imposter {
+background: none repeat scroll 0 0 transparent;
+}
+.yui-skin-ux .content-header div .left-split {
+background: none repeat scroll 0 0 transparent;
+}
+.yui-skin-ux .content-header div .right-split {
+background: none repeat scroll 0 0 transparent;
+}
+.yui-skin-ux #sidebar .sidebar-form {
+background-color: transparent;
+}
+.yui-skin-ux #email-compose-hide-templates, .yui-skin-ux #email-compose-use-template {
+background: none repeat scroll 0 0 transparent;
+}
+.yui-skin-ux #contacts-actions {
+background-color: transparent;
+}
+.yui-skin-ux .content-header {
+background: none repeat scroll 0 0 transparent;
+}
+
+/*MAKE LIGHT BLUE BORDERS TRANSPARENT */
+.yui-skin-ux #sidebar {
+border-left: 3px solid transparent;
+}
+.yui-skin-ux .side-links, .yui-skin-ux .side-content, .yui-skin-ux .subnav {
+border-color: transparent;
+}
+.yui-skin-ux #doc2 {
+border: 0 none;
+}
+.yui-skin-ux #content.yui-b {
+border-color: transparent;
+}
+.ux-block2 {
+border-top: 2px solid transparent;
+}
+.yui-skin-ux #email-groups-actions {
+border: 3px solid transparent;
+}
+.yui-skin-ux .groups_menu_container .yuimenu {
+border: 1px solid transparent;
+}
+
+/* MAKE THE GREY BACKGROUNDS TRANSPARENT */
+.yui-skin-ux .side-links, .yui-skin-ux .side-content, .yui-skin-ux .subnav {
+background-color: transparent; /* SUBNAV SIDEBAR LINK BOX BACKGROUND */
+}
+.yui-skin-ux #hd {
+background-color: transparent; /* HEADER AREA */
+padding: 0;
+}
+.yui-skin-ux ol.subnav {
+background: none repeat scroll 0 0 transparent; /* IMPORT CONTACTS STEPS */
+}
+.yui-skin-ux div.page-setting {
+background: none repeat scroll 0 0 transparent;
+}
+.yui-skin-ux .big-button-off {
+background: none repeat scroll 0 0 transparent;/* IMPORT CONTACTS SERVICE */
+border-color: #CCCCCC;
+}
+.yui-skin-ux #hd-nav li {
+background: none repeat scroll 0 0 transparent; /* TOP NAV background*/
+filter: none !important; /* FOR the impeccable IE */
+}
+.yui-skin-ux #bd-what-next {
+background-color: transparent; /* HOME PAGE NEXT STEPS */
+border: 3px solid transparent;
+}
+.yui-skin-ux .bd-progress {
+background: none repeat scroll 0 0 transparent; /* THERMOMETER GRADIENT BACKGROUND */
+}
+.yui-skin-ux .media {
+background: none repeat scroll 0 0 transparent;
+}
+
+/* MAKE THE SIDEBAR BACKGROUND TRANSPARENT */
+.yui-skin-ux .ux-main {
+background: #fff;
+margin: 20px 0 0 0;
+padding: 20px;
+
+}
+
+/* MAKE THE BLACK BAR UNDER THE TABS TRANSPARENT */
+.yui-skin-ux #hd-nav-base {
+background-color: transparent;
+}
+
+/* CHANGE THE PC2 BACKGROUND FROM WHITE to TRANSPARENT */
+html {
+background: none repeat scroll 0 0 transparent !important;
+}
+
+/* REMOVE GREY BORDERS ON THAT DARN RECENT ACTIVITY TABLE */
+.yui-skin-ux .yui-dt th, .yui-skin-ux .yui-dt td {
+border-bottom: 1px solid transparent;
+border-left: 1px solid transparent;
+border-top: 1px solid transparent;
+}
+.yui-skin-ux table {
+border-bottom: 2px solid transparent;
+border-right: 2px solid transparent;
+}
+.yui-skin-ux #bd-recent-activity table thead, .yui-skin-ux #bd-recent-activity table tr th {
+background-color: transparent;
+border-color: transparent;
+}
+/*---------------END PC2 COLOR RESET--------------- */
+
+
+/*----------------Layout Overrides------------------------*/
+.yui-skin-ux #doc2 {
+  width: 100%;
+}
+.yui-t5 #yui-main .yui-b {
+  width: 100%;
+  margin-right: 0 !important;
+}
+.yui-skin-ux #hd {
+  margin: 0;
+  padding: 1.5em 0 0;
+}
+.yui-skin-ux .recent-activity-donation, 
+.yui-skin-ux .recent-activity-recruit, 
+.yui-skin-ux .recent-activity-message {
+  background-color: #007F7B;
+}
+.yui-skin-ux .fundraising-progress {
+  width: 100%;
+  max-width: 550px;
+  overflow: hidden;
+}
+.yui-skin-ux #send-info-table {
+  background-color: #eee;
+}
+.yui-t4 #yui-main, .yui-t5 #yui-main, .yui-t6 #yui-main {
+  margin-right: 0;
+  width: 80%;
+  float: none;
+}
+#bd {
+	width: 97%;
+	}
+#hd {
+	width: 95%;
+}
+.yui-skin-ux #sidebar {
+  width: 22%;
+  float: right;
+}
+#msg_cat_nav_help_link {
+  display: none;
+}
+.yui-skin-ux .fundraising-progress .section, .yui-skin-ux .fundraising-progress #progress-contactdetails-days-left {
+  margin-right: 1em;
+}
+
+
+/* BEGIN PC2 RESPONSIVE*/
+@media only screen and (max-width:800px) {
+.yui-skin-ux #doc2 {
+/* MAKE THE MAIN AREA RESPONSIBLY RESPONSIVE */
+width: 100%;
+}
+.yui-skin-ux .ux-main {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+#bd-personal-progress > img {
+/* MAKE THE THERMOMETER REASONABLY RESPONSIVE */
+width: 100%;
+}
+.yui-skin-ux #sidebar {
+/* SET LOOSE THE SIDEBAR */
+clear: both;
+width: 100%;
+}
+
+.yui-skin-ux #hd-nav {
+/* EXPAND THE NAV! */
+margin: 0;
+width: 100%;
+}
+.yui-skin-ux #hd-nav li {
+/* EXPAND THE NAV BUTTONS! */
+width: 100%;
+}
+
+.yui-skin-ux .yui-t5 #yui-main .yui-b {
+/* GET RID OF SOME CRAY CRAY MARGINS */
+margin: 0 !important;
+}
+.yui-skin-ux #hd-etc {
+/* HIDE THAT HELP, AINT NOBODY GOT TIME FOR THAT! */
+display: none;
+}
+
+.defaultSkin tr.mceFirst .mceToolbar tr td, .defaultSkin tr.mceLast .mceToolbar tr td {
+/* WISHFUL THINKING; TEXT EDITOR MENU BUTTONS ARE TDs */
+display: block;
+float: left;
+}
+
+.yui-module.yui-overlay.yui-panel {
+/* HIDDEN DIALOGS, GET IN YOUR SPANX */
+width: 100% !important;
+padding-left: 0 !important;
+padding-right: 0 !important;
+}
+.yui-panel-container.yui-overlay-hidden {
+/* TO THE LEFT TO THE LEFT, ALL YOU HIDDEN OVERLAYS IN A BOX TO THE LEFT */
+left: 0 !important;
+}
+.yui-skin-ux .yui-dt th, .yui-skin-ux .yui-dt td {
+/* MENUS ON THE CONTACTS PAGE, THE MENUS!! */
+float: left;
+}
+.yui-skin-ux .recent-activity-detail {
+/* RECENT ACTIVITY */
+width: auto;
+}
+/* EDIT CONTENT UPLOAD FIELDS */
+.yui-skin-ux .media form { margin-left: 0; } /*SHIMMY SHIMMY FORMO PUFF */
+select, input, textarea, button {
+max-width: 100%;
+}
+.yui-skin-ux #hd-nav .selected a, 
+.yui-skin-ux #hd-nav .selected a:link, 
+.yui-skin-ux #hd-nav .selected a:visited {
+  background: none;
+}
+  .yui-skin-ux .fundraising-progress .progress-amt-raised,
+  .yui-skin-ux .fundraising-progress .progress-goal, 
+  .yui-skin-ux .fundraising-progress .progress-team-goal,
+  .yui-skin-ux .fundraising-progress .progress-percent,
+  .yui-skin-ux .fundraising-progress .progress-days-left {
+    width: 100%;
+    margin: 15px 0;
+    clear: both;
+  }
+  .yui-skin-ux .tiny-block {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  .yui-skin-ux .big-block {
+    float: left;
+    margin-right: 10px;
+  }
+  .ux-block2, .yui-skin-ux #bd-what-next {
+    padding: 0 5px;
+  }
+  .yui-t4 #yui-main, .yui-t5 #yui-main, .yui-t6 #yui-main {
+	width: 97%;	  
+  }
+}
+@media only screen and (max-width:400px) {
+  .yui-skin-ux .bd-progress h3, 
+  .yui-skin-ux .bd-progress h3 .progressType,
+  .yui-skin-ux #msg_cat_what_next_question,
+  h3#msg_cat_recent_activity_header
+   {
+    font-size: 35px;
+  }
+  #wait_c {
+  	width: 300px;
+  }
+  .yui-skin-ux div.page-setting div.page-setting-action {
+  	clear: both;
+  }
+
+
+}
+ /* END PC2 RESPONSIVE LAYOUT CODE */
+
+
+

@@ -26,7 +26,7 @@
 	
 	&__group {
 		&__link {
-			color: #8e8f8e;
+			color: #8e8f8e !important;
 			display: inline-block;
 			margin: 0 15px 0 0;
 			text-decoration: none;
@@ -93,7 +93,7 @@
 			}
 		
 		&__link {
-			color: #fff;
+			color: #fff !important;
 			display: block;
 			font-family: @font-brandon;
 			font-size: .75rem;
@@ -122,6 +122,10 @@
 				width: 0;
 			}
 			
+			&:hover {
+				color: #fff;
+			}
+			
 			&:hover::after {
 				width: 35px;
 			}
@@ -133,12 +137,16 @@
 			}
 			
 			&--top-level {
-				color: #85754e;
+				color: #85754e !important;
 				font-style: italic;
 				font-weight: bold;
 				
 				&::after {
 					border-bottom: 1px solid #85754e;
+				}
+				
+				&:hover {
+					color: #85754e;
 				}
 				
 				@media all and (max-width:@break-mobile) {

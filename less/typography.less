@@ -1,53 +1,38 @@
-.rftw-content a {
-	color: @blue-base;
+.rftw-alert {
+	color: @red-base;
+}
+
+.rftw-content a:not(.rftw-sub-nav__item) {
+	color: @blue-base !important;
 	text-decoration: none;
 	transition: @default-transition;
 	
 	&:hover {
-		color: #11dfcd;
-	} 
-}
-
-.rftw-content p {
-	color: @blue-dark;
-	font-family: @font-lato;
-	font-size: 1rem;
-	line-height: 1.75rem;
-	margin: 0 auto 30px;
-	max-width: 750px;
-	text-align: left;
-}
-
-.rftw-page-header {
-	color: @green-base;
-	font-family: @font-brandon;
-	font-size: 2.8125rem;
-	font-style: italic;
-	font-weight: bold;
-	line-height: 2.8125rem;
-	letter-spacing: 5px;
-	margin: 0 0 30px;
-	text-transform: uppercase;
-	transition: @default-transition;
-	-webkit-font-smoothing: antialiased;
-	
-	@media all and (max-width:@break-mobile) {
-		font-size: 1.875rem;
-		letter-spacing: 3px;
-		line-height: 1.875rem;
-		margin: 0 0 20px;
+		color: #11dfcd !important;
 	}
 }
 
-.rftw-partners-header {
-	color: @green-base;
-	font-family: @font-brandon;
-	font-size: .9375rem;
-	font-style: italic;
-	font-weight: bold;
-	line-height: .9375rem;
-	letter-spacing: 1px;
-	margin: 0 0 20px;
-	text-transform: uppercase;
-	-webkit-font-smoothing: antialiased;
+.rftw-content {
+	h3 {
+		.subheader;
+	}
+	
+	p {
+		color: @blue-dark;
+		font-family: @font-lato;
+		font-size: 1rem;
+		line-height: 1.75rem;
+		margin: 0 auto 30px;
+		max-width: @inset-width;
+		text-align: left;
+	}
+}
+
+.rftw-page-header {
+	.header;
+}
+
+.rftw-schedule--header {
+	margin: 35px auto 10px auto !important;
+	max-width: 550px !important;
 }

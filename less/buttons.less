@@ -1,8 +1,11 @@
 .rftw-button {
+	border: 0;
+	background-color: transparent;
 	background-image: url('@{image-path}button-blue-bg.png');
 	background-position: right center;
 	background-size: auto 100%;
 	color: #fff !important;
+	cursor: pointer;
 	display: inline-block;
 	font-family: @font-brandon;
 	font-size: .75rem;
@@ -12,6 +15,7 @@
 	line-height: .75rem;
 	margin: 0 0 0 4px;
 	padding: 0 6px 0 0;
+	transition: @default-transition;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -29,11 +33,29 @@
 		position: relative;
 		width: 4px;
 	}
+
+	&::-moz-focus-inner {
+		border: none;
+		padding:0;
+	}
 	
+	&:focus {
+		outline: none;
+	}
+	
+	&:hover {
+		opacity: .75;
+	}
+		
 	&__action {
 		padding: 0 7px;	
 		position: relative;
 		top: 10px;
+	}
+	
+	&--disabled {
+		cursor: default;
+		opacity: .5;
 	}
 }
 

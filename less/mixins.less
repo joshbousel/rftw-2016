@@ -1,0 +1,71 @@
+.basic-button {
+	border: 0;
+	border-radius: 2px;
+	background-color: transparent;
+	background-image: url('@{image-path}bg-stone-teal.png');
+	color: #fff !important;
+	cursor: pointer;
+	display: inline-block;
+	font-family: @font-brandon;
+	font-size: 1.25rem;
+	font-style: italic;
+	height: auto;
+	letter-spacing: 1px;
+	line-height: 1.25rem;
+	padding: 8px 20px;
+	transition: @default-transition;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	-webkit-font-smoothing: antialiased;
+	width: auto;
+	vertical-align: top;
+	
+	&:hover {
+		opacity: .75;
+	}
+}
+
+.note-copy {
+	color: #706c65;
+    display: block;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    margin: 10px 0 0 0;
+}
+
+.header {
+	color: @green-base;
+	font-family: @font-brandon;
+	font-size: 2.8125rem;
+	font-style: italic;
+	font-weight: bold;
+	line-height: 2.8125rem;
+	letter-spacing: 5px;
+	margin: 0 0 30px;
+	text-transform: uppercase;
+	transition: @default-transition;
+	-webkit-font-smoothing: antialiased;
+	
+	@media all and (max-width:@break-mobile) {
+		font-size: 1.875rem;
+		letter-spacing: 3px;
+		line-height: 1.875rem;
+		margin: 0 0 20px;
+	}
+}
+
+.subheader {
+	color: @gold-base;
+	font-family: @font-brandon;
+	font-size: 1.125rem;
+	font-style: italic;
+	font-weight: bold;
+	line-height: 1.125rem;
+	letter-spacing: 3px;
+	margin: 35px auto 10px;
+	max-width: 750px;
+	text-align: left;
+	text-transform: uppercase;
+	-webkit-font-smoothing: antialiased;
+}	
