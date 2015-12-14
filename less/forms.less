@@ -15,7 +15,6 @@
 			border: 1px solid @blue-dark !important;
 			box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.25) !important;
 			outline: none;
-			transition: all 0.15s ease-out;
 		}
 	}
 	
@@ -57,7 +56,10 @@
 div.responsive input[type="text"], 
 div.responsive input[type="number"], 
 div.responsive input[type="password"], 
-div.responsive textarea {
+div.responsive textarea,
+div.responsive select,
+#first_name_search_field input,
+#search_part_team div.ui-tabs-panel input {
 	background: #FBFBFB;
     border: 1px solid #AFB4C3;
     border-radius: 2px;
@@ -68,12 +70,23 @@ div.responsive textarea {
 	line-height: 1rem;
 	margin: 0 10px 0 0;
     padding: 6px 12px;
+    transition: @default-transition;
     
     @media all and (max-width:@break-mobile) {
-			display: block;
-			margin: 0 0 10px;
-			width: calc(~'100% - 26px');
-		}
+		display: block;
+		margin: 0 0 10px;
+		width: calc(~'100% - 26px');
+	}
+	
+	&:focus {
+		border: 1px solid @blue-dark;
+	    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.25);
+		outline: none;
+	}
+}
+
+div.responsive select {
+	height: 33px;
 }
 
 .rftw-form__field--has-error {

@@ -49,6 +49,11 @@ $(function() {
 		var errorCount = 0;
 		var $errorContainer = $(".rftw-form__error");
 		var errorMessage;
+		var $button = $(".rftw-form--volunteer .rftw-button");
+		var $buttonAction = $(".rftw-form--volunteer .rftw-button__action");
+		
+		$button.addClass("rftw-button--disabled");
+		$buttonAction.html("Please Wait...");
 		
 		if (!validateEmail($email.val())) {
 			errorMessage = "The provided email address is not valid."
@@ -67,6 +72,8 @@ $(function() {
 		
 		if (errorCount > 0) {
 			$errorContainer.html(errorMessage).show();
+			$button.removeClass("rftw-button--disabled");
+			$buttonAction.html("Submit");
 			$('html,body').animate({scrollTop: $errorContainer.offset().top}, 250);
 		}
 		else {

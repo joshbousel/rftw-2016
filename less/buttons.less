@@ -15,6 +15,7 @@
 	line-height: .75rem;
 	margin: 0 0 0 4px;
 	padding: 0 6px 0 0;
+	transition: @default-transition;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -41,11 +42,20 @@
 	&:focus {
 		outline: none;
 	}
+	
+	&:hover {
+		opacity: .75;
+	}
 		
 	&__action {
 		padding: 0 7px;	
 		position: relative;
 		top: 10px;
+	}
+	
+	&--disabled {
+		cursor: default;
+		opacity: .5;
 	}
 }
 

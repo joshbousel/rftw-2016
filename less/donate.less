@@ -1,0 +1,307 @@
+/*********************************/
+/* Support a Participant Page    */
+/*********************************/
+
+#find_participant div.participant-find-search-container {
+	margin: 0 auto 60px;
+	max-width: @inset-width;
+	width: 100%;
+}
+
+#findFriendForm {
+	position: relative;
+}
+
+div#find_participant button.search-button {
+	.basic-button;
+	position: absolute;
+    left: 0px;
+    top: 95px;
+	
+	#participant_find_search_text {
+		display: inline-block;
+	}
+}
+
+#last_name_search_field {
+	margin: 15px 0 0 0;
+}
+
+#search_part_team ul li.ui-tabs-selected,
+#search_part_team div.ui-tabs-panel {
+	background: none;
+	border: none;
+}
+
+#search_part_team ul li.ui-tabs-selected a {
+	.subheader;
+	color: @gold-base !important;
+	cursor: default;
+	
+	&:hover {
+		color: @gold-base !important;
+	}
+}
+
+#search_mode_link_advanced,
+.section-sub-header.empty,
+#find_hdr_container {
+	display: none;
+}
+
+#find_participant div.participant-find-search-results {
+    background: transparent;
+	border: 0;
+	border-top: 1px solid #eee;
+	margin: 0 auto;
+	max-width: @inset-width;
+    padding: 0px;	
+}
+
+#team_find_search_results_header_text {
+	.subheader;
+}
+
+.list-component-paginator {
+	text-align: left;
+}
+
+#find_participant div.list-component-row {
+    background: none;
+    border-radius: 0;
+    border: 0;
+    border-top: 1px solid #eee;
+    text-align: left;
+    margin: 0;
+    padding: 15px 0 5px;
+    line-height: 1rem;
+    
+    a {
+	    font-weight: normal;
+    }
+}
+
+#find_participant div.list-component-row:last-of-type {
+	border-bottom: 1px solid #eee;
+}
+
+/*********************************/
+/* Donation Form                 */
+/*********************************/
+
+div.donation-form-container.responsive {
+    background: transparent;
+	border: 0;
+    padding: 0px;
+}
+
+div.donation-level-general-ask, div.html-caption-container {
+	max-width: none;
+}
+
+div.form-row,
+div.responsive .button-container {
+	color: @blue-dark;
+	margin: 15px auto 0;
+	max-width: @inset-width;
+    text-align: left;
+}
+
+div.responsive .button-sub-container {
+	margin: 0 0 0 13.25em;
+	
+	@media all and (max-width:@break-tablet) {
+		margin: 0;
+	}
+}
+
+div.donation-level-container, 
+div.responsive div.form-content, 
+div.donation-level-input-container, 
+div.generic-repeat-label-checkbox-container {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+div.responsive div.form-content {
+	width: 100%;
+}
+
+.responsive #level_standard_row .form-content .field-required, 
+.responsive #level_standard_row .form-content .FormLabelText, 
+.responsive #level_standard_row .form-content .donation-level-general-ask, 
+.responsive #level_standard_row .form-content .donation-levels, 
+.responsive .form-row .form-content .field-required, 
+.responsive .form-row .form-content label, 
+.responsive .form-row .form-content input, 
+.responsive .form-row .form-content select, 
+.responsive input[type="checkbox"], 
+.responsive fieldset, 
+.responsive .date-input-container,
+.responsive textarea,
+div.responsive legend {
+    display: inline-block!important;
+    vertical-align: text-top!important;
+}
+
+.responsive .form-row .form-content input[type="text"], 
+.responsive textarea {
+	@media all and (max-width:@break-tablet) {
+		display: block !important;
+		width: calc(~'100% - 26px') !important;
+	}
+}
+
+.responsive .form-row .form-content select,
+.responsive .donation-levels {
+	@media all and (max-width:@break-tablet) {
+		display: block !important;
+		width: 100% !important;
+	}
+}
+
+div.responsive legend {
+	float: left;
+	width: 13.25em;
+}
+
+div.responsive .radio-array-list {
+	float: left;
+}
+
+div.donation-level-container, 
+div.responsive div.form-content, 
+div.donation-level-input-container, 
+div.generic-repeat-label-checkbox-container {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.responsive .FormLabelText {
+    margin: 0 15px 0 0;
+}
+
+div.donation-level-container {
+	margin: 5px 0 0;
+}
+
+.responsive .form-row .form-content .field-required + label {
+    width: 12.5em;
+}
+
+.responsive .form-row .form-content label {
+    margin: 0 0 10px 0;
+    min-width: inherit;
+    width: 13.25em;
+}
+
+label[for="tr_recognition_nameanonymousname"],
+label[for="level_standardexpanded14329amount"],
+label[for="tr_show_gift_to_publicname"] {
+	width: 65% !important;
+	
+	@media all and (max-width:@break-tablet) {
+		width: 80% !important;
+	}
+}
+
+label[for="level_standardexpanded14329amount"] {
+	margin: 0 !important;
+}
+
+label[for="payment_typecc_exp_date_YEAR"] {
+	width: 0 !important;
+}
+
+#tr_show_gift_to_publicname,
+#tr_recognition_nameanonymousname {
+	margin: 0 6px 0 13.25em;
+	
+	@media all and (max-width:@break-tablet) {
+		margin: 0 6px 0 0;
+	}
+}
+
+div.responsive .donation-level-label-input-container {
+	margin: 0 6px 0;
+}
+
+label+div.donation-level-user-entered {
+	margin: -15px 0 15px 30px;
+}
+
+div.responsive .auto-opt-in-warning-message {
+	.note-copy;
+}
+
+div.responsive div.form-content .HelpLink {
+    position: absolute;
+    width: 100%;
+    bottom: -28px;
+    
+    @media all and (max-width:@break-tablet) {
+		left: 0;
+	}
+}
+
+div.responsive .payment-type-element-container {
+	margin: 0 0 65px;
+}
+
+div.button-container {
+	border: 0;
+	padding: 0;
+}
+
+div.responsive #pstep_finish {
+	.basic-button;
+	float: none;
+	max-width: none;
+	
+	@media all and (max-width:@break-tablet) {
+		width: 100%;
+	}
+}
+
+div.responsive #pstep_cancel {
+	display: none;
+}
+
+div.responsive .date-input-container {	
+	@media all and (max-width:@break-tablet) {
+		display: block !important;
+		
+		#payment_typecc_exp_date_MONTH,
+		#payment_typecc_exp_date_YEAR {
+			float: left;
+			width: auto !important;
+		}
+	}
+}
+
+.badges {
+    text-align: center;
+	
+	&::before {
+	    background: #eee;
+	    border: none;
+	    content: "";
+	    display: block;
+	    height: 1px;
+	    margin: 30px auto 50px;
+	    width: 100%;
+	}
+}
+
+.badge, .badge img {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+
+div.responsive div.ErrorMessage.page-error>span.field-error-text {
+    width: 95%;
+}
