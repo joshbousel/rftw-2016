@@ -21,6 +21,7 @@
 	&__fieldset {
 		display: block;
 		margin: 0 0 25px;
+		width: 100%;
 	}
 	
 	&__label {
@@ -52,7 +53,7 @@
 	}
 }
 
-.rftw-form __field,
+.rftw-form__field,
 div.responsive input[type="text"], 
 div.responsive input[type="number"], 
 div.responsive input[type="password"], 
@@ -60,29 +61,7 @@ div.responsive textarea,
 div.responsive select,
 #first_name_search_field input,
 #search_part_team div.ui-tabs-panel input {
-	background: #FBFBFB;
-    border: 1px solid #AFB4C3;
-    border-radius: 2px;
-    box-shadow: 0 0;
-    color: @blue-dark;
-    font-family: @font-lato;
-	font-size: 1rem;
-	line-height: 1rem;
-	margin: 0 10px 0 0;
-    padding: 6px 12px;
-    transition: @default-transition;
-    
-    @media all and (max-width:@break-mobile) {
-		display: block;
-		margin: 0 0 10px;
-		width: calc(~'100% - 26px');
-	}
-	
-	&:focus {
-		border: 1px solid @blue-dark;
-	    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.25);
-		outline: none;
-	}
+	.default-field
 }
 
 div.responsive select {
@@ -91,6 +70,28 @@ div.responsive select {
 
 .rftw-form__field--has-error {
     border: 1px solid @red-base !important;
+}
+
+.rftw-form--login {
+	text-align: center;
+	
+	.rftw-form__label {
+	    display: block;
+	    text-align: left;
+	    margin: 0 auto 5px;
+	    
+	    @media all and (max-width:@break-tablet) {
+			width: 200px;
+		}
+		
+		 @media all and (max-width:@break-mobile) {
+			width: 100%;
+		}
+	}
+	
+	p {
+		text-align: center;
+	}
 }
 
 .rftw-form--volunteer {

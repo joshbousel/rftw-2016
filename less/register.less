@@ -1,0 +1,309 @@
+/*********************************/
+/* General Layout Changes        */
+/*********************************/
+
+div.registration-page-container div.section-container,
+div.registration-page-container div.section-header,
+div.registration-page-container div.section-footer,
+div.registration-page-container div.section-sub-header,
+div.registration-page-container div.sub-section-header,
+div.registration-page-container div.sub-section-container {
+	background: transparent;	
+	border: 0;
+}
+
+div.registration-page-container,
+div#user_type_section_container {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin: 25px auto;
+    padding: 0;
+	max-width: @inset-width;
+}
+
+div.registration-page-container div.section-body,
+div.registration-page-container div.section-footer {
+	padding: 0;
+}
+
+div#user_type_section_header {
+	margin: 0 0 35px;
+}
+
+div.registration-page-container div.sub-section-header {
+    border-bottom: 1px solid #eee;
+    }
+
+div.registration-page-container .part-type-container {
+	margin: 0 0 15px 0;
+}
+
+div.part-type-container .part-type-decoration-messages {
+	max-width: none;
+	width: calc(~'100% - 50px');
+}
+
+div.registration-page-container div.required-indicator-legend,
+div.required-indicator-legend {
+	padding: 0 0 15px;
+	text-align: left;
+}
+
+#entry .side-bar,
+div.registration-page-container #s_rememberMe,
+div#reg_payment_page #btn_prev,
+div#user_type_section_body div.required-indicator-legend {
+	display: none !important;
+}
+
+/*********************************/
+/* Typography Changes            */
+/*********************************/
+
+div.registration-page-container div.section-header .section-header-text,
+#fr_new_user_container, #fr_returning_user_container, 
+#fr_responsive_social_login_container,
+div.registration-page-container #title_container,
+div.registration-page-container div.sub-section-header,
+div.registration-page-container .section-header-text, 
+div#user_type_section_header .section-header-text {
+	.subheader
+}
+
+/*********************************/
+/* Progress Bar Changes          */
+/*********************************/
+
+div.progress-bar-step-container {
+	.progress-bar-step-number-container {
+		background: #ccc;
+		color: #fff;
+	}
+	
+	.progress-bar-step-text-container {
+		color: #ccc;
+	}
+}
+
+div.progress-bar-step-current div.progress-bar-step-number-container,
+div.progress-bar-step-selectable div.progress-bar-step-number-container {
+	background: url('@{image-path}/bg-stone-teal.png');
+	color: #fff;
+}
+
+div.progress-bar-step-selectable {
+	opacity: .75;
+	transition: @default-transition;
+	
+	&:hover {
+		opacity: 1;
+	}
+	
+	.progress-bar-step-text-container a {
+		&:hover {
+			color: @blue-base !important;
+		}
+	}
+	
+	.progress-bar-step-number-container a {
+		color: #fff !important;
+		
+		&:hover {
+			color: #fff !important;
+		}	
+	}
+}
+
+/*********************************/
+/* Button Changes                */
+/*********************************/
+
+div.registration-page-container a.next-step, 
+div.registration-page-container button.next-step {
+	.basic-button;
+	float: left;
+}
+
+div#user_type_new_participant_registration_container #next_step {
+	margin: 0;
+}
+
+div#user_type_new_participant_registration_container #next_step,
+div#user_type_login_login_container #user_type_login_login_button {
+	.basic-button;
+}
+
+div.responsive button.next-step[disabled="disabled"] {
+	.basic-button;
+	border: 0;
+	opacity: .25;
+	
+	&:hover {
+		opacity: .25;
+	}
+}
+
+div.registration-page-container #another_button {
+	.secondary-button;
+	float: right;
+	font-size: .875rem;
+	line-height: .875rem;
+	margin: 0;
+}
+
+div.reg-summary-thanks-common-container #next_button {
+	float: right;
+}
+
+div.reg-summary-thanks-common-container #cancel_button {
+	left: 0;
+}
+
+div.registration-page-container button.previous-step, 
+div.registration-page-container button.cancel-step,
+div.registration-page-container #previous_step,
+div.registration-page-container .prev-step,
+div#user_type_section_footer #previous_step {
+	.secondary-button;
+	position: relative;
+	left: 20px;
+}
+
+div#user_type_section_footer #previous_step {
+	margin: 25px auto;
+	
+	@media all and (max-width:@break-tablet) {
+		margin: 0;
+	}
+}
+
+/*********************************/
+/* Login Page Changes            */
+/*********************************/
+
+div#user_type_login_container {
+    background: #f6fffe;
+    border: 1px solid #0bb6a7;
+    border-radius: 4px;
+    padding: 0px 40px;
+    text-align: left;
+    
+    input {
+	    .default-field;
+	    max-width: none;
+	    width: 85%;
+    }
+    
+    #user_type_email_login_info_link_container {
+	    font-size: .85rem;
+    }
+}
+
+div#user_type_new_participant_registration_container {
+    margin: 0 12px 35px;
+}
+
+div#user_type_section_body {
+	margin: 0 0 0 65px;
+	
+	@media all and (max-width:@break-tablet) {
+		margin: 0;
+	}
+}
+
+/*********************************/
+/* Form Display Changes          */
+/*********************************/
+
+div.registration-page-container .input-container input {
+	.default-field
+}
+
+div.part-type-container.selected {
+    background: #F6FFFE;
+	border: 1px solid @blue-base;
+    border-radius: 4px;
+}
+
+div#part_type_fundraising_goal_container input,
+div.registration-page-container #fr_gift {
+    margin-left: 0;
+}
+
+div.registration-page-container label {
+	margin: 0 0 5px;
+}
+
+div.registration-page-container .input-container .ungrouped,
+div.registration-page-container input[id="3255_11861_8_9827"],
+div.registration-page-container input[id="3255_11861_7_9826"] {
+    margin: 5px 0 20px !important;
+}
+
+div.registration-page-container div.reg-summary-name-info {
+	background: #eee;
+    border: none;
+    margin: 15px 0 0;
+}
+
+div.reg-summary-thanks-common-container div.reg-summary-total {
+	background: #eee;
+	margin: 0px;
+}
+
+div.reg-summary-thanks-common-container div.reg-summary-address-info,
+div.reg-summary-thanks-common-container div.reg-summary-event-info,
+div.registration-page-container div.label-value-block-container,
+div.registration-page-container div#fr_waiver_page div.waiver-text,
+div#fr_thanks_page div#transaction_summary_container {
+	border: 2px solid #eee;
+}
+
+div.registration-page-container .form-row {
+	display: block;
+	width: 100%;
+}
+
+div.registration-page-container #cons_birth_date_date {
+	display: block;
+    margin: 25px 0 12px 0;
+}
+
+#entry .main-content, div#cons_info_component_container div#personal_info_section_one, div#cons_info_component_container div#personal_info_section_two, div#cons_info_component_container div#contact_info_section_one, div#cons_info_component_container div#contact_info_section_two, div#registration_options_page div#user_name_pword_container, div#registration_options_page div#privacy_opts_container, div#registration_options_page div#tribute_component_section_one, div#registration_options_page div#tribute_component_section_two, div#emergency_contact_container, div#gift_notice_optin, div#email_optin {
+	width: 100%;
+}
+
+div.registration-page-container .input-hint {
+    left: -23px;
+	position: relative;
+    top: -21px;
+}
+
+div.registration-page-container label[for="responsive_payment_typecc_exp_date_YEAR"] {
+	width: 0 !important;
+}
+
+div.registration-page-container .cardExpGroup select {
+	display: inline-block !important;
+    width: auto !important;
+}
+
+/*********************************/
+/* Register Landing Page Styles  */
+/*********************************/
+
+.rftw-register-block {
+	margin: 0 auto;
+	max-width: @inset-width;
+	text-align: left;
+	
+	&__item {
+	    display: inline-block;
+	    margin: 0 50px 25px 0 !important;
+	}
+}
+
+.rftw-register-prize-list {
+	float: right;
+	margin: 0 0 0 25px;
+}
