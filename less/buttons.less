@@ -48,6 +48,7 @@
 	}
 		
 	&__action {
+		color: #fff;
 		padding: 0 7px;	
 		position: relative;
 		top: 10px;
@@ -56,6 +57,26 @@
 	&--disabled {
 		cursor: default;
 		opacity: .5;
+	}
+}
+
+.rftw-button-basic {
+	.basic-button;
+	
+	&--small {
+	    font-size: .75rem;
+		line-height: .75rem;
+		padding: 4px 5px;
+	}
+	
+	&--white {
+		background-color: #fff;
+		background-image: none !important;
+		color: @blue-base !important;
+		
+		&:hover {
+			color: @blue-base !important;
+		}
 	}
 }
 
@@ -124,5 +145,9 @@
 	&::before {
 		background-image: url('@{image-path}button-white-left.png');
 		left: -4px;
+	}
+	
+	.rftw-button__action {
+		color: @blue-base;
 	}
 }

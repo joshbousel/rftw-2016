@@ -1,4 +1,3 @@
-		[[S7]]
 		<header class="rftw-header">
 			<div class="rftw-container">
 				<h1 class="rftw-logo">
@@ -13,9 +12,15 @@
 					<a href="TR?fr_id=[[S80:evID]]&pg=informational&type=fr_informational&sid=1388" class="rftw-nav__item">Fundraising</a>
 					<a href="TR?fr_id=[[S80:evID]]&pg=informational&type=fr_informational&sid=1385" class="rftw-nav__item">Event Info</a>
 					<a href="TR?fr_id=[[S80:evID]]&pg=informational&type=fr_informational&sid=1390" class="rftw-nav__item">Partners</a>
+					[[?x[[S1:user_name]]x::xx::
 					<a href="TR?fr_id=[[S80:evID]]&pg=informational&type=fr_informational&sid=1460" class="rftw-nav__item--login rftw-button rftw-button--white">
 						<span class="rftw-button__action">Log in</span>
 					</a>
+					::
+					<div class="rftw-nav__item--login rftw-nav__item--login--active">
+						<span class="rftw-nav__item--login__welcome">[[S1:first_name]] <a  class="rftw-button-basic rftw-button-basic--small" href="UserLogin?logout=&NEXTURL=[[T1:TR?fr_id=[[S80:evID]]&pg=entry]]">Logout</a></span>
+						<span><a href="TRC?fr_id=[[S80:evID]]&pg=center" class="rftw-button-basic rftw-button-basic--white rftw-button-basic--small">Participant Center</a> <a href="ConsProfileUser?dispMode=edit" class="rftw-button-basic rftw-button-basic--white rftw-button-basic--small">My Profile</a></span>
+					]]
 				</nav>
 				<a href="#" class="rftw-header__menu-button">
 					<span class="rftw-header__menu-button__line"></span>
@@ -24,7 +29,7 @@
 		</header>
 		<section class="rftw-content">
 			<div class="rftw-container">
-				[[?xpersonalxobjconx::x[[S334:pg]]x::::<h2 class="rftw-page-header">[[S80:page]]</h2>::]]
+				[[?xpersonalxobjconx::x[[S334:pg]]x::::<h2 class="rftw-page-header">[[S80:page]]</h2>]]
 				[[?x1385x1394x1382x1392x1383x1387x1433x::x[[S334:sid]]x::
 				<nav class="rftw-sub-nav">
 					<a href="TR?fr_id=[[S80:evID]]&pg=informational&type=fr_informational&sid=1394" class="rftw-sub-nav__item [[?xx[[S334:sid]]xx::xx1394xx::rftw-sub-nav__item--active::]]">Schedule</a>
@@ -37,6 +42,11 @@
 				<nav class="rftw-sub-nav">
 					<a href="TR?fr_id=[[S80:evID]]&pg=pfind" class="rftw-sub-nav__item [[?xx[[S334:pg]]xx::xxpfindxx::rftw-sub-nav__item--active::]]">Support a Participant</a>
 					<a href="Donation2?df_id=9564&9564.donation=form1" class="rftw-sub-nav__item [[?xx[[S334:df_id]]xx::xx9564xx::rftw-sub-nav__item--active::]]">Donate</a>
+				</nav>::]]
+				[[?xx[[S334:pg]]xx::xxentryxx::
+				<nav class="rftw-sub-nav">
+					<a href="TRR?pg=tfind&fr_tm_opt=none&fr_id=[[S80:evID]]" class="rftw-sub-nav__item">Individual Participant</a>
+					<a href="TRR?pg=tfind&fr_tm_opt=none&fr_id=[[S80:evID]]" class="rftw-sub-nav__item">Virtual Runner</a>
 				</nav>::]]
 				[[S63:3]]
 			</div>

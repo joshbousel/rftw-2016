@@ -1,5 +1,5 @@
 $(function() {
-	$doc =$(document);
+	$doc = $(document);
 	
 	/////////////////////////////////
 	// UniversalForm Validaton     //
@@ -19,7 +19,7 @@ $(function() {
 		$menu = $(this);
 		$menuButtom = $(".rftw-header__menu-button");
 		$mobileNav = $(".rftw-mobile-nav");
-		$mobileNav.css({ height: $doc.height() - $(".rftw-header").outerHeight() })
+		$mobileNav.css({ height: $doc.height() - $(".rftw-header").height() })
 
 		if ($mobileNav.hasClass("rftw-mobile-nav--is-open")) {
 			$mobileNav.removeClass("rftw-mobile-nav--is-open");

@@ -2,7 +2,7 @@
 	border: 0;
 	border-radius: 2px;
 	background-color: transparent;
-	background-image: url('@{image-path}bg-stone-teal.png');
+	background-image: url('@{image-path}bg-stone-teal.png') !important;
 	color: #fff !important;
 	cursor: pointer;
 	display: inline-block;
@@ -22,7 +22,44 @@
 	vertical-align: top;
 	
 	&:hover {
+		color: #fff !important;
 		opacity: .75;
+	}
+}
+
+.default-field {
+	background: #FBFBFB;
+    border: 1px solid #AFB4C3;
+    border-radius: 2px;
+    box-shadow: 0 0;
+    color: @blue-dark;
+    font-family: @font-lato;
+	font-size: 1rem;
+	line-height: 1rem;
+	margin: 0 10px 0 0;
+    padding: 6px 12px;
+    transition: @default-transition;
+    
+    @media all and (max-width:@break-mobile) {
+		display: block;
+		margin: 0 0 10px;
+		width: calc(~'100% - 26px');
+	}
+	
+	&:focus {
+		border: 1px solid @blue-dark;
+	    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.25);
+		outline: none;
+	}
+}
+
+.secondary-button {
+	.basic-button;
+	background: #eee !important;
+	color: #8C8C8C !important;
+	
+	&:hover {
+		color: #8C8C8C !important;
 	}
 }
 
