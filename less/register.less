@@ -21,6 +21,18 @@ div#user_type_section_container {
 	max-width: @inset-width;
 }
 
+div.responsive div.ErrorMessage.page-error {
+	font-size: 1rem;
+    line-height: 1.25rem;
+    margin: 25px auto;
+	max-width: @inset-width;
+	width: calc(~'100% - 25px');
+	
+	.field-error-text {
+		width: calc(~'100% - 39px');
+	}
+}
+
 div.registration-page-container div.section-body,
 div.registration-page-container div.section-footer {
 	padding: 0;
@@ -56,6 +68,22 @@ div#user_type_section_body div.required-indicator-legend {
 	display: none !important;
 }
 
+#entry .main-content, div#cons_info_component_container div#personal_info_section_one, div#cons_info_component_container div#personal_info_section_two, div#cons_info_component_container div#contact_info_section_one, div#cons_info_component_container div#contact_info_section_two, div#registration_options_page div#user_name_pword_container, div#registration_options_page div#privacy_opts_container, div#registration_options_page div#tribute_component_section_one, div#registration_options_page div#tribute_component_section_two, div#emergency_contact_container, div#gift_notice_optin, div#email_optin {
+	width: 100%;
+}
+
+div.reg-summary-thanks-common-container div.action-button-container {
+	@media all and (max-width:@break-tablet) {
+		width: 100%;
+	}
+}
+
+div.reg-summary-thanks-common-container div.action-button-container .secondary-wrapper {
+	@media all and (max-width:@break-tablet) {
+		float: none;
+	}
+}
+
 /*********************************/
 /* Typography Changes            */
 /*********************************/
@@ -82,6 +110,10 @@ div.progress-bar-step-container {
 	
 	.progress-bar-step-text-container {
 		color: #ccc;
+		
+		@media all and (max-width:@break-tablet) {
+			display: none;
+		}
 	}
 }
 
@@ -167,15 +199,20 @@ div#user_type_section_footer #previous_step {
 	.secondary-button;
 	position: relative;
 	left: 20px;
+	
+	@media all and (max-width:@break-tablet) {
+		left: 0;
+	}
 }
 
 div#user_type_section_footer #previous_step {
 	margin: 25px auto;
-	
-	@media all and (max-width:@break-tablet) {
-		margin: 0;
-	}
 }
+
+
+div.registration-page-container.reg-summary-thanks-common-container #part_ctr_container {
+	display: none;
+} 
 
 /*********************************/
 /* Login Page Changes            */
@@ -187,6 +224,10 @@ div#user_type_login_container {
     border-radius: 4px;
     padding: 0px 40px;
     text-align: left;
+    
+    @media all and (max-width:@break-tablet) {
+		width: calc(~'100% - 100px');
+	}
     
     input {
 	    .default-field;
@@ -201,6 +242,11 @@ div#user_type_login_container {
 
 div#user_type_new_participant_registration_container {
     margin: 0 12px 35px;
+    
+    @media all and (max-width:@break-tablet) {
+		float: none;
+		width: auto;
+	}
 }
 
 div#user_type_section_body {
@@ -244,6 +290,7 @@ div.registration-page-container div.reg-summary-name-info {
 	background: #eee;
     border: none;
     margin: 15px 0 0;
+    width: calc(~'100% - 20px');
 }
 
 div.reg-summary-thanks-common-container div.reg-summary-total {
@@ -269,9 +316,6 @@ div.registration-page-container #cons_birth_date_date {
     margin: 25px 0 12px 0;
 }
 
-#entry .main-content, div#cons_info_component_container div#personal_info_section_one, div#cons_info_component_container div#personal_info_section_two, div#cons_info_component_container div#contact_info_section_one, div#cons_info_component_container div#contact_info_section_two, div#registration_options_page div#user_name_pword_container, div#registration_options_page div#privacy_opts_container, div#registration_options_page div#tribute_component_section_one, div#registration_options_page div#tribute_component_section_two, div#emergency_contact_container, div#gift_notice_optin, div#email_optin {
-	width: 100%;
-}
 
 div.registration-page-container .input-hint {
     left: -23px;
@@ -286,6 +330,10 @@ div.registration-page-container label[for="responsive_payment_typecc_exp_date_YE
 div.registration-page-container .cardExpGroup select {
 	display: inline-block !important;
     width: auto !important;
+}
+
+div#responsive_payment_typecc_type_row legend {
+    display: none !important;
 }
 
 /*********************************/
