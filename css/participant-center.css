@@ -1,0 +1,393 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Regular.eot');
+  src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Regular.woff2') format('woff2'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Regular.woff') format('woff'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Italic.eot');
+  src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Italic.eot?#iefix') format('embedded-opentype'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Italic.woff2') format('woff2'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Italic.woff') format('woff'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Italic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Bold.eot');
+  src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Bold.woff2') format('woff2'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Bold.woff') format('woff'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-BoldItalic.eot');
+  src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-BoldItalic.eot?#iefix') format('embedded-opentype'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-BoldItalic.woff2') format('woff2'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-BoldItalic.woff') format('woff'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-BoldItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/Brandon_reg-webfont.eot');
+  src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/Brandon_reg-webfont.eot?#iefix') format('embedded-opentype'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/Brandon_reg-webfont.woff') format('woff'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/Brandon_reg-webfont.ttf') format('truetype'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/Brandon_reg-webfont.svg#BrandonGrotesqueRegularRg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/brandon_blk-webfont.eot');
+  src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/brandon_blk-webfont.eot?#iefix') format('embedded-opentype'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/brandon_blk-webfont.woff') format('woff'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/brandon_blk-webfont.ttf') format('truetype'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/brandon_blk-webfont.svg#brandon_grotesqueblack') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/brandongrotesque-blackitalic-webfont.eot');
+  src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/brandongrotesque-blackitalic-webfont.eot?#iefix') format('embedded-opentype'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/brandongrotesque-blackitalic-webfont.woff2') format('woff2'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/brandongrotesque-blackitalic-webfont.woff') format('woff'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/brandongrotesque-blackitalic-webfont.ttf') format('truetype'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/brandongrotesque-blackitalic-webfont.svg#brandon_grotesqueblack_italic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+/*********************************/
+/* PC Layout Changes             */
+/*********************************/
+html,
+body {
+  background-color: #fff !important;
+  color: #0bb6a7;
+  font-family: 'Lato', helvetica, arial, sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+}
+#doc2.yui-t5 {
+  width: 100%;
+}
+#embeddedParticipantCenter {
+  width: 100% !important;
+}
+#yui-main {
+  width: 75% !important;
+}
+.yui-skin-ux .ux-hd-row {
+  margin-top: 0px;
+  text-align: center;
+}
+div.ux-main div.dashboard-bd {
+  background-color: #eee;
+  border: none;
+}
+.yui-skin-ux .fundraising-progress .section {
+  background: transparent;
+  border: 0;
+  font-family: 'Lato', helvetica, arial, sans-serif;
+}
+#bd-what-next .what-next-icon {
+  margin: 0 10px 0 0 !important;
+  vertical-align: top;
+}
+#bd-what-next .what-next-message-container {
+  width: calc(100% - 55px);
+}
+.yui-skin-ux .yui-dt th,
+.yui-skin-ux .yui-dt td {
+  border: 0;
+  padding: 10px 5px !important;
+}
+.yui-skin-ux .yui-dt tr td:first-child,
+.yui-skin-ux .yui-dt tr th.yui-dt-first {
+  border: 0;
+}
+@media all and (max-width: 800px) {
+  .nav_container span:nth-child(2) {
+    display: none;
+  }
+}
+.yui-skin-ux .hidden-form {
+  display: none !important;
+}
+div#email-wizard-preview-body {
+  overflow: auto;
+}
+/*********************************/
+/* Color Changes                 */
+/*********************************/
+#bd-what-next .what-next-answer-item,
+div.ux-main div#yui-main div#content {
+  border: 1px solid #eee;
+}
+#bd-what-next .what-next-answer-item.what-next-completed {
+  border: 1px solid #eee;
+  background: #eee;
+}
+#bd-what-next .what-next-icon {
+  color: #0bb6a7;
+}
+.yui-skin-ux .yui-dt thead {
+  background: #0bb6a7;
+}
+.track-progress li {
+  background-color: #85DBD3;
+}
+.track-progress li > span:before {
+  border-left-color: #85DBD3;
+}
+.track-progress li.email-wizard-nav-selected > span,
+.track-progress li.addressbookimport-wizard-nav-selected > span,
+.track-progress li.email-wizard-nav-selected:hover > span,
+.track-progress li.email-wizard-nav-unselected:hover > span {
+  background-color: #0bb6a7;
+}
+.track-progress li.email-wizard-nav-selected + li > span:before,
+.track-progress li.addressbookimport-wizard-nav-selected + li > span:before,
+.track-progress li.email-wizard-nav-selected:hover + li > span:before,
+.track-progress li.email-wizard-nav-unselected:hover + li > span:before {
+  border-left-color: #0bb6a7;
+}
+/*********************************/
+/* Button Changes                */
+/*********************************/
+.yui-skin-ux div.primary-action {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  width: calc(100% - 38px);
+}
+.yui-skin-ux div.primary-action a {
+  border: 0;
+  border-radius: 2px;
+  background-color: transparent;
+  background-image: url('https://secure3.convio.net/wcs/rftw-2016/images/bg-stone-teal.png') !important;
+  color: #fff !important;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Brandon Grotesque', helvetica, arial, sans-serif !important;
+  font-size: 1.25rem;
+  font-style: italic;
+  height: auto;
+  letter-spacing: 1px;
+  line-height: 1.25rem;
+  padding: 8px 20px;
+  transition: all 0.1s ease-out;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  width: auto;
+  vertical-align: top;
+  width: 100%;
+}
+.yui-skin-ux div.primary-action a:hover {
+  color: #fff !important;
+  opacity: .75;
+}
+@media all and (max-width: 800px) {
+  .yui-skin-ux div.primary-action a {
+    width: 100%;
+  }
+}
+.yui-skin-ux div.primary-action a span {
+  background: transparent !important;
+  padding: 0 !important;
+}
+.yui-skin-ux button:not([class^="janrain"]):not(.email-wizard-recipients-actions-button),
+.yui-skin-ux .yui-push-button {
+  border: 0;
+  border-radius: 2px;
+  background-color: transparent;
+  background-image: url('https://secure3.convio.net/wcs/rftw-2016/images/bg-stone-teal.png') !important;
+  color: #fff !important;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Brandon Grotesque', helvetica, arial, sans-serif !important;
+  font-size: 1.25rem;
+  font-style: italic;
+  height: auto;
+  letter-spacing: 1px;
+  line-height: 1.25rem;
+  padding: 8px 20px;
+  transition: all 0.1s ease-out;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  width: auto;
+  vertical-align: top;
+}
+.yui-skin-ux button:not([class^="janrain"]):not(.email-wizard-recipients-actions-button):hover,
+.yui-skin-ux .yui-push-button:hover {
+  color: #fff !important;
+  opacity: .75;
+}
+@media all and (max-width: 800px) {
+  .yui-skin-ux button:not([class^="janrain"]):not(.email-wizard-recipients-actions-button),
+  .yui-skin-ux .yui-push-button {
+    width: 100%;
+  }
+}
+/*********************************/
+/* Sidebard Changes             */
+/*********************************/
+#sidebar {
+  width: 25% !important;
+}
+/*********************************/
+/* PC Typography Changes         */
+/*********************************/
+.yui-skin-ux h1 {
+  color: #ac9167;
+  font-family: 'Brandon Grotesque', helvetica, arial, sans-serif;
+  font-size: 1.125rem;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 1.125rem;
+  letter-spacing: 3px;
+  margin: 35px auto 10px;
+  max-width: 750px;
+  text-align: left;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+}
+.yui-skin-ux .bd-progress h3 {
+  font-family: 'Lato', helvetica, arial, sans-serif;
+  font-size: 1rem;
+}
+.yui-skin-ux .tiny-block {
+  font-size: .875rem;
+  text-transform: uppercase;
+}
+#bd-what-next .what-next-message-container .what-next-type {
+  color: #0bb6a7;
+  font-family: 'Lato', helvetica, arial, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+#bd-what-next .what-next-message-container .what-next-message {
+  font-family: 'Lato', helvetica, arial, sans-serif;
+  font-size: .875rem;
+  line-height: 1.25rem;
+}
+.yui-skin-ux .yui-dt thead th div,
+.yui-skin-ux .yui-dt thead th div a,
+.yui-skin-ux .yui-dt td div {
+  font-family: 'Lato', helvetica, arial, sans-serif;
+  font-size: .875rem;
+}
+.yui-skin-ux #sidebar a {
+  color: #0bb6a7;
+  font-family: 'Lato', helvetica, arial, sans-serif;
+  font-size: 1rem;
+  transition: all 0.1s ease-out;
+}
+.yui-skin-ux #sidebar a:hover {
+  color: #11dfcd;
+  text-decoration: none;
+}
+/*********************************/
+/* Progress Bar Changes          */
+/*********************************/
+div.progress-bar-outer {
+  background-color: #eee;
+  background-image: none;
+  border: 0;
+  width: 100%;
+}
+div.progress-bar-inner {
+  background-image: url('https://secure3.convio.net/wcs/rftw-2016/images/bg-stone-teal.png') !important;
+  border: 0;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/*********************************/
+/* Tabs to Nav                   */
+/*********************************/
+.yui-skin-ux #hd-nav {
+  display: inline-block;
+  float: none;
+  font-size: 0;
+  margin: 0 auto 45px;
+}
+@media all and (max-width: 450px) {
+  .yui-skin-ux #hd-nav {
+    width: 98%;
+  }
+}
+.yui-skin-ux #hd-nav li {
+  background-color: transparent;
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-top: 1px solid #eee;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  transition: all 0.1s ease-out;
+}
+@media all and (max-width: 450px) {
+  .yui-skin-ux #hd-nav li {
+    border-bottom: 0;
+    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;
+    border-top: 1px solid #eee;
+    width: 100%;
+  }
+  .yui-skin-ux #hd-nav li:first-of-type {
+    border-radius: 3px 3px 0 0 !important;
+  }
+  .yui-skin-ux #hd-nav li#personalpage-nav-link {
+    border-bottom: 1px solid #eee;
+    border-radius: 0 0 3px 3px !important;
+  }
+}
+.yui-skin-ux #hd-nav li:hover {
+  background: #eee;
+}
+.yui-skin-ux #hd-nav li:first-of-type {
+  border-left: 1px solid #eee;
+  border-radius: 3px 0 0 3px !important;
+}
+.yui-skin-ux #hd-nav li#personalpage-nav-link {
+  border-radius: 0 3px 3px 0;
+}
+.yui-skin-ux #hd-nav li a,
+.yui-skin-ux #hd-nav li a:link,
+.yui-skin-ux #hd-nav li a:visited {
+  color: #475267 !important;
+  font-family: 'Brandon Grotesque', helvetica, arial, sans-serif;
+  font-size: .9375rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 5px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+}
+@media all and (max-width: 800px) {
+  .yui-skin-ux #hd-nav li a,
+  .yui-skin-ux #hd-nav li a:link,
+  .yui-skin-ux #hd-nav li a:visited {
+    font-size: .8125rem;
+  }
+}
+@media all and (max-width: 450px) {
+  .yui-skin-ux #hd-nav li a,
+  .yui-skin-ux #hd-nav li a:link,
+  .yui-skin-ux #hd-nav li a:visited {
+    font-size: .9375rem;
+  }
+}
+.yui-skin-ux #hd-nav li.selected {
+  background-color: #475267;
+  border-bottom: 1px solid #475267;
+  border-right: 1px solid #475267;
+  border-top: 1px solid #475267;
+  border-radius: 0;
+  color: #fff !important;
+  margin: 0;
+}
+.yui-skin-ux #hd-nav li.selected:hover {
+  background: #475267;
+}
+.yui-skin-ux #hd-nav li.selected a {
+  color: #fff !important;
+}

@@ -1,4 +1,4 @@
-.basic-button {
+.basic-button() {
 	border: 0;
 	border-radius: 2px;
 	background-color: transparent;
@@ -6,7 +6,7 @@
 	color: #fff !important;
 	cursor: pointer;
 	display: inline-block;
-	font-family: @font-brandon;
+	font-family: @font-brandon !important;
 	font-size: 1.25rem;
 	font-style: italic;
 	height: auto;
@@ -25,9 +25,13 @@
 		color: #fff !important;
 		opacity: .75;
 	}
+	
+	@media all and (max-width:@break-tablet) {
+		width: 100%;
+	}
 }
 
-.default-field {
+.default-field() {
 	background: #FBFBFB;
     border: 1px solid #AFB4C3;
     border-radius: 2px;
@@ -40,7 +44,7 @@
     padding: 6px 12px;
     transition: @default-transition;
     
-    @media all and (max-width:@break-mobile) {
+    @media all and (max-width:@break-tablet) {
 		display: block;
 		margin: 0 0 10px;
 		width: calc(~'100% - 26px');
@@ -53,7 +57,7 @@
 	}
 }
 
-.secondary-button {
+.secondary-button() {
 	.basic-button;
 	background: #eee !important;
 	color: #8C8C8C !important;
@@ -63,7 +67,7 @@
 	}
 }
 
-.note-copy {
+.note-copy() {
 	color: #706c65;
     display: block;
     font-size: .875rem;
@@ -71,7 +75,7 @@
     margin: 10px 0 0 0;
 }
 
-.header {
+.header() {
 	color: @green-base;
 	font-family: @font-brandon;
 	font-size: 2.8125rem;
@@ -92,7 +96,7 @@
 	}
 }
 
-.subheader {
+.subheader() {
 	color: @gold-base;
 	font-family: @font-brandon;
 	font-size: 1.125rem;
