@@ -14,3 +14,81 @@ a#sidebar_donate_button {
 	 	.header;	
 	}
 }
+
+div.tr-page-main-content {
+	width: 65%;
+	
+	@media all and (max-width:@break-tablet) {
+		width: 100%;
+	}
+}
+
+div.tr-page-container div.side-bar {
+	width: calc(~'35% - 50px');
+	
+	@media all and (max-width:@break-tablet) {
+		width: 100%;
+	}
+}
+
+div.tr-page-container #sidebar_donate_button {
+	width: calc(~'100% - 46px');
+}
+
+div.TrAchievementBadgeIconListLargeHeader,
+div.indicator-title {
+	.subheader();
+}
+
+div.indicator-container.vscroll-container {
+	background: #eee;
+}
+
+div.TrAchievementBadgeLarge,
+div.indicator-container {
+	border: 0;
+}
+
+div.thermometer-container div.thermometer-outer {
+	background: #eee;
+}
+
+div.thermometer-container div.thermometer-inner {
+	background-image: url('@{image-path}bg-stone-teal.png') !important;
+}
+
+.TrAchievementBadgeNameLarge {
+	color: @blue-dark;
+	font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.25rem;
+}
+
+div.TrAchievementBadgeDescLarge {
+    color: @blue-dark;
+    font-size: 1rem;
+	margin: 10px 0 0 54px;
+}
+
+div.thermometer-container div.amount-percentage-info span, 
+div.thermometer-container div.amount-raised-info span {
+	color: @blue-dark;
+	font-weight: normal;
+    margin: 0 0 5px;
+}
+
+div#personal_page_image_div {
+	float: right;
+    margin: 0 0 30px 30px;
+    
+    @media all and (max-width:@break-mobile) {
+		float: none;
+		margin: 0 0 30px 0;
+		width: 100%;
+		
+		img {
+			height: auto;
+			width: 100%;
+		}
+	}
+}
