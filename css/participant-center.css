@@ -69,6 +69,11 @@ body {
 #yui-main {
   width: 75% !important;
 }
+@media all and (max-width: 450px) {
+  #yui-main {
+    width: 100% !important;
+  }
+}
 .yui-skin-ux .ux-hd-row {
   margin-top: 0px;
   text-align: center;
@@ -109,6 +114,12 @@ div.ux-main div.dashboard-bd {
 div#email-wizard-preview-body {
   overflow: auto;
 }
+@media all and (max-width: 800px) {
+  .email-wizard #email-compose-content-actions,
+  div#personalpage-content-actions {
+    text-align: center;
+  }
+}
 /*********************************/
 /* Color Changes                 */
 /*********************************/
@@ -144,6 +155,14 @@ div.ux-main div#yui-main div#content {
 .track-progress li.email-wizard-nav-unselected:hover + li > span:before {
   border-left-color: #0bb6a7;
 }
+.yui-skin-ux .permalink_block {
+  background: #F9F9F9;
+  border: 1px solid #D8D8D8;
+}
+th.yui-dt-col-email,
+th.yui-dt-col-donations {
+  background-color: #18A79A;
+}
 /*********************************/
 /* Button Changes                */
 /*********************************/
@@ -153,11 +172,13 @@ div.ux-main div#yui-main div#content {
   box-shadow: none;
   width: calc(100% - 38px);
 }
-.yui-skin-ux div.primary-action a {
+.yui-skin-ux div.primary-action a,
+.yui-skin-ux #sidebar div.primary-action a {
   border: 0;
   border-radius: 2px;
   background-color: transparent;
   background-image: url('https://secure3.convio.net/wcs/rftw-2016/images/bg-stone-teal.png') !important;
+  background-repeat: repeat;
   color: #fff !important;
   cursor: pointer;
   display: inline-block;
@@ -177,25 +198,33 @@ div.ux-main div#yui-main div#content {
   vertical-align: top;
   width: 100%;
 }
-.yui-skin-ux div.primary-action a:hover {
+.yui-skin-ux div.primary-action a:hover,
+.yui-skin-ux #sidebar div.primary-action a:hover {
   color: #fff !important;
   opacity: .75;
 }
 @media all and (max-width: 800px) {
-  .yui-skin-ux div.primary-action a {
+  .yui-skin-ux div.primary-action a,
+  .yui-skin-ux #sidebar div.primary-action a {
     width: 100%;
   }
 }
-.yui-skin-ux div.primary-action a span {
+.yui-skin-ux div.primary-action a:hover,
+.yui-skin-ux #sidebar div.primary-action a:hover {
+  color: #fff !important;
+}
+.yui-skin-ux div.primary-action a span,
+.yui-skin-ux #sidebar div.primary-action a span {
   background: transparent !important;
   padding: 0 !important;
 }
 .yui-skin-ux button:not([class^="janrain"]):not(.email-wizard-recipients-actions-button),
-.yui-skin-ux .yui-push-button {
+.yui-skin-ux .yui-push-button.default {
   border: 0;
   border-radius: 2px;
   background-color: transparent;
   background-image: url('https://secure3.convio.net/wcs/rftw-2016/images/bg-stone-teal.png') !important;
+  background-repeat: repeat;
   color: #fff !important;
   cursor: pointer;
   display: inline-block;
@@ -215,21 +244,153 @@ div.ux-main div#yui-main div#content {
   vertical-align: top;
 }
 .yui-skin-ux button:not([class^="janrain"]):not(.email-wizard-recipients-actions-button):hover,
-.yui-skin-ux .yui-push-button:hover {
+.yui-skin-ux .yui-push-button.default:hover {
   color: #fff !important;
   opacity: .75;
 }
 @media all and (max-width: 800px) {
   .yui-skin-ux button:not([class^="janrain"]):not(.email-wizard-recipients-actions-button),
-  .yui-skin-ux .yui-push-button {
+  .yui-skin-ux .yui-push-button.default {
     width: 100%;
   }
+}
+.yui-skin-ux button:not([class^="janrain"]):not(.email-wizard-recipients-actions-button):hover,
+.yui-skin-ux .yui-push-button.default:hover {
+  color: #fff !important;
+}
+@media all and (max-width: 800px) {
+  .yui-skin-ux button:not([class^="janrain"]):not(.email-wizard-recipients-actions-button),
+  .yui-skin-ux .yui-push-button.default {
+    width: calc(100% - 33px);
+  }
+}
+.ui-button-icon-secondary.ui-icon-triangle-1-e {
+  display: none;
+}
+#quick-gift-cancel,
+.yui-skin-ux .yui-push-button:not(.default),
+#msg_cat_add_contacts_cancel_link,
+#addressbookimport-selectsource-cancel,
+#cancel_shortcut,
+#msg_cat_contact_edit_cancel_link {
+  border: 0;
+  border-radius: 2px;
+  background-color: transparent;
+  background-image: url('https://secure3.convio.net/wcs/rftw-2016/images/bg-stone-teal.png') !important;
+  background-repeat: repeat;
+  color: #fff !important;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Brandon Grotesque', helvetica, arial, sans-serif !important;
+  font-size: 1.25rem;
+  font-style: italic;
+  height: auto;
+  letter-spacing: 1px;
+  line-height: 1.25rem;
+  padding: 8px 20px;
+  transition: all 0.1s ease-out;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  width: auto;
+  vertical-align: top;
+  background: #eee !important;
+  color: #8C8C8C !important;
+}
+#quick-gift-cancel:hover,
+.yui-skin-ux .yui-push-button:not(.default):hover,
+#msg_cat_add_contacts_cancel_link:hover,
+#addressbookimport-selectsource-cancel:hover,
+#cancel_shortcut:hover,
+#msg_cat_contact_edit_cancel_link:hover {
+  color: #fff !important;
+  opacity: .75;
+}
+@media all and (max-width: 800px) {
+  #quick-gift-cancel,
+  .yui-skin-ux .yui-push-button:not(.default),
+  #msg_cat_add_contacts_cancel_link,
+  #addressbookimport-selectsource-cancel,
+  #cancel_shortcut,
+  #msg_cat_contact_edit_cancel_link {
+    width: 100%;
+  }
+}
+#quick-gift-cancel:hover,
+.yui-skin-ux .yui-push-button:not(.default):hover,
+#msg_cat_add_contacts_cancel_link:hover,
+#addressbookimport-selectsource-cancel:hover,
+#cancel_shortcut:hover,
+#msg_cat_contact_edit_cancel_link:hover {
+  color: #8C8C8C !important;
+}
+.yui-skin-ux .actions button {
+  margin: 0 10px 15px 0 !important;
 }
 /*********************************/
 /* Sidebard Changes             */
 /*********************************/
 #sidebar {
   width: 25% !important;
+}
+@media all and (max-width: 450px) {
+  #sidebar {
+    width: 100% !important;
+  }
+}
+/*********************************/
+/* Form Changes                  */
+/*********************************/
+#personal_page_title,
+#company_page_title {
+  width: calc(100% - 26px);
+}
+.ux-main select,
+.ux-main input,
+.ux-main textarea,
+.yui-panel-container input {
+  background: #FBFBFB;
+  border: 1px solid #AFB4C3;
+  border-radius: 2px;
+  box-shadow: 0 0;
+  color: #475267;
+  font-family: 'Lato', helvetica, arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1rem;
+  margin: 0 10px 0 0;
+  padding: 6px 12px;
+  transition: all 0.1s ease-out;
+}
+@media all and (max-width: 800px) {
+  .ux-main select,
+  .ux-main input,
+  .ux-main textarea,
+  .yui-panel-container input {
+    display: block;
+    margin: 0 0 10px;
+    width: calc(100% - 26px);
+  }
+  .ux-main select[type="radio"],
+  .ux-main input[type="radio"],
+  .ux-main textarea[type="radio"],
+  .yui-panel-container input[type="radio"],
+  .ux-main select[type="checkbox"],
+  .ux-main input[type="checkbox"],
+  .ux-main textarea[type="checkbox"],
+  .yui-panel-container input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    vertical-align: -webkit-baseline-middle;
+  }
+}
+.ux-main select:focus,
+.ux-main input:focus,
+.ux-main textarea:focus,
+.yui-panel-container input:focus {
+  border: 1px solid #475267;
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.25);
+  outline: none;
 }
 /*********************************/
 /* PC Typography Changes         */
@@ -273,15 +434,59 @@ div.ux-main div#yui-main div#content {
   font-family: 'Lato', helvetica, arial, sans-serif;
   font-size: .875rem;
 }
-.yui-skin-ux #sidebar a {
+.yui-skin-ux #sidebar a,
+.yui-skin-ux a,
+.yui-skin-ux a:link {
   color: #0bb6a7;
   font-family: 'Lato', helvetica, arial, sans-serif;
   font-size: 1rem;
+  text-decoration: none;
   transition: all 0.1s ease-out;
 }
-.yui-skin-ux #sidebar a:hover {
-  color: #11dfcd;
+.yui-skin-ux #sidebar a:hover,
+.yui-skin-ux a:hover,
+.yui-skin-ux a:link:hover {
+  color: #11dfcd !important;
+}
+.yui-skin-ux #sidebar a:hover,
+.yui-skin-ux a:hover,
+.yui-skin-ux a:link:hover {
   text-decoration: none;
+}
+.email-wizard #email-compose-content-actions a,
+div#personalpage-content-actions a {
+  color: #0bb6a7;
+  font-family: 'Lato', helvetica, arial, sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.1s ease-out;
+  display: inline-block;
+  margin: 10px 0 15px 22px;
+}
+.email-wizard #email-compose-content-actions a:hover,
+div#personalpage-content-actions a:hover {
+  color: #11dfcd !important;
+}
+#email-compose-templates h3 {
+  background: url('https://secure3.convio.net/wcs/rftw-2016/images/bg-stone-teal.png') !important;
+  font-family: 'Lato', helvetica, arial, sans-serif;
+  font-size: 1rem;
+}
+.email-wizard #email-template-container label,
+.yui-skin-ux #page-form p.form-field .width-label,
+#gift-add-content #gift-add-content-form #addl_gift_options label,
+.yui-skin-ux #msg_cat_gift_label,
+.yui-skin-ux #page-form #msg_cat_gift_payment_type_label,
+.yui-skin-ux #page-form #payment-radio-choices label,
+.yui-dialog .bd label,
+.yui-skin-ux #sidebar .sidebar-form .label-field-wrap label,
+#ux-block2 p,
+#personalpage_permalink_block .page-setting-detail span,
+#personalpage_permalink_block .page-setting-detail label,
+.yui-skin-ux .page-form label {
+  color: #475267;
+  font-family: 'Lato', helvetica, arial, sans-serif;
+  font-size: 1rem;
 }
 /*********************************/
 /* Progress Bar Changes          */
@@ -293,11 +498,51 @@ div.progress-bar-outer {
   width: 100%;
 }
 div.progress-bar-inner {
-  background-image: url('https://secure3.convio.net/wcs/rftw-2016/images/bg-stone-teal.png') !important;
+  background-image: url('https://secure3.convio.net/wcs/rftw-2016/images//bg-stone-teal.png') !important;
   border: 0;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+/*********************************/
+/* Sidebar Tabs                  */
+/*********************************/
+div.dashboard-bd div#sidebar ul.subnav li {
+  background: transparent;
+  border-top: 1px solid #D8D8D8;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+div.dashboard-bd div#sidebar ul.subnav li:last-of-type {
+  border-bottom: 1px solid #D8D8D8;
+}
+div.dashboard-bd div#sidebar ul.subnav li a {
+  background: #EEEEEE;
+  color: #475267;
+  display: inline-block;
+  font-family: 'Brandon Grotesque', helvetica, arial, sans-serif;
+  font-size: .9375rem;
+  font-weight: bold;
+  line-height: .9375rem;
+  padding: 10px 0 10px 15px;
+  text-transform: uppercase;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+div.dashboard-bd div#sidebar ul.subnav li a:hover {
+  color: #fff !important;
+  background: #475267;
+}
+div.dashboard-bd div#sidebar ul.subnav li.selected a {
+  background: #fff;
+}
+div.dashboard-bd div#sidebar ul.subnav li.selected a:hover {
+  background: #fff;
+  color: #475267 !important;
 }
 /*********************************/
 /* Tabs to Nav                   */

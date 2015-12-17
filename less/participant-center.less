@@ -27,6 +27,10 @@ html, body {
 
 #yui-main {
 	width: 75% !important;
+	
+	@media all and (max-width:@break-mobile) {
+		width: 100% !important;
+	}
 }
 
 .yui-skin-ux .ux-hd-row {
@@ -82,6 +86,13 @@ div#email-wizard-preview-body {
 	overflow: auto;
 }
 
+.email-wizard #email-compose-content-actions,
+div#personalpage-content-actions {
+	@media all and (max-width:@break-tablet) {
+		text-align: center;
+	}
+}
+
 /*********************************/
 /* Color Changes                 */
 /*********************************/
@@ -126,6 +137,16 @@ div.ux-main div#yui-main div#content {
 	border-left-color: @blue-base;
 }
 
+.yui-skin-ux .permalink_block {
+	background: #F9F9F9;
+    border: 1px solid #D8D8D8;
+}
+
+th.yui-dt-col-email,
+th.yui-dt-col-donations {
+	background-color: #18A79A;
+}
+
 /*********************************/
 /* Button Changes                */
 /*********************************/
@@ -137,9 +158,14 @@ div.ux-main div#yui-main div#content {
 	width: calc(~'100% - 38px');
 }
 
-.yui-skin-ux div.primary-action a {
+.yui-skin-ux div.primary-action a,
+.yui-skin-ux #sidebar div.primary-action a {
 	.basic-button();
 	width: 100%;
+	
+	&:hover {
+		color: #fff !important;
+	}
 	
 	span {
 		background: transparent !important;
@@ -148,8 +174,33 @@ div.ux-main div#yui-main div#content {
 }
 
 .yui-skin-ux button:not([class^="janrain"]):not(.email-wizard-recipients-actions-button), 
-.yui-skin-ux .yui-push-button {
+.yui-skin-ux .yui-push-button.default {
 	.basic-button();
+	
+	&:hover {
+		color: #fff !important;
+	}
+	
+	@media all and (max-width:@break-tablet) {
+	    width: calc(~'100% - 33px');
+	}
+}
+
+.ui-button-icon-secondary.ui-icon-triangle-1-e {
+    display: none;
+}
+
+#quick-gift-cancel,
+.yui-skin-ux .yui-push-button:not(.default),
+#msg_cat_add_contacts_cancel_link,
+#addressbookimport-selectsource-cancel,
+#cancel_shortcut,
+#msg_cat_contact_edit_cancel_link {
+	.secondary-button();
+}
+
+.yui-skin-ux .actions button {
+    margin: 0 10px 15px 0 !important;
 }
 
 /*********************************/
@@ -158,6 +209,26 @@ div.ux-main div#yui-main div#content {
 
 #sidebar {
 	width: 25% !important;
+	
+	@media all and (max-width:@break-mobile) {
+		width: 100% !important;
+	}
+}
+
+/*********************************/
+/* Form Changes                  */
+/*********************************/
+
+#personal_page_title, 
+#company_page_title {
+    width: calc(~'100% - 26px');
+}
+
+.ux-main select, 
+.ux-main input, 
+.ux-main textarea,
+.yui-panel-container input {
+	.default-field();
 }
 
 /*********************************/
@@ -200,16 +271,44 @@ div.ux-main div#yui-main div#content {
 	font-size: .875rem;
 }
 
-.yui-skin-ux #sidebar a {
-	color: @blue-base;
-	font-family: @font-lato;
-	font-size: 1rem;
-	transition: @default-transition;
+.yui-skin-ux #sidebar a,
+.yui-skin-ux a, 
+.yui-skin-ux a:link {
+	.default-link();
 	
 	&:hover {
-		color: #11dfcd;
 		text-decoration: none;
 	}
+}
+
+.email-wizard #email-compose-content-actions,
+div#personalpage-content-actions {
+	a {
+		.default-link();
+		display: inline-block;
+	    margin: 10px 0 15px 22px;
+	}
+}
+
+#email-compose-templates h3 {
+	background: url('@{image-path}bg-stone-teal.png') !important;
+	font-family: @font-lato;
+	font-size: 1rem;
+}
+
+.email-wizard #email-template-container label,
+.yui-skin-ux #page-form p.form-field .width-label,
+#gift-add-content #gift-add-content-form #addl_gift_options label,
+.yui-skin-ux #msg_cat_gift_label,
+.yui-skin-ux #page-form #msg_cat_gift_payment_type_label,
+.yui-skin-ux #page-form #payment-radio-choices label,
+.yui-dialog .bd label,
+.yui-skin-ux #sidebar .sidebar-form .label-field-wrap label,
+#ux-block2 p,
+#personalpage_permalink_block .page-setting-detail span,
+#personalpage_permalink_block .page-setting-detail label,
+.yui-skin-ux .page-form label {
+	.default-copy();
 }
 
 /*********************************/
@@ -224,12 +323,62 @@ div.progress-bar-outer {
 }
 
 div.progress-bar-inner {
-	background-image: url('https://secure3.convio.net/wcs/rftw-2016/images/bg-stone-teal.png') !important;
+	background-image: url('@{image-path}/bg-stone-teal.png') !important;
     border: 0;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
+
+/*********************************/
+/* Sidebar Tabs                  */
+/*********************************/
+
+div.dashboard-bd div#sidebar ul.subnav li {
+    background: transparent;
+    border-top: 1px solid #D8D8D8;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    
+     &:last-of-type {
+	    border-bottom: 1px solid #D8D8D8;
+    }
+    
+    a {
+	    background: #EEEEEE;
+		color: @blue-dark;
+	    display: inline-block;
+	    font-family: @font-brandon;
+		font-size: .9375rem;
+	    font-weight: bold;
+	    line-height: .9375rem;
+	    padding: 10px 0 10px 15px;
+	    text-transform: uppercase;
+	    width: 100%;
+	    -webkit-font-smoothing: antialiased;
+	    
+	    &:hover {
+		    color: #fff !important;
+		    background: @blue-dark;
+	    }
+	}
+	
+	&.selected {
+		a {
+			background: #fff;
+			
+			&:hover {
+			    background: #fff;
+			    color: @blue-dark !important;
+		    }
+		}
+	}
+}
+
 
 /*********************************/
 /* Tabs to Nav                   */

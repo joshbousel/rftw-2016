@@ -3,6 +3,7 @@
 	border-radius: 2px;
 	background-color: transparent;
 	background-image: url('@{image-path}bg-stone-teal.png') !important;
+	background-repeat: repeat;
 	color: #fff !important;
 	cursor: pointer;
 	display: inline-block;
@@ -31,6 +32,12 @@
 	}
 }
 
+.default-copy() {
+	color: @blue-dark;
+	font-family: @font-lato;
+	font-size: 1rem;
+}
+
 .default-field() {
 	background: #FBFBFB;
     border: 1px solid #AFB4C3;
@@ -48,12 +55,31 @@
 		display: block;
 		margin: 0 0 10px;
 		width: calc(~'100% - 26px');
+		
+		&[type="radio"],
+		&[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+			vertical-align: -webkit-baseline-middle;
+		}
 	}
 	
 	&:focus {
 		border: 1px solid @blue-dark;
 	    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.25);
 		outline: none;
+	}
+}
+
+.default-link() {
+	color: @blue-base;
+	font-family: @font-lato;
+	font-size: 1rem;
+	text-decoration: none;
+	transition: @default-transition;
+	
+	&:hover {
+		color: #11dfcd !important;
 	}
 }
 
