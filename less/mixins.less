@@ -30,10 +30,14 @@
 	@media all and (max-width:@break-tablet) {
 		width: 100%;
 	}
+	
+	span {
+		font-family: @font-brandon !important;
+	}
 }
 
-.default-copy() {
-	color: @blue-dark;
+.default-copy(@color: @blue-dark) {
+	color: @color;
 	font-family: @font-lato;
 	font-size: 1rem;
 }
@@ -84,7 +88,7 @@
 }
 
 .secondary-button() {
-	.basic-button;
+	.basic-button();
 	background: #eee !important;
 	color: #8C8C8C !important;
 	

@@ -47,6 +47,10 @@
 		
 		&--login {
 			margin: 25px 0 0 5px;
+			
+			.rftw-button__action {
+				color: @green-base;
+			}
 		}
 	}
 }
@@ -189,5 +193,38 @@
 	
 	@media all and (max-width:@break-desktop) {
 		font-size: .8125rem;
+	}
+}
+
+.rftw-user-nav {
+	background: @blue-dark;
+	padding: 9px 0;
+	
+	@media all and (max-width:@break-desktop) {
+		padding: 9px 5%;
+	}
+	
+	@media all and (max-width:@break-tablet) {
+		display: none;
+	}
+	
+	&__logout {
+		float: right;
+		position: relative;
+		top: -1px;
+		
+		.rftw-button__action {
+			color: @blue-dark;
+		}
+	}
+	
+	&__username {
+		.default-copy(#fff);
+		vertical-align: middle;
+	}
+	
+	.rftw-button-basic {
+		margin: 0 0 0 10px;
+		vertical-align: middle;
 	}
 }
