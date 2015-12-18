@@ -15,14 +15,13 @@ html, body {
 	font-family: @font-lato;
 	font-size: 16px;
 	line-height: 16px;
+	max-width: 100%;
+	width: 100%;
 }
 
 #doc2.yui-t5 {	
+	max-width: 100%;
 	width: 100%;	
-}
-
-#embeddedParticipantCenter {
-	width: 100% !important;
 }
 
 #yui-main {
@@ -55,7 +54,7 @@ div.ux-main div.dashboard-bd {
 }
 
 #bd-what-next .what-next-message-container {
-    width: calc(~'100% - 55px');
+    width: calc(~'100% - 56px');
 }
 
 .yui-skin-ux .yui-dt th,
@@ -93,6 +92,37 @@ div#personalpage-content-actions {
 	}
 }
 
+.ux-block2 .page-form .content-actions {
+	@media all and (max-width:@break-tablet) {
+		margin: 0;
+	}
+}
+
+.yui-skin-ux #contacts-table-info-block {
+	overflow: auto;
+}
+
+.yui-skin-ux .thumbnail {
+    @media all and (max-width:@break-tablet) {
+   		display: block;
+	    float: none;
+	}
+}
+
+.yui-skin-ux .media form {
+	@media all and (max-width:@break-tablet) {
+   		margin: 15px 0 0 0;
+	}
+}
+
+.yui-skin-ux #page-form .radio-section {
+	margin: 0;
+	
+	#payment-radio-choices {
+		margin: 0 0 0 15px;
+	}
+}
+
 /*********************************/
 /* Color Changes                 */
 /*********************************/
@@ -112,7 +142,7 @@ div.ux-main div#yui-main div#content {
 }
 
 .yui-skin-ux .yui-dt thead {
-    background: #0bb6a7;
+    background: @blue-dark;
 }
 
 .track-progress li {
@@ -140,11 +170,12 @@ div.ux-main div#yui-main div#content {
 .yui-skin-ux .permalink_block {
 	background: #F9F9F9;
     border: 1px solid #D8D8D8;
+    overflow: hidden;
 }
 
 th.yui-dt-col-email,
 th.yui-dt-col-donations {
-	background-color: #18A79A;
+	background-color: #3F485A;
 }
 
 /*********************************/
@@ -197,10 +228,55 @@ th.yui-dt-col-donations {
 #cancel_shortcut,
 #msg_cat_contact_edit_cancel_link {
 	.secondary-button();
+	
+	@media all and (max-width:@break-tablet) {
+	    width: calc(~'100% - 33px');
+	}
 }
 
 .yui-skin-ux .actions button {
     margin: 0 10px 15px 0 !important;
+}
+
+div#sidebar div#address_book_add div#add-contact-button-container button,
+.yui-skin-ux .addressbookimport-flow-actions button,
+.ux-block2 .page-form .content-actions button {
+    @media all and (max-width:@break-tablet) {
+	    margin: 0 0 15px 0;
+	    float: none;
+	    width: 100% !important;
+	}
+}
+
+div#email-contacts-content span#groups_menu_container button#groupsMenuButton-button,
+span#detailsGroupsMenuButton button#detailsGroupsMenuButton-button {
+	color: #0BB6A3 !important;
+    background-image: none !important;
+	font-family: @font-lato !important;
+    font-size: .875rem;
+    text-transform: capitalize;
+    font-style: normal;
+    letter-spacing: 0;
+    text-decoration: none;
+    transition: @default-transition;
+    -webkit-font-smoothing: auto;
+}
+
+.yui-dialog .yui-push-button:not(.default) button {
+    background-image: none !important;
+    color: #8C8C8C !important;
+    
+    &:hover {
+	    color: #8C8C8C !important;
+    }
+}
+
+.yui-panel-container.yui-dialog span.default button {
+    background: transparent !important;
+}
+
+#acknowledge_contact_gift_no_email_dialog_c .yui-push-button:first-of-type {
+	margin: 0 10px 0 0;
 }
 
 /*********************************/
@@ -220,8 +296,9 @@ th.yui-dt-col-donations {
 /*********************************/
 
 #personal_page_title, 
-#company_page_title {
-    width: calc(~'100% - 26px');
+#company_page_title,
+.yui-skin-ux #sidebar .sidebar-form .label-field-wrap input {
+    width: calc(~'100% - 27px');
 }
 
 .ux-main select, 
@@ -229,6 +306,13 @@ th.yui-dt-col-donations {
 .ux-main textarea,
 .yui-panel-container input {
 	.default-field();
+}
+
+.yui-skin-ux .page-form label {
+    float: none;
+    margin: 0 0 5px 0;
+    display: inline-block;
+    text-align: left;
 }
 
 /*********************************/
@@ -266,14 +350,15 @@ th.yui-dt-col-donations {
 
 .yui-skin-ux .yui-dt thead th div, 
 .yui-skin-ux .yui-dt thead th div a,
-.yui-skin-ux .yui-dt td div {
+.yui-skin-ux .yui-dt td div,
+div#email-contacts-content div#contacts-actions a {
 	font-family: @font-lato;
 	font-size: .875rem;
 }
 
 .yui-skin-ux #sidebar a,
 .yui-skin-ux a, 
-.yui-skin-ux a:link {
+.yui-skin-ux a:link, {
 	.default-link();
 	
 	&:hover {
@@ -291,9 +376,22 @@ div#personalpage-content-actions {
 }
 
 #email-compose-templates h3 {
-	background: url('@{image-path}bg-stone-teal.png') !important;
+	background: @blue-dark !important;
 	font-family: @font-lato;
 	font-size: 1rem;
+}
+
+.yui-skin-ux .yui-panel .hd,
+.ui-draggable .ui-dialog-titlebar {
+	.default-copy();
+	background: @blue-dark;
+	color: #fff !important;
+}
+
+#msg_cat_personal_page_view_label {
+    font-style: normal;
+    letter-spacing: 0;
+    text-transform: capitalize;
 }
 
 .email-wizard #email-template-container label,
@@ -307,7 +405,15 @@ div#personalpage-content-actions {
 #ux-block2 p,
 #personalpage_permalink_block .page-setting-detail span,
 #personalpage_permalink_block .page-setting-detail label,
-.yui-skin-ux .page-form label {
+.yui-skin-ux .page-form label,
+#msg_cat_personal_page_photo_video_select_label,
+#msg_cat_use_media_type_photos_label,
+#msg_cat_use_media_type_video_label,
+#msg_cat_personal_video_url_label,
+div#email-contacts-content div.search label#msg_cat_search_contacts_text,
+.yui-skin-ux #sidebar.yui-b .side-block,
+#msg_cat_contacts_acknowledge_contact_gift_no_email_body,
+#contact_email {
 	.default-copy();
 }
 
@@ -336,16 +442,16 @@ div.progress-bar-inner {
 
 div.dashboard-bd div#sidebar ul.subnav li {
     background: transparent;
-    border-top: 1px solid #D8D8D8;
-    border-bottom: 0;
+    border-bottom: 1px solid #D8D8D8;
+    border-top: 0;
     border-left: 0;
     border-right: 0;
     padding: 0;
     margin: 0;
     width: 100%;
     
-     &:last-of-type {
-	    border-bottom: 1px solid #D8D8D8;
+     &:first-of-type {
+	    border-top: 1px solid #D8D8D8;
     }
     
     a {

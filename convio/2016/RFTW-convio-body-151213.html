@@ -1,3 +1,16 @@
+		<script>
+		  dataLayer = [{
+		    'pageType': 'RFTW'
+		  }];
+		</script>
+		
+		<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PXND3K"
+			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+			<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-PXND3K');</script>
 		<header class="rftw-header">
 			<div class="rftw-container">
 				<h1 class="rftw-logo">
@@ -15,21 +28,28 @@
 					[[?x[[S1:user_name]]x::xx::
 					<a href="TR?fr_id=[[S80:evID]]&pg=informational&type=fr_informational&sid=1460" class="rftw-nav__item--login rftw-button rftw-button--white">
 						<span class="rftw-button__action">Log in</span>
-					</a>
-					::
-					<div class="rftw-nav__item--login rftw-nav__item--login--active">
-						<span class="rftw-nav__item--login__welcome">[[S1:first_name]] <a  class="rftw-button-basic rftw-button-basic--small" href="UserLogin?logout=&NEXTURL=[[T1:TR?fr_id=[[S80:evID]]&pg=entry]]">Logout</a></span>
-						<span><a href="TRC?fr_id=[[S80:evID]]&pg=center" class="rftw-button-basic rftw-button-basic--white rftw-button-basic--small">Participant Center</a> <a href="ConsProfileUser?dispMode=edit" class="rftw-button-basic rftw-button-basic--white rftw-button-basic--small">My Profile</a></span>
-					]]
+					</a>::]]
 				</nav>
 				<a href="#" class="rftw-header__menu-button">
 					<span class="rftw-header__menu-button__line"></span>
 				</a>
 			</div>
 		</header>
+		[[?x[[S1:user_name]]x::xx::::
+		<nav class="rftw-user-nav">
+			<div class="rftw-container">
+				<span class="rftw-user-nav__username">Welcome, [[S1:first_name]]</span>
+				<a href="TRC?fr_id=[[S80:evID]]&pg=center" class="rftw-button-basic rftw-button-basic--white rftw-button-basic--small">Participant Center</a> 
+				<a href="ConsProfileUser" class="rftw-button-basic rftw-button-basic--white rftw-button-basic--small">My Profile</a>
+				<a href="UserLogin?logout=&NEXTURL=[[T1:TR?fr_id=[[S80:evID]]&pg=entry]]" class="rftw-user-nav__logout rftw-button rftw-button--white rftw-button--small">
+						<span class="rftw-button__action">Log out</span>
+					</a>
+			</div>
+		</nav>
+		]]
 		<section class="rftw-content">
 			<div class="rftw-container">
-				[[?[[?xpersonalxobjconx::x[[S334:pg]]x::T::]][[?xx[[S334:page_type]]xx::xxfr_personalxx::T::]]::T::::<h2 class="rftw-page-header">[[S80:page]]</h2>]]
+				[[?[[?xpersonalxobjconx::x[[S334:pg]]x::T::]][[?xx[[S334:page_type]]xx::xxfr_personalxx::T::]]::T::::<h2 class="rftw-page-header">[[?xx[[S6]]xx::xxhttps://secure3.convio.net/wcs/site/UserLoginxx::Login::[[?xx[[S6]]xx::xxhttps://secure3.convio.net/wcs/site/ConsProfileUserxx::My Profile::[[?xx[[S6]]xx::xxhttps://secure3.convio.net/wcs/site/ConsInterestsUserxx::My Profile::[[S80:page]]]]]]]]</h2>]]
 				[[?x1385x1394x1382x1392x1383x1387x1433x::x[[S334:sid]]x::
 				<nav class="rftw-sub-nav">
 					<a href="TR?fr_id=[[S80:evID]]&pg=informational&type=fr_informational&sid=1394" class="rftw-sub-nav__item [[?xx[[S334:sid]]xx::xx1394xx::rftw-sub-nav__item--active::]]">Schedule</a>
@@ -130,7 +150,14 @@
 			<a href="TR?fr_id=[[S80:evID]]&pg=informational&type=fr_informational&sid=1387" class="rftw-mobile-nav__item">FAQs</a>
 			<a href="TR?fr_id=[[S80:evID]]&pg=informational&type=fr_informational&sid=1388" class="rftw-mobile-nav__item rftw-mobile-nav__item--top-level">Fundraising</a>
 			<a href="TR?fr_id=[[S80:evID]]&pg=informational&type=fr_informational&sid=1390" class="rftw-mobile-nav__item rftw-mobile-nav__item--top-level">Partners</a>
+			[[?x[[S1:user_name]]x::xx::
 			<a href="TR?fr_id=[[S80:evID]]&pg=informational&type=fr_informational&sid=1460" class="rftw-mobile-nav__item--login rftw-button rftw-button--white rftw-button--large">
 				<span class="rftw-button__action">Log in</span>
 			</a>
+			::
+			<a href="TRC?fr_id=[[S80:evID]]&pg=center" class="rftw-mobile-nav__item rftw-mobile-nav__item--top-level">Participant Center</a>
+			<a href="UserLogin?logout=&NEXTURL=[[T1:TR?fr_id=[[S80:evID]]&pg=entry]]" class="rftw-mobile-nav__item--login rftw-button rftw-button--white rftw-button--large">
+				<span class="rftw-button__action">Log Out</span>
+			</a>
+			]]
 		</nav>
