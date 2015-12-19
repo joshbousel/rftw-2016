@@ -84,11 +84,11 @@
 
     /* Fix highlighted links in iOS */	
     .appleLinks a {
-        color: #847b71 !important;
-        text-decoration: none !important;
-        font-family: 'futuraBTlight', Helvetica, Arial, sans-serif !important; 
-        font-size: 14px !important; 
+        font-family: 'Brandon Grotesque', Helvetica, Arial, sans-serif !important; 
+        color: #575551 !important; 
+        font-size: 16px !important; 
         line-height: 22px !important;
+        text-decoration: none !important;
     }
 
     /* Fix image spacing in Outlook */
@@ -108,6 +108,11 @@
             padding: 0 20px !important;
             width: 100% !important;
             min-width: 100% !important;
+        }
+        
+        td[class="sponsor-group"] {
+	        display: block !important;
+	        width: 100% !important;
         }
     }
 
@@ -132,6 +137,10 @@
             min-width: 38px !important;
             height: 38px !important;
         }
+        
+        .mobile-hide {
+	        display: none !important;
+        }
 
         table[class="callout"] {
             width: 100% !important;
@@ -150,6 +159,16 @@
         }
     }
     --></style>
+<!--[if mso]>
+<style type=”text/css”>
+	.body-text,
+	.body-text p,
+	.body-text em,
+	.body-text strong {
+		font-family: Helvetica, Arial, sans-serif !important;
+	}
+</style>
+<![endif]-->
 [[?[[S63:3]]::This line forces Convio to read in our U0 session tags first::::]]
 <!-- Start Prehead -->
 <table style="width: 100% !important; min-width: 100% !important;" border="0" cellspacing="0" cellpadding="0" width="100%" bgcolor="#ffffff">
@@ -174,10 +193,10 @@
 					<tr>
 					<td>
 					<![endif]-->
-                    <table class="responsive-table" style="width: 100%; max-width: 650px;" border="0" cellspacing="25" cellpadding="0" width="650">
+                    <table class="responsive-table" style="width: 100%; max-width: 650px; border-collapse: separate;" border="0" cellspacing="25" cellpadding="0" width="650">
                         <tbody>
                             <tr>
-                                <td style="text-align: left; font-family: 'Lato', Helvetica, Arial, sans-serif; color: #27231d; font-size: 14px; line-height: 22px;" align="left">
+                                <td style="text-align: left; font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;" align="left">
                                     [[S80:liftnote]]
                                 </td>
                             </tr>
@@ -196,7 +215,6 @@
 ]]
 <!-- End Liftnote -->
 <!-- Start Header -->
-
 <table style="padding: 0 10px; width: 100% !important; min-width: 100% !important; height: 60px; background: url(http://e.wcs.org/rftw-2016/stationery/images/bg-header.jpg) #02b4a4;" border="0" cellspacing="0" cellpadding="0" width="100%" height="60" bgcolor="#02b4a4" background="http://e.wcs.org/rftw-2016/stationery/images/bg-header.jpg">
     <tbody>
         <tr>
@@ -211,11 +229,13 @@
                     <table class="responsive-table" style="width: 100%; max-width: 600px;" border="0" cellspacing="0" cellpadding="0" width="600">
                         <tbody>
                             <tr>
-                                <td style="min-width: 112px !important; text-align: left; font-size: 0px; height: 60px;" height="60" align="left" valign="middle">
-                                    <a href="http://bronxzoo.com/run-for-the-wild"><img src="http://e.wcs.org/rftw-2016/stationery/images/logo-rftw.gif" border="0" alt="WCS" width="132" height="45" align="middle" style="display: inline;"></a>
-                                  	<img src="http://e.wcs.org/rftw-2016/stationery/images/event-info.gif" class="mobile-hide" border="0" alt="WCS" width="113" height="25" align="middle" style="display: inline;">  
+                                <td style="width: 132px !important; text-align: left; font-size: 0px; height: 60px;" width="132" height="60" align="left" valign="middle">
+                                    <a href="http://bronxzoo.com/run-for-the-wild"><img src="http://e.wcs.org/rftw-2016/stationery/images/logo-rftw.gif" border="0" alt="WCS" width="132" height="45" align="middle" style="display: inline;" align="middle"></a>
                                 </td>
-                                <td style="width: 250px !important; text-align: right; font-size: 0px;" align="right" valign="middle">
+                                <td style="text-align: left; font-size: 0px; height: 60px;" height="60" align="left" valign="middle" class="mobile-hide">
+                                  	<img src="http://e.wcs.org/rftw-2016/stationery/images/event-info.gif" class="mobile-hide" border="0" alt="WCS" width="113" height="25" align="middle" style="display: inline;" align="middle">  
+                                </td>
+                                <td style="min-width: 125px !important; text-align: right; font-size: 0px;" align="right" valign="middle">
                                     [[?x[[S80:headerCta]]x::xx::::
                                     <span class="header-action">[[S80:headerCta]]</span>
                                     ]]
@@ -235,7 +255,6 @@
 </table>
 <!-- End Header -->
 <!-- Start Main Content -->
-
 <table style="padding: 0 10px; width: 100%; min-width: 100% !important;" border="0" cellspacing="0" cellpadding="0" width="100%">
     <tbody>
         <tr>
@@ -252,7 +271,7 @@
                                 <td style="font-size: 0px;" height="35">&nbsp;</td>
                             </tr>
                             <tr>
-                                <td style="text-align: left; font-family: 'Lato', Helvetica, Arial, sans-serif; color: #27231d; font-size: 14px; line-height: 22px;" align="left">
+                                <td class="body-text" style="text-align: left; font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;" align="left">
                                     <convio:session name="63" param="2"></convio:session>
                                 </td>
                             </tr>
@@ -272,8 +291,143 @@
     </tbody>
 </table>
 <!-- End Main Content -->
-<!-- Start Footer -->
-<table style="width: 100% !important; min-width: 100% !important; background: url(http://e.wcs.org/images/stationery/wcs-2015/footer-bg.jpg) #fafafa;" border="0" cellspacing="0" cellpadding="0" width="100%" bgcolor="#fafafa" background="https://secure3.convio.net/wcs/images/stationery/wcs-2015/footer-bg.jpg">
+<!-- Start Sponsors -->
+<table style="width: 100% !important; min-width: 100% !important; background: url('http://e.wcs.org/rftw-2016/stationery/images/bg-callout.jpg') #f3f2f2;"  background="http://e.wcs.org/rftw-2016/stationery/images/bg-callout.jpg" bgcolor="#f3f2f2" border="0" cellspacing="0" cellpadding="0" width="100%">
+	<tbody>
+        <tr>
+            <td align="center" valign="top">
+                <div style="max-width: 600px;">
+                    <!--[if (gte mso 7)|(IE)]>
+					<table width="600" cellspacing="0" cellpadding="0" align="center" style="width: 600px;" _mce_style="width: 600px;">
+					<tr>
+					<td>
+					<![endif]-->
+					<table class="responsive-table" style="width: 100%; max-width: 600px;" border="0" cellspacing="20" cellpadding="0" width="600" align="center">
+                        <tbody>
+                            <tr>
+                                <td style="text-align: center; font-size: 0px;" valign="top">
+                                    <table border="0" cellspacing="15" cellpadding="0" style="display: inline-block; vertical-align: top; margin: 0 7px; border-collapse: separate;">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center" valign="middle">
+                                                    <span style="font-family: 'Brandon Grotesque', Helvetica, Arial, sans-serif; color: #019f5e; font-size: 14px; font-weight: bold; font-style: italic; letter-spacing: 1px;">PRESENTED BY</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+	                                            <td styl="font-size: 0px;" align="center" valign="middle">
+		                                            <a href="http://www.coned.com/"><img src="http://e.wcs.org/rftw-2016/stationery/images/logo-coned.gif" border="0" alt="Con Edison" width="54" height="65" /></a>
+	                                            </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table border="0" cellspacing="15" cellpadding="0" style="display: inline-block; vertical-align: top; margin: 0 7px; border-collapse: separate;">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center" valign="middle">
+                                                    <span style="font-family: 'Brandon Grotesque', Helvetica, Arial, sans-serif; color: #019f5e; font-size: 14px; font-weight: bold; font-style: italic; letter-spacing: 1px;">FEATURED SPONSOR</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+	                                            <td styl="font-size: 0px;" align="center" valign="middle">
+		                                            <a href="http://www.montefiore.org/"><img src="http://e.wcs.org/rftw-2016/stationery/images/logo-montefiore.gif" border="0" alt="Montifiore" width="92" height="25" /></a>
+	                                            </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table border="0" cellspacing="15" cellpadding="0" style="display: inline-block; vertical-align: top; border-collapse: separate;">
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2" align="center" valign="middle">
+                                                    <span style="font-family: 'Brandon Grotesque', Helvetica, Arial, sans-serif; color: #019f5e; font-size: 14px; font-weight: bold; font-style: italic; letter-spacing: 1px;">SUPPORTING SPONSORS</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+	                                            <td styl="font-size: 0px;" align="center" valign="middle">
+		                                            <a href="https://www.empireblue.com/"><img src="http://e.wcs.org/rftw-2016/stationery/images/logo-empire.gif" border="0" alt="Empire Blue Cross Blue Shield" width="64" height="16" /></a>
+	                                            </td>
+	                                            <td styl="font-size: 0px;" align="center" valign="middle">
+		                                            <a href="https://www.monroecollege.edu/"><img src="http://e.wcs.org/rftw-2016/stationery/images/logo-monroe-college.gif" border="0" alt="Monroe College" width="50" height="20" /></a>
+	                                            </td>
+                                            </tr>
+                                            <tr>
+	                                            <td styl="font-size: 0px;" align="center" valign="middle">
+		                                            <a href="https://www.usa.canon.com"><img src="http://e.wcs.org/rftw-2016/stationery/images/logo-canon.gif" border="0" alt="Canon" width="69" height="15" /></a>
+	                                            </td>
+	                                            <td styl="font-size: 0px;" align="center" valign="middle">
+		                                            <a href="http://www.pgcruises.com/"><img src="http://e.wcs.org/rftw-2016/stationery/images/logo-paul.gif" border="0" alt="Paul Gauguin Cruises" width="77" height="22" /></a>
+	                                            </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+					</table>
+				   <!--[if (gte mso 7)|(IE)]>
+					</td>
+					</tr>
+					</table>
+					<![endif]-->
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- End Sponsors -->					
+<!-- Start Footer Social Links -->
+<table style="width: 100% !important; min-width: 100% !important; background: #181a1b;" border="0" cellspacing="0" cellpadding="0" width="100%" bgcolor="#181a1b">
+	<tbody>
+        <tr>
+            <td align="center" valign="top">
+                <div style="max-width: 600px;">
+                    <!--[if (gte mso 7)|(IE)]>
+					<table width="600" cellspacing="0" cellpadding="0" align="center" style="width: 600px;" _mce_style="width: 600px;">
+					<tr>
+					<td>
+					<![endif]-->
+					
+					<table class="responsive-table" style="width: 100%; max-width: 600px;" border="0" cellspacing="0" cellpadding="0" width="600" align="center">
+                        <tbody>
+                            <tr>
+                                <td style="text-align: center; font-size: 0px;" align="center">
+                                    <table border="0" cellspacing="38" cellpadding="0" align="center" style="border-collapse: separate;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="font-size: 0px;" width="20" height="20" align="center" valign="center">
+                                                    <a href="https://www.facebook.com/bronxzoo"><img src="http://e.wcs.org/rftw-2016/stationery/images/icon-footer-facebook.gif" border="0" alt="Facebook" width="20" height="20" /></a>
+                                                </td>
+                                                <td style="font-size: 0px;" width="20" height="20" align="center" valign="center">
+                                                    <a href="https://twitter.com/bronxzoo"><img src="http://e.wcs.org/rftw-2016/stationery/images/icon-footer-twitter.gif" border="0" alt="Twitter" width="20" height="20" /></a>
+                                                </td>
+                                                <td style="font-size: 0px;" width="20" height="20" align="center" valign="center">
+                                                    <a href="http://instagram.com/bronxzoo"><img src="http://e.wcs.org/rftw-2016/stationery/images/icon-footer-instagram.gif" border="0" alt="Instagram" width="20" height="20" /></a>
+                                                </td>
+                                                <td style="font-size: 0px;" width="20" height="20" align="center" valign="center">
+                                                    <a href="https://www.youtube.com/user/WCSMedia"><img src="http://e.wcs.org/rftw-2016/stationery/images/icon-footer-youtube.gif" border="0" alt="YouTube" width="20" height="20" /></a>
+                                                </td>
+                                                <td style="font-size: 0px;" width="20" height="20" align="center" valign="center">
+                                                    <a href="https://plus.google.com/113575251372996712281"><img src="http://e.wcs.org/rftw-2016/stationery/images/icon-footer-google-plus.gif" border="0" alt="Google+" width="20" height="20" /></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+					</table>
+				   <!--[if (gte mso 7)|(IE)]>
+					</td>
+					</tr>
+					</table>
+					<![endif]-->
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- End Footer Social Links -->
+<!-- End Footer -->
+<table style="width: 100% !important; min-width: 100% !important; background: #000000;" border="0" cellspacing="0" cellpadding="0" width="100%" bgcolor="#000000">
     <tbody>
         <tr>
             <td align="center" valign="top">
@@ -284,53 +438,30 @@
 					<td>
 					<![endif]-->
 
-                    <table class="responsive-table" style="width: 100%; max-width: 600px;" border="0" cellspacing="0" cellpadding="0" width="600" align="center">
+                    <table class="responsive-table" style="width: 100%; max-width: 600px; border-collapse: separate;" border="0" cellspacing="25" cellpadding="0" width="600" align="center">
                         <tbody>
                             <tr>
-                                <td style="text-align: center; font-size: 0px;" align="center">
-
-                                    <table class="footer-social" border="0" cellspacing="35" cellpadding="0" align="center">
-                                        <tbody>
-                                            <tr>
-                                                <td class="social-icon-cell" style="border: 1px solid #e8e7e6; font-size: 0px;" width="48" height="48" align="center" valign="center">
-                                                    <a href="https://www.facebook.com/TheWCS"><img class="social-icon-img" src="http://e.wcs.org/images/stationery/wcs-2015/footer-icon-facebook.gif" border="0" alt="Facebook" width="48" height="48" /></a>
-                                                </td>
-                                                <td class="social-icon-cell" style="border: 1px solid #e8e7e6; font-size: 0px;" width="48" height="48" align="center" valign="center">
-                                                    <a href="https://twitter.com/thewcs"><img class="social-icon-img" src="http://e.wcs.org/images/stationery/wcs-2015/footer-icon-twitter.gif" border="0" alt="Twitter" width="48" height="48" /></a>
-                                                </td>
-                                                <td class="social-icon-cell" style="border: 1px solid #e8e7e6; font-size: 0px;" width="48" height="48" align="center" valign="center">
-                                                    <a href="https://instagram.com/thewcs"><img class="social-icon-img" src="http://e.wcs.org/images/stationery/wcs-2015/footer-icon-instagram.gif" border="0" alt="Instagram" width="48" height="48" /></a>
-                                                </td>
-                                                <td class="social-icon-cell" style="border: 1px solid #e8e7e6; font-size: 0px;" width="48" height="48" align="center" valign="center">
-                                                    <a href="https://www.youtube.com/user/WCSMedia"><img class="social-icon-img" src="http://e.wcs.org/images/stationery/wcs-2015/footer-icon-youtube.gif" border="0" alt="YouTube" width="48" height="48" /></a>
-                                                </td>
-                                                <td class="social-icon-cell" style="border: 1px solid #e8e7e6; font-size: 0px;" width="48" height="48" align="center" valign="center">
-                                                    <a href="https://plus.google.com/+wildlifeconservationsociety"><img class="social-icon-img" src="http://e.wcs.org/images/stationery/wcs-2015/footer-icon-google-plus.gif" border="0" alt="Google+" width="48" height="48" /></a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                <td style="text-align: center;" align="center" valign="top">
+                                    <a href="http://www.wcs.org"><img src="http://e.wcs.org/rftw-2016/stationery/images/logo-wcs.gif" border="0" alt="WCS" width="42" height="42" style="display: inline;" /></a>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="text-align: center;" align="center" valign="top">
-                                    <p style="padding: 0; margin: 0;"><span style="font-family: 'futuraBTlight', Helvetica, Arial, sans-serif; color: #847b71; font-size: 14px; line-height: 22px;">
-                                        &copy;<convio:session name="9" param="pattern:yyyy"></convio:session> Wildlife Conservation Society<br />
-                                        <span class="appleLinks" style="font-family: 'futuraBTlight', Helvetica, Arial, sans-serif; color: #847b71; font-size: 14px; line-height: 22px;">2300 Southern Boulevard, Bronx, New York 10460</span><br />
-                                        <span class="appleLinks" style="font-family: 'futuraBTlight', Helvetica, Arial, sans-serif; color: #847b71; font-size: 14px; line-height: 22px;">718-220-5100</span></span></p>
-                                </td>
+	                            <td>
+		                            <p style="padding: 0  0 5px 0; margin: 0; text-align: center;"><span style="font-family: 'Brandon Grotesque', Helvetica, Arial, sans-serif; color: #575551; font-size: 16px; line-height: 22px;">&copy;<convio:session name="9" param="pattern:yyyy"></convio:session> Wildlife Conservation Society</p>
+									<p style="padding: 0  0 5px 0; margin: 0; text-align: center;"><span style="font-family: 'Brandon Grotesque', Helvetica, Arial, sans-serif; color: #575551; font-size: 16px; line-height: 22px;" class="appleLinks">2300 Southern Boulevard, Bronx, New York 10460</p>
+									<p style="padding: 0  0 5px 0; margin: 0; text-align: center;"><span style="font-family: 'Brandon Grotesque', Helvetica, Arial, sans-serif; color: #575551; font-size: 16px; line-height: 22px;" class="appleLinks">718-220-5100</p>
+	                            </td>
                             </tr>
                             <tr>
                                 <td style="text-align: center;" align="center">
-
                                     <table style="width: 100%; min-width: 100%;" border="0" cellpadding="0" align="center">
                                         <tbody>
                                             <tr>
-                                                <td style="padding-top: 30px; padding-bottom: 30px; padding-right: 3px;" align="center" valign="top">
-                                                    <a href="http://www.wcs.org/terms-of-use" class="footer-link" style="font-family: 'futuraBT', Helvetica, Arial, sans-serif; color: #ac9167; font-size: 13px; text-decoration: none; margin-right: 10px;"><span style="white-space: nowrap;">TERMS OF USE</span></a>
-													<a href="http://www.wcs.org/privacy-policy" class="footer-link" style="font-family: 'futuraBT', Helvetica, Arial, sans-serif; color: #ac9167; font-size: 13px; text-decoration: none; margin-right: 10px;"><span style="white-space: nowrap;">PRIVACY POLICY</span></a>
-													<a href="http://www.wcs.org/childrens-privacy-policy" class="footer-link" style="font-family: 'futuraBT', Helvetica, Arial, sans-serif; color: #ac9167; font-size: 13px; text-decoration: none; margin-right: 10px;"><span style="white-space: nowrap;">CHILDREN'S PRIVACY POLICY</span></a>
-													<a style="font-family: 'futuraBT', Helvetica, Arial, sans-serif; color: #ac9167; font-size: 13px; text-decoration: none;" href="https://e.wcs.org/site/CO">UNSUBSCRIBE</a>
+                                                <td align="center" valign="top">
+                                                    <a href="http://www.wcs.org/terms-of-use" class="footer-link" style="font-family: 'Brandon Grotesque', Helvetica, Arial, sans-serif; color: #737373; font-size: 14px; line-height: 22px; text-decoration: none; margin: 0 10px 0 0;"><span style="white-space: nowrap;">TERMS OF USE</span></a>
+													<a href="http://www.wcs.org/privacy-policy" class="footer-link" style="font-family: 'Brandon Grotesque', Helvetica, Arial, sans-serif; color: #737373; font-size: 14px; line-height: 22px; text-decoration: none; margin: 0 10px 0 0;"><span style="white-space: nowrap;">PRIVACY POLICY</span></a>
+													<a href="http://www.wcs.org/childrens-privacy-policy" class="footer-link" style="font-family: 'Brandon Grotesque', Helvetica, Arial, sans-serif; color: #737373; font-size: 14px; line-height: 22px; text-decoration: none; margin: 0 10px 0 0;"><span style="white-space: nowrap;">CHILDREN'S PRIVACY POLICY</span></a>
+													<a style="font-family: 'Brandon Grotesque', Helvetica, Arial, sans-serif; color: #737373; font-size: 14px; line-height: 22px; text-decoration: none; margin: 0;" href="https://e.wcs.org/site/CO">UNSUBSCRIBE</a>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -339,9 +470,8 @@
                             </tr>
                             <tr>
                                 <td style="text-align: center;" align="center" valign="top">
-                                    <p style="padding: 0 0 40px; margin: 0;">
-                                        <span style="font-family: 'futuraBTlight', Helvetica, Arial, sans-serif; color: #847b71; font-size: 14px; line-height: 26px;">Having problems viewing this message?<br /></span>
-                                        <a style="font-family: 'futuraBT', Helvetica, Arial, sans-serif; color: #ac9167; font-size: 13px; line-height: 22px; text-decoration: none;" href="https://e.wcs.org/site/MessageViewer">VIEW IN BROWSER</a>
+                                    <p style="padding: 0  0 5px 0; margin: 0; text-align: center;"><span style="font-family: 'Brandon Grotesque', Helvetica, Arial, sans-serif; color: #575551; font-size: 16px; line-height: 22px;">Having problems viewing this message?<br /></span></p>
+                                    <p style="padding: 0  0 40px 0; margin: 0; text-align: center;"><a style="font-family: 'Brandon Grotesque', Helvetica, Arial, sans-serif; color: #737373; font-size: 14px; line-height: 22px; text-decoration: none; margin: 0;" href="https://e.wcs.org/site/MessageViewer">VIEW IN BROWSER</a>
                                     </p>
                                 </td>
                             </tr>
