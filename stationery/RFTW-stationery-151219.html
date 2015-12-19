@@ -1,0 +1,554 @@
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width" />
+<style type="text/css"><!--
+    /* Import font for supported clients */
+    @font-face {
+	    font-family: 'Lato';
+	    src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Regular.eot');
+	    src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+	         url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Regular.woff2') format('woff2'),
+	         url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Regular.woff') format('woff'),
+	         url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Regular.ttf') format('truetype');
+	    font-style: normal;
+	    font-weight: normal;
+	}
+	
+	@font-face {
+	    font-family: 'Lato';
+	    src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Italic.eot');
+	    src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Italic.eot?#iefix') format('embedded-opentype'),
+	         url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Italic.woff2') format('woff2'),
+	         url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Italic.woff') format('woff'),
+	         url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Italic.ttf') format('truetype');
+	    font-style: italic;
+	    font-weight: normal;
+	}
+	
+	@font-face {
+	    font-family: 'Lato';
+	    src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Bold.eot');
+	    src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+	         url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Bold.woff2') format('woff2'),
+	         url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Bold.woff') format('woff'),
+	         url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Bold.ttf') format('truetype');
+	    font-style: normal;
+	    font-weight: bold;
+	    text-rendering: optimizeLegibility;
+	}
+	
+	@font-face {
+	    font-family: 'Lato';
+	    src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-BoldItalic.eot');
+	    src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-BoldItalic.eot?#iefix') format('embedded-opentype'),
+	         url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-BoldItalic.woff2') format('woff2'),
+	         url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-BoldItalic.woff') format('woff'),
+	         url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-BoldItalic.ttf') format('truetype');
+	    font-style: italic;
+	    font-weight: bold;
+	    text-rendering: optimizeLegibility;
+	}
+	
+	@font-face {
+	    font-family: 'Brandon Grotesque';
+	    src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/Brandon_reg-webfont.eot');
+	    src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/Brandon_reg-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('https://secure3.convio.net/wcs/rftw-2016/fonts/Brandon_reg-webfont.woff') format('woff'),
+	         url('https://secure3.convio.net/wcs/rftw-2016/fonts/Brandon_reg-webfont.ttf') format('truetype'),
+	         url('https://secure3.convio.net/wcs/rftw-2016/fonts/Brandon_reg-webfont.svg#BrandonGrotesqueRegularRg') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	
+	@font-face {
+	    font-family: 'Brandon Grotesque';
+	    src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/brandon_blk-webfont.eot');
+	    src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/brandon_blk-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('https://secure3.convio.net/wcs/rftw-2016/fonts/brandon_blk-webfont.woff') format('woff'),
+	         url('https://secure3.convio.net/wcs/rftw-2016/fonts/brandon_blk-webfont.ttf') format('truetype'),
+	         url('https://secure3.convio.net/wcs/rftw-2016/fonts/brandon_blk-webfont.svg#brandon_grotesqueblack') format('svg');
+	    font-weight: bold;
+	    font-style: normal;
+	}
+	
+	@font-face {
+	    font-family: 'Brandon Grotesque';
+	    src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/brandongrotesque-blackitalic-webfont.eot');
+	    src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/brandongrotesque-blackitalic-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('https://secure3.convio.net/wcs/rftw-2016/fonts/brandongrotesque-blackitalic-webfont.woff2') format('woff2'),
+	         url('https://secure3.convio.net/wcs/rftw-2016/fonts/brandongrotesque-blackitalic-webfont.woff') format('woff'),
+	         url('https://secure3.convio.net/wcs/rftw-2016/fonts/brandongrotesque-blackitalic-webfont.ttf') format('truetype'),
+	         url('https://secure3.convio.net/wcs/rftw-2016/fonts/brandongrotesque-blackitalic-webfont.svg#brandon_grotesqueblack_italic') format('svg');
+	    font-weight: bold;
+	    font-style: italic;
+	}
+
+    /* Fix highlighted links in iOS */	
+    .appleLinks a {
+        font-family: 'Brandon Grotesque', Helvetica, Arial, sans-serif !important; 
+        color: #575551 !important; 
+        font-size: 16px !important; 
+        line-height: 22px !important;
+        text-decoration: none !important;
+    }
+
+    /* Fix image spacing in Outlook */
+    img {
+        display:block;
+    }
+
+    /* When we reach the default width */
+    @media only screen and (max-device-width: 620px), only screen and (max-width: 620px) {
+        img[class="responsive-image"] {
+            width: 100% !important;
+            min-width: 100% !important;
+            height: auto !important;
+        }
+
+        table[class="responsive-table"] {
+            padding: 0 20px !important;
+            width: 100% !important;
+            min-width: 100% !important;
+        }
+        
+        td[class="sponsor-group"] {
+	        display: block !important;
+	        width: 100% !important;
+        }
+    }
+
+    /* Optimize layout for mobile */	
+    @media only screen and (max-device-width: 480px), only screen and (max-width: 480px) {
+        a[class="footer-link"] {
+            display: block !important;
+            text-align: center !important;
+            width: 100% !important;
+            min-width: 100% !important;
+            margin: 0 0 20px 0 !important;
+        }
+
+        img[class="callout-image"] {
+            width: 100% !important;
+            min-width: 100% !important;
+            height: auto !important;
+        }
+
+        img[class="social-icon-img"] {
+            width: 38px !important;
+            min-width: 38px !important;
+            height: 38px !important;
+        }
+        
+        .mobile-hide {
+	        display: none !important;
+        }
+
+        table[class="callout"] {
+            width: 100% !important;
+            min-width: 100% !important;
+            padding: 0 !important;
+            margin: 0 auto 0 auto !important;
+            float: none !important;
+        }
+
+        table[class="footer-social"] {
+            border-spacing: 15px 35px !important;
+        }
+
+        div, p, a, li, td {
+            -webkit-text-size-adjust: none !important;
+        }
+    }
+    --></style>
+<!--[if mso]>
+<style type=”text/css”>
+	.body-text,
+	.body-text p,
+	.body-text em,
+	.body-text strong {
+		font-family: Helvetica, Arial, sans-serif !important;
+	}
+</style>
+<![endif]-->
+<!-- Start Prehead -->
+<table style="width: 100% !important; min-width: 100% !important;" border="0" cellspacing="0" cellpadding="0" width="100%" bgcolor="#ffffff">
+    <tbody>
+        <tr>
+            <td style="font-size: 1px;" align="center" valign="top">
+                <p style="padding: 0px; margin: 0px;"><span style="color: #fff;"><convio:session name="80" param="prehead"></convio:session></span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- End Prehead -->
+<!-- Start Liftnote -->
+<table style="width: 100% !important; min-width: 100% !important;" border="0" cellspacing="0" cellpadding="0" width="100%">
+    <tbody>
+        <tr>
+            <td style="font-size: 0px;" align="center" valign="top">
+                <div style="max-width: 650px;">
+                    <!--[if (gte mso 7)|(IE)]>
+					<table width="650" cellspacing="0" cellpadding="0" align="center" style="width: 650px;" _mce_style="width: 650px;">
+					<tr>
+					<td>
+					<![endif]-->
+                    <table class="responsive-table" style="width: 100%; max-width: 650px; border-collapse: separate;" border="0" cellspacing="25" cellpadding="0" width="650">
+                        <tbody>
+                            <tr>
+                                <td style="text-align: left; font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;" align="left">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--[if (gte mso 7)|(IE)]>
+					</td>
+					</tr>
+					</table>
+					<![endif]-->
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- End Liftnote -->
+<!-- Start Header -->
+<table style="padding: 0 10px; width: 100% !important; min-width: 100% !important; height: 60px; background: url(http://e.wcs.org/rftw-2016/stationery/images/bg-header.jpg) #02b4a4;" border="0" cellspacing="0" cellpadding="0" width="100%" height="60" bgcolor="#02b4a4" background="http://e.wcs.org/rftw-2016/stationery/images/bg-header.jpg">
+    <tbody>
+        <tr>
+            <td style="font-size: 0px;" align="center" valign="top">
+                <div style="max-width: 600px;">
+                    <!--[if (gte mso 7)|(IE)]>
+					<table width="600" cellspacing="0" cellpadding="0" align="center" style="width: 600px;" _mce_style="width: 600px;">
+					<tr>
+					<td>
+					<![endif]-->
+
+                    <table class="responsive-table" style="width: 100%; max-width: 600px;" border="0" cellspacing="0" cellpadding="0" width="600">
+                        <tbody>
+                            <tr>
+                                <td style="width: 132px !important; text-align: left; font-size: 0px; height: 60px;" width="132" height="60" align="left" valign="middle">
+                                    <a href="http://bronxzoo.com/run-for-the-wild"><img src="http://e.wcs.org/rftw-2016/stationery/images/logo-rftw.gif" border="0" alt="WCS" width="132" height="45" align="middle" style="display: inline;" align="middle"></a>
+                                </td>
+                                <td style="text-align: left; font-size: 0px; height: 60px;" height="60" align="left" valign="middle" class="mobile-hide">
+                                  	<img src="http://e.wcs.org/rftw-2016/stationery/images/event-info.gif" class="mobile-hide" border="0" alt="WCS" width="113" height="25" align="middle" style="display: inline;" align="middle">  
+                                </td>
+                                <td style="min-width: 125px !important; text-align: right; font-size: 0px;" align="right" valign="middle">
+                                    <span class="header-action"><a href="http://www.wcs.org/donate"><img src="http://e.wcs.org/rftw-2016/stationery/images/button-header-register.gif" alt="Register" width="109" height="32" border="0" align="right"></a></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--[if (gte mso 7)|(IE)]>
+					</td>
+					</tr>
+					</table>
+					<![endif]-->
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- End Header -->
+<!-- Start Main Content -->
+<table style="padding: 0 10px; width: 100%; min-width: 100% !important;" border="0" cellspacing="0" cellpadding="0" width="100%">
+    <tbody>
+        <tr>
+            <td align="center" valign="top">
+                <div style="max-width: 600px;">
+                    <!--[if (gte mso 7)|(IE)]>
+					<table width="600" cellspacing="0" cellpadding="0" align="center" style="width: 600px;" _mce_style="width: 600px;">
+					<tr>
+					<td>
+					<![endif]-->
+                    <table class="responsive-table" style="width: 100%; max-width: 600px;" border="0" cellspacing="0" cellpadding="0" width="600">
+                        <tbody>
+                            <tr>
+                                <td style="font-size: 0px;" height="35">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="body-text" style="text-align: left; font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;" align="left">
+                                   
+                                    <!-- Start Call Out Box -->
+
+									<table class="callout" cellspacing="0" cellpadding="0" border="0" width="250" align="right" style="padding: 0; margin-left: 20px; width: 250px;">
+										<tr>
+											<td style="font-size: 0px;">
+												<img src="http://e.wcs.org/rftw-2016/stationery/images/photo-callout.jpg" class="callout-image" alt="Lion" width="250" style="min-width: 100%; height: auto; display: block;">
+											</td>
+										</tr>
+										<tr>
+											<td align="left" valign="top" style="font-size: 0px;">
+												<table cellpadding="0" cellspacing="0" border="0" background="http://e.wcs.org/rftw-2016/stationery/images/bg-callout.jpg" bgcolor="#f3f2f2" style="background: url('http://e.wcs.org/rftw-2016/stationery/images/bg-callout.jpg') #f3f2f2;">
+													<tr>
+														<td align="left" valign="top" style="text-align: left; padding: 18px;">
+															<div style="font-size: 14px; line-height: 22px;">
+																<p style="padding: 0 0 5px 0; margin: 0;"><span style="font-family: 'Brandon Grotesque', Helvetica, Arial, sans-serif; color: #019f5e; font-size: 14px; font-weight: bold; font-style: italic; letter-spacing: 1px;">CALLOUT HEADER</span></p>
+																<p style="padding: 0; margin: 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim.</span></p>
+																<p style="padding:0; margin: 10px 0 0;" align="left"><a href="http://www.wcs.org/donate"><img src="http://e.wcs.org/rftw-2016/stationery/images/button-register.gif" alt="Register" width="109" height="32" border="0"></a></p>
+															</div>
+													</tr>
+												</table>
+											</td>
+										</tr>
+										<tr>
+											<td height="15" style="font-size: 0px;">&nbsp;</td>
+										</tr>
+									</table>
+									
+									<!-- End Call Out Box -->
+									
+									<p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">Dear Josh,</span></p>
+									<p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis.</span></p>
+									<p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. <a style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #02b4a4; font-size: 14px; font-style: normal; line-height: 22px; text-decoration: underline;">Aliquam erat volutpat. Sed quis velit.</a></span></p>
+									<p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat.</span></p> 
+									<p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">Nam magna enim, accumsan eu, blandit sed, blandit a, eros. Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio.</span></p> 
+									<p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis. Donec eget sem sit amet ligula viverra gravida. Etiam vehicula urna vel turpis. Suspendisse sagittis ante a urna.</span></p> 
+									
+									<p style="padding: 0  0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">Sincerely,</span></p>
+									<p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">Sender's Name<br>
+										Vice President, Species Conservation<br>
+										Wildlife Conservation Society</span></p>
+										
+									<!-- Start Bottom CTA -->
+									
+									<center>
+										<p style="padding: 0; font-size: 0px;"><a href="http://www.wcs.org/donate"><img src="http://e.wcs.org/rftw-2016/stationery/images/button-register.gif" alt="Register" width="109" height="32" border="0"></a></p>
+									</center>
+									
+									<!-- End Bottom CTA -->
+									
+									<!-- Start Social Share -->
+									
+									<table cellpadding="0" cellspacing="18" border="0" align="center" style="padding: 25px 0 10px; border-collapse: separate;">
+										<tr>
+											<td colspan="2" style="text-align: center;" align="center">
+												<span style="font-family: 'Brandon Grotesque', Helvetica, Arial, sans-serif; color: #019f5e; font-size: 14px; font-weight: bold; font-style: italic; letter-spacing: 1px;">SHARE</span>
+											</td>
+										</tr>
+										<tr>
+											<td style="font-style: 0px;">
+												<a href="#"><img src="http://e.wcs.org/rftw-2016/stationery/images/icon-facebook.gif" alt="Facebook" width="40" height="40" border="0"></a>
+											</td>
+											<td style="font-style: 0px;">
+												<a href="#"><img src="http://e.wcs.org/rftw-2016/stationery/images/icon-email.gif" alt="Email" width="40" height="40" border="0"></a>
+											</td>
+										</tr>
+									</table>
+									
+									<!-- End Social Share -->
+									
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 0px;" height="35">&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--[if (gte mso 7)|(IE)]>
+					</td>
+					</tr>
+					</table>
+					<![endif]-->
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- End Main Content -->
+<!-- Start Sponsors -->
+<table style="width: 100% !important; min-width: 100% !important; background: url('http://e.wcs.org/rftw-2016/stationery/images/bg-callout.jpg') #f3f2f2;"  background="http://e.wcs.org/rftw-2016/stationery/images/bg-callout.jpg" bgcolor="#f3f2f2" border="0" cellspacing="0" cellpadding="0" width="100%">
+	<tbody>
+        <tr>
+            <td align="center" valign="top">
+                <div style="max-width: 600px;">
+                    <!--[if (gte mso 7)|(IE)]>
+					<table width="600" cellspacing="0" cellpadding="0" align="center" style="width: 600px;" _mce_style="width: 600px;">
+					<tr>
+					<td>
+					<![endif]-->
+					<table class="responsive-table" style="width: 100%; max-width: 600px;" border="0" cellspacing="20" cellpadding="0" width="600" align="center">
+                        <tbody>
+                            <tr>
+                                <td style="text-align: center; font-size: 0px;" valign="top">
+                                    <table border="0" cellspacing="15" cellpadding="0" style="display: inline-block; vertical-align: top; margin: 0 7px; border-collapse: separate;">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center" valign="middle">
+                                                    <span style="font-family: 'Brandon Grotesque', Helvetica, Arial, sans-serif; color: #019f5e; font-size: 14px; font-weight: bold; font-style: italic; letter-spacing: 1px;">PRESENTED BY</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+	                                            <td styl="font-size: 0px;" align="center" valign="middle">
+		                                            <a href="http://www.coned.com/"><img src="http://e.wcs.org/rftw-2016/stationery/images/logo-coned.gif" border="0" alt="Con Edison" width="54" height="65" /></a>
+	                                            </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table border="0" cellspacing="15" cellpadding="0" style="display: inline-block; vertical-align: top; margin: 0 7px; border-collapse: separate;">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center" valign="middle">
+                                                    <span style="font-family: 'Brandon Grotesque', Helvetica, Arial, sans-serif; color: #019f5e; font-size: 14px; font-weight: bold; font-style: italic; letter-spacing: 1px;">FEATURED SPONSOR</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+	                                            <td styl="font-size: 0px;" align="center" valign="middle">
+		                                            <a href="http://www.montefiore.org/"><img src="http://e.wcs.org/rftw-2016/stationery/images/logo-montefiore.gif" border="0" alt="Montifiore" width="92" height="25" /></a>
+	                                            </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table border="0" cellspacing="15" cellpadding="0" style="display: inline-block; vertical-align: top; border-collapse: separate;">
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2" align="center" valign="middle">
+                                                    <span style="font-family: 'Brandon Grotesque', Helvetica, Arial, sans-serif; color: #019f5e; font-size: 14px; font-weight: bold; font-style: italic; letter-spacing: 1px;">SUPPORTING SPONSORS</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+	                                            <td styl="font-size: 0px;" align="center" valign="middle">
+		                                            <a href="https://www.empireblue.com/"><img src="http://e.wcs.org/rftw-2016/stationery/images/logo-empire.gif" border="0" alt="Empire Blue Cross Blue Shield" width="64" height="16" /></a>
+	                                            </td>
+	                                            <td styl="font-size: 0px;" align="center" valign="middle">
+		                                            <a href="https://www.monroecollege.edu/"><img src="http://e.wcs.org/rftw-2016/stationery/images/logo-monroe-college.gif" border="0" alt="Monroe College" width="50" height="20" /></a>
+	                                            </td>
+                                            </tr>
+                                            <tr>
+	                                            <td styl="font-size: 0px;" align="center" valign="middle">
+		                                            <a href="https://www.usa.canon.com"><img src="http://e.wcs.org/rftw-2016/stationery/images/logo-canon.gif" border="0" alt="Canon" width="69" height="15" /></a>
+	                                            </td>
+	                                            <td styl="font-size: 0px;" align="center" valign="middle">
+		                                            <a href="http://www.pgcruises.com/"><img src="http://e.wcs.org/rftw-2016/stationery/images/logo-paul.gif" border="0" alt="Paul Gauguin Cruises" width="77" height="22" /></a>
+	                                            </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+					</table>
+				   <!--[if (gte mso 7)|(IE)]>
+					</td>
+					</tr>
+					</table>
+					<![endif]-->
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- End Sponsors -->					
+<!-- Start Footer Social Links -->
+<table style="width: 100% !important; min-width: 100% !important; background: #181a1b;" border="0" cellspacing="0" cellpadding="0" width="100%" bgcolor="#181a1b">
+	<tbody>
+        <tr>
+            <td align="center" valign="top">
+                <div style="max-width: 600px;">
+                    <!--[if (gte mso 7)|(IE)]>
+					<table width="600" cellspacing="0" cellpadding="0" align="center" style="width: 600px;" _mce_style="width: 600px;">
+					<tr>
+					<td>
+					<![endif]-->
+					
+					<table class="responsive-table" style="width: 100%; max-width: 600px;" border="0" cellspacing="0" cellpadding="0" width="600" align="center">
+                        <tbody>
+                            <tr>
+                                <td style="text-align: center; font-size: 0px;" align="center">
+                                    <table border="0" cellspacing="38" cellpadding="0" align="center" style="border-collapse: separate;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="font-size: 0px;" width="20" height="20" align="center" valign="center">
+                                                    <a href="https://www.facebook.com/bronxzoo"><img src="http://e.wcs.org/rftw-2016/stationery/images/icon-footer-facebook.gif" border="0" alt="Facebook" width="20" height="20" /></a>
+                                                </td>
+                                                <td style="font-size: 0px;" width="20" height="20" align="center" valign="center">
+                                                    <a href="https://twitter.com/bronxzoo"><img src="http://e.wcs.org/rftw-2016/stationery/images/icon-footer-twitter.gif" border="0" alt="Twitter" width="20" height="20" /></a>
+                                                </td>
+                                                <td style="font-size: 0px;" width="20" height="20" align="center" valign="center">
+                                                    <a href="http://instagram.com/bronxzoo"><img src="http://e.wcs.org/rftw-2016/stationery/images/icon-footer-instagram.gif" border="0" alt="Instagram" width="20" height="20" /></a>
+                                                </td>
+                                                <td style="font-size: 0px;" width="20" height="20" align="center" valign="center">
+                                                    <a href="https://www.youtube.com/user/WCSMedia"><img src="http://e.wcs.org/rftw-2016/stationery/images/icon-footer-youtube.gif" border="0" alt="YouTube" width="20" height="20" /></a>
+                                                </td>
+                                                <td style="font-size: 0px;" width="20" height="20" align="center" valign="center">
+                                                    <a href="https://plus.google.com/113575251372996712281"><img src="http://e.wcs.org/rftw-2016/stationery/images/icon-footer-google-plus.gif" border="0" alt="Google+" width="20" height="20" /></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+					</table>
+				   <!--[if (gte mso 7)|(IE)]>
+					</td>
+					</tr>
+					</table>
+					<![endif]-->
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- End Footer Social Links -->
+<!-- End Footer -->
+<table style="width: 100% !important; min-width: 100% !important; background: #000000;" border="0" cellspacing="0" cellpadding="0" width="100%" bgcolor="#000000">
+    <tbody>
+        <tr>
+            <td align="center" valign="top">
+                <div style="max-width: 600px;">
+                    <!--[if (gte mso 7)|(IE)]>
+					<table width="600" cellspacing="0" cellpadding="0" align="center" style="width: 600px;" _mce_style="width: 600px;">
+					<tr>
+					<td>
+					<![endif]-->
+
+                    <table class="responsive-table" style="width: 100%; max-width: 600px; border-collapse: separate;" border="0" cellspacing="25" cellpadding="0" width="600" align="center">
+                        <tbody>
+                            <tr>
+                                <td style="text-align: center;" align="center" valign="top">
+                                    <a href="http://www.wcs.org"><img src="http://e.wcs.org/rftw-2016/stationery/images/logo-wcs.gif" border="0" alt="WCS" width="42" height="42" style="display: inline;" /></a>
+                                </td>
+                            </tr>
+                            <tr>
+	                            <td>
+		                            <p style="padding: 0  0 5px 0; margin: 0; text-align: center;"><span style="font-family: 'Brandon Grotesque', Helvetica, Arial, sans-serif; color: #575551; font-size: 16px; line-height: 22px;">&copy;2015 Wildlife Conservation Society</p>
+									<p style="padding: 0  0 5px 0; margin: 0; text-align: center;"><span style="font-family: 'Brandon Grotesque', Helvetica, Arial, sans-serif; color: #575551; font-size: 16px; line-height: 22px;" class="appleLinks">2300 Southern Boulevard, Bronx, New York 10460</p>
+									<p style="padding: 0  0 5px 0; margin: 0; text-align: center;"><span style="font-family: 'Brandon Grotesque', Helvetica, Arial, sans-serif; color: #575551; font-size: 16px; line-height: 22px;" class="appleLinks">718-220-5100</p>
+	                            </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;" align="center">
+                                    <table style="width: 100%; min-width: 100%;" border="0" cellpadding="0" align="center">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center" valign="top">
+                                                    <a href="http://www.wcs.org/terms-of-use" class="footer-link" style="font-family: 'Brandon Grotesque', Helvetica, Arial, sans-serif; color: #737373; font-size: 14px; line-height: 22px; text-decoration: none; margin: 0 10px 0 0;"><span style="white-space: nowrap;">TERMS OF USE</span></a>
+													<a href="http://www.wcs.org/privacy-policy" class="footer-link" style="font-family: 'Brandon Grotesque', Helvetica, Arial, sans-serif; color: #737373; font-size: 14px; line-height: 22px; text-decoration: none; margin: 0 10px 0 0;"><span style="white-space: nowrap;">PRIVACY POLICY</span></a>
+													<a href="http://www.wcs.org/childrens-privacy-policy" class="footer-link" style="font-family: 'Brandon Grotesque', Helvetica, Arial, sans-serif; color: #737373; font-size: 14px; line-height: 22px; text-decoration: none; margin: 0 10px 0 0;"><span style="white-space: nowrap;">CHILDREN'S PRIVACY POLICY</span></a>
+													<a style="font-family: 'Brandon Grotesque', Helvetica, Arial, sans-serif; color: #737373; font-size: 14px; line-height: 22px; text-decoration: none; margin: 0;" href="https://e.wcs.org/site/CO">UNSUBSCRIBE</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;" align="center" valign="top">
+                                    <p style="padding: 0  0 5px 0; margin: 0; text-align: center;"><span style="font-family: 'Brandon Grotesque', Helvetica, Arial, sans-serif; color: #575551; font-size: 16px; line-height: 22px;">Having problems viewing this message?<br /></span></p>
+                                    <p style="padding: 0  0 40px 0; margin: 0; text-align: center;"><a style="font-family: 'Brandon Grotesque', Helvetica, Arial, sans-serif; color: #737373; font-size: 14px; line-height: 22px; text-decoration: none; margin: 0;" href="https://e.wcs.org/site/MessageViewer">VIEW IN BROWSER</a>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--[if (gte mso 7)|(IE)]>
+					</td>
+					</tr>
+					</table>
+					<![endif]-->
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- End Footer -->
