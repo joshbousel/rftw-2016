@@ -108,7 +108,7 @@ div.ux-main div.dashboard-bd {
     display: none;
   }
 }
-.yui-skin-ux .hidden-form {
+.yui-skin-ux .hidden-form:not(#addressbookimport_csv_form_container) {
   display: none !important;
 }
 div#email-wizard-preview-body {
@@ -125,7 +125,9 @@ div#email-wizard-preview-body {
     margin: 0;
   }
 }
-.yui-skin-ux #contacts-table-info-block {
+.yui-skin-ux #contacts-table-info-block,
+#addressbookimport-importcandidatecontacts-list {
+  width: 100% !important;
   overflow: auto;
 }
 @media all and (max-width: 800px) {
@@ -144,6 +146,52 @@ div#email-wizard-preview-body {
 }
 .yui-skin-ux #page-form .radio-section #payment-radio-choices {
   margin: 0 0 0 15px;
+}
+#ui-dialog-buttonset {
+  width: calc(100% - 23px);
+}
+@media all and (max-width: 800px) {
+  #ui-dialog-buttonset button {
+    width: calc(100% - 5px);
+  }
+}
+@media all and (max-width: 800px) {
+  div#email-contacts-content div.search {
+    width: 100%;
+  }
+  div#email-contacts-content div.search button {
+    width: 100%;
+  }
+  div#email-contacts-content div.search input {
+    width: calc(100% - 26px) !important;
+  }
+}
+@media all and (max-width: 800px) {
+  #contactedit-dialog-form {
+    padding: 0 15px !important;
+    width: 100%;
+  }
+}
+#contactedit-dialog-form input {
+  margin: 0 0 15px 5px !important;
+}
+@media all and (max-width: 800px) {
+  #contactedit-dialog-form input {
+    width: calc(100% - 46px) !important;
+  }
+}
+#contactedit-dialog-form label {
+  margin: 0 0 0 5px !important;
+}
+@media all and (max-width: 800px) {
+  #contactedit-dialog-form label {
+    width: 100%;
+  }
+}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+  float: none !important;
+  padding: 0 15px !important;
+  width: 100%;
 }
 /*********************************/
 /* Color Changes                 */
@@ -306,7 +354,9 @@ th.yui-dt-col-donations {
 #msg_cat_add_contacts_cancel_link,
 #addressbookimport-selectsource-cancel,
 #cancel_shortcut,
-#msg_cat_contact_edit_cancel_link {
+#msg_cat_contact_edit_cancel_link,
+#addressbookimport-selectcontacts-cancel,
+#addressbookimport-thirdpartystatus-cancel {
   border: 0;
   border-radius: 2px;
   background-color: transparent;
@@ -337,7 +387,9 @@ th.yui-dt-col-donations {
 #msg_cat_add_contacts_cancel_link:hover,
 #addressbookimport-selectsource-cancel:hover,
 #cancel_shortcut:hover,
-#msg_cat_contact_edit_cancel_link:hover {
+#msg_cat_contact_edit_cancel_link:hover,
+#addressbookimport-selectcontacts-cancel:hover,
+#addressbookimport-thirdpartystatus-cancel:hover {
   color: #fff !important;
   opacity: .75;
 }
@@ -347,7 +399,9 @@ th.yui-dt-col-donations {
   #msg_cat_add_contacts_cancel_link,
   #addressbookimport-selectsource-cancel,
   #cancel_shortcut,
-  #msg_cat_contact_edit_cancel_link {
+  #msg_cat_contact_edit_cancel_link,
+  #addressbookimport-selectcontacts-cancel,
+  #addressbookimport-thirdpartystatus-cancel {
     width: 100%;
   }
 }
@@ -356,7 +410,9 @@ th.yui-dt-col-donations {
 #msg_cat_add_contacts_cancel_link span,
 #addressbookimport-selectsource-cancel span,
 #cancel_shortcut span,
-#msg_cat_contact_edit_cancel_link span {
+#msg_cat_contact_edit_cancel_link span,
+#addressbookimport-selectcontacts-cancel span,
+#addressbookimport-thirdpartystatus-cancel span {
   font-family: 'Brandon Grotesque', helvetica, arial, sans-serif !important;
 }
 #quick-gift-cancel:hover,
@@ -364,7 +420,9 @@ th.yui-dt-col-donations {
 #msg_cat_add_contacts_cancel_link:hover,
 #addressbookimport-selectsource-cancel:hover,
 #cancel_shortcut:hover,
-#msg_cat_contact_edit_cancel_link:hover {
+#msg_cat_contact_edit_cancel_link:hover,
+#addressbookimport-selectcontacts-cancel:hover,
+#addressbookimport-thirdpartystatus-cancel:hover {
   color: #8C8C8C !important;
 }
 @media all and (max-width: 800px) {
@@ -373,7 +431,9 @@ th.yui-dt-col-donations {
   #msg_cat_add_contacts_cancel_link,
   #addressbookimport-selectsource-cancel,
   #cancel_shortcut,
-  #msg_cat_contact_edit_cancel_link {
+  #msg_cat_contact_edit_cancel_link,
+  #addressbookimport-selectcontacts-cancel,
+  #addressbookimport-thirdpartystatus-cancel {
     width: calc(100% - 33px);
   }
 }
@@ -401,6 +461,7 @@ span#detailsGroupsMenuButton button#detailsGroupsMenuButton-button {
   text-decoration: none;
   transition: all 0.1s ease-out;
   -webkit-font-smoothing: auto;
+  white-space: nowrap;
 }
 .yui-dialog .yui-push-button:not(.default) button {
   background-image: none !important;
@@ -414,6 +475,28 @@ span#detailsGroupsMenuButton button#detailsGroupsMenuButton-button {
 }
 #acknowledge_contact_gift_no_email_dialog_c .yui-push-button:first-of-type {
   margin: 0 10px 0 0;
+}
+div#email-wizard-contacts button {
+  margin-right: 15px;
+}
+#confirm_delete_draft_dialog .yui-push-button,
+#confirm_sent_delete_dialog .yui-push-button,
+#new-group-dialog_c .yui-push-button,
+#yui-gen3_c .yui-push-button,
+#details-new-group-dialog .yui-push-button {
+  margin: 0 0 10px 0;
+  width: calc(100% - 43px);
+}
+@media all and (max-width: 800px) {
+  #gift-add-content button {
+    width: 100% !important;
+  }
+}
+@media all and (max-width: 800px) {
+  #email-wizard-contacts button {
+    margin: 0 0 15px 0;
+    width: 100% !important;
+  }
 }
 /*********************************/
 /* Sidebard Changes             */
@@ -437,7 +520,8 @@ span#detailsGroupsMenuButton button#detailsGroupsMenuButton-button {
 .ux-main select,
 .ux-main input,
 .ux-main textarea,
-.yui-panel-container input {
+.yui-panel-container input,
+#contactedit-dialog-form input {
   background: #FBFBFB;
   border: 1px solid #AFB4C3;
   border-radius: 2px;
@@ -454,7 +538,8 @@ span#detailsGroupsMenuButton button#detailsGroupsMenuButton-button {
   .ux-main select,
   .ux-main input,
   .ux-main textarea,
-  .yui-panel-container input {
+  .yui-panel-container input,
+  #contactedit-dialog-form input {
     display: block;
     margin: 0 0 10px;
     width: calc(100% - 26px);
@@ -463,10 +548,12 @@ span#detailsGroupsMenuButton button#detailsGroupsMenuButton-button {
   .ux-main input[type="radio"],
   .ux-main textarea[type="radio"],
   .yui-panel-container input[type="radio"],
+  #contactedit-dialog-form input[type="radio"],
   .ux-main select[type="checkbox"],
   .ux-main input[type="checkbox"],
   .ux-main textarea[type="checkbox"],
-  .yui-panel-container input[type="checkbox"] {
+  .yui-panel-container input[type="checkbox"],
+  #contactedit-dialog-form input[type="checkbox"] {
     display: inline-block;
     width: auto;
     vertical-align: -webkit-baseline-middle;
@@ -475,7 +562,8 @@ span#detailsGroupsMenuButton button#detailsGroupsMenuButton-button {
 .ux-main select:focus,
 .ux-main input:focus,
 .ux-main textarea:focus,
-.yui-panel-container input:focus {
+.yui-panel-container input:focus,
+#contactedit-dialog-form input:focus {
   border: 1px solid #475267;
   box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.25);
   outline: none;
@@ -562,7 +650,8 @@ div#personalpage-content-actions a {
 div#personalpage-content-actions a:hover {
   color: #11dfcd !important;
 }
-#email-compose-templates h3 {
+#email-compose-templates h3,
+#addressbookimport_importresults_section_added_header {
   background: #475267 !important;
   font-family: 'Lato', helvetica, arial, sans-serif;
   font-size: 1rem;
@@ -599,7 +688,20 @@ div#personalpage-content-actions a:hover {
 div#email-contacts-content div.search label#msg_cat_search_contacts_text,
 .yui-skin-ux #sidebar.yui-b .side-block,
 #msg_cat_contacts_acknowledge_contact_gift_no_email_body,
-#contact_email {
+#contact_email,
+#msg_cat_drafts_confirm_delete_body,
+#msg_cat_sent_confirm_delete_body,
+#msg_cat_addressbookimport_selectcontacts_info,
+#msg_cat_addressbookimport_selectcontacts_option_all_2,
+#msg_cat_addressbookimport_selectcontacts_option_some,
+#msg_cat_addressbookimport_selectcontacts_title,
+#msg_cat_addressbookimport_thirdpartystatus_info,
+#msg_cat_addressbookimport_thirdpartystatus_title,
+#addressbookimport-thirdpartystatus-events div,
+#msg_cat_addressbookimport_importresults_title,
+#msg_cat_addressbookimport_importresults_info,
+#msg_cat_addressbookimport_importresults_section_added_info,
+#msg_cat_gift_confirm_delete_body {
   color: #475267;
   font-family: 'Lato', helvetica, arial, sans-serif;
   font-size: 1rem;

@@ -310,3 +310,91 @@ div.responsive .date-input-container {
 div.responsive div.ErrorMessage.page-error>span.field-error-text {
         width: calc(~'100% - 38px');
 }
+
+/*********************************/
+/* Donation Thank You            */
+/*********************************/
+
+div.donation-form-content .FormSectionHeader {
+	.subheader();
+}
+
+div.donation-form-content .transaction-summary-entries,
+div.donation-form-content .additional-entries {
+	margin: 0 auto;
+	max-width: @inset-width;
+	width: 100%;
+	
+	div.transaction-summary-entry {
+		background-color: transparent;
+		border-top: 1px solid #eee;
+		padding: 15px;
+		
+		&:last-of-type {
+			border-bottom: 1px solid #eee;
+		}
+		
+		span.entry-label {
+			color: @blue-dark;
+		    font-weight: bold;
+		    line-height: 1.25rem;
+		    text-align: left !important; 
+		    width: 49% !important;
+		    vertical-align: top;
+		    
+		    @media all and (max-width:@break-tablet) {
+			    margin: 0 0 5px;
+				width: 100% !important;
+			}
+		}
+		
+		span.entry-value {
+		    color: @blue-dark;
+		    line-height: 1.25rem;
+		    text-align: left !important;
+		    width: 50% !important;
+		    vertical-align: top;
+		    
+		    @media all and (max-width:@break-tablet) {
+				width: 100% !important;
+			}
+		}
+	}
+}
+
+.rftw-share {
+	text-align: center !important;
+	
+	&__label {
+		color: @green-base;
+		display: block;
+		font-family: @font-brandon;
+		font-size: 1rem;
+		font-style: italic;
+		font-weight: bold;
+		line-height: 1rem;
+		letter-spacing: 1px;
+		margin: 0 0 15px;
+		text-transform: uppercase;
+		-webkit-font-smoothing: antialiased;
+	}
+	
+	&__link {
+		border: 1px solid #eee;
+		border-radius: 2px;
+		display: inline-block;
+		padding: 10px;
+		transition: @default-transition;
+		
+		&:hover {
+			opacity: .75;
+		}
+		
+		&__icon {
+			display: block;
+			height: 40px;
+			fill: @blue-base;
+			width: 40px;
+		}
+	}
+}

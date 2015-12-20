@@ -77,7 +77,7 @@ div.ux-main div.dashboard-bd {
 	}
 }
 
-.yui-skin-ux .hidden-form {
+.yui-skin-ux .hidden-form:not(#addressbookimport_csv_form_container) {
 	display: none !important;
 }
 
@@ -98,7 +98,9 @@ div#personalpage-content-actions {
 	}
 }
 
-.yui-skin-ux #contacts-table-info-block {
+.yui-skin-ux #contacts-table-info-block,
+#addressbookimport-importcandidatecontacts-list {
+	width: 100% !important;
 	overflow: auto;
 }
 
@@ -121,6 +123,60 @@ div#personalpage-content-actions {
 	#payment-radio-choices {
 		margin: 0 0 0 15px;
 	}
+}
+
+#ui-dialog-buttonset {
+	width: calc(~'100% - 23px');
+	
+	button {
+		@media all and (max-width:@break-tablet) {
+	   		width: calc(~'100% - 5px');
+		}
+	}
+}
+
+div#email-contacts-content div.search {
+	@media all and (max-width:@break-tablet) {
+   		width: 100%;
+   		
+   		button {
+	   		width: 100%;
+   		}
+   		
+   		input {
+	   		width: calc(~'100% - 26px') !important;
+   		}
+	}
+}
+
+#contactedit-dialog-form {
+	
+	@media all and (max-width:@break-tablet) {
+		padding: 0 15px !important;
+   		width: 100%;
+	}
+   
+   input {
+	   margin: 0 0 15px 5px !important;
+	   
+	   @media all and (max-width:@break-tablet) {
+	   		width: calc(~'100% - 46px') !important;
+   		}
+   	}
+   	
+   	label {
+	    margin: 0 0 0 5px !important;
+	    
+	    @media all and (max-width:@break-tablet) {
+	   		width: 100%;
+   		}
+   	}
+}
+
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+	float: none !important;
+	padding: 0 15px !important;
+	width: 100%;
 }
 
 /*********************************/
@@ -226,7 +282,9 @@ th.yui-dt-col-donations {
 #msg_cat_add_contacts_cancel_link,
 #addressbookimport-selectsource-cancel,
 #cancel_shortcut,
-#msg_cat_contact_edit_cancel_link {
+#msg_cat_contact_edit_cancel_link,
+#addressbookimport-selectcontacts-cancel,
+#addressbookimport-thirdpartystatus-cancel {
 	.secondary-button();
 	
 	@media all and (max-width:@break-tablet) {
@@ -260,6 +318,7 @@ span#detailsGroupsMenuButton button#detailsGroupsMenuButton-button {
     text-decoration: none;
     transition: @default-transition;
     -webkit-font-smoothing: auto;
+    white-space: nowrap;
 }
 
 .yui-dialog .yui-push-button:not(.default) button {
@@ -277,6 +336,32 @@ span#detailsGroupsMenuButton button#detailsGroupsMenuButton-button {
 
 #acknowledge_contact_gift_no_email_dialog_c .yui-push-button:first-of-type {
 	margin: 0 10px 0 0;
+}
+
+div#email-wizard-contacts button {
+    margin-right: 15px;
+}
+
+#confirm_delete_draft_dialog .yui-push-button,
+#confirm_sent_delete_dialog .yui-push-button,
+#new-group-dialog_c .yui-push-button,
+#yui-gen3_c .yui-push-button,
+#details-new-group-dialog .yui-push-button {
+    margin: 0 0 10px 0;
+    width: calc(~'100% - 43px');
+}
+
+#gift-add-content button {
+	@media all and (max-width:@break-tablet) {
+		width: 100% !important;
+	}
+}
+
+#email-wizard-contacts button {
+   @media all and (max-width:@break-tablet) {
+	    margin: 0 0 15px 0;
+	    width: 100% !important;
+	}
 }
 
 /*********************************/
@@ -304,7 +389,8 @@ span#detailsGroupsMenuButton button#detailsGroupsMenuButton-button {
 .ux-main select, 
 .ux-main input, 
 .ux-main textarea,
-.yui-panel-container input {
+.yui-panel-container input,
+#contactedit-dialog-form input {
 	.default-field();
 }
 
@@ -375,7 +461,8 @@ div#personalpage-content-actions {
 	}
 }
 
-#email-compose-templates h3 {
+#email-compose-templates h3,
+#addressbookimport_importresults_section_added_header {
 	background: @blue-dark !important;
 	font-family: @font-lato;
 	font-size: 1rem;
@@ -413,7 +500,20 @@ div#personalpage-content-actions {
 div#email-contacts-content div.search label#msg_cat_search_contacts_text,
 .yui-skin-ux #sidebar.yui-b .side-block,
 #msg_cat_contacts_acknowledge_contact_gift_no_email_body,
-#contact_email {
+#contact_email,
+#msg_cat_drafts_confirm_delete_body,
+#msg_cat_sent_confirm_delete_body,
+#msg_cat_addressbookimport_selectcontacts_info,
+#msg_cat_addressbookimport_selectcontacts_option_all_2,
+#msg_cat_addressbookimport_selectcontacts_option_some,
+#msg_cat_addressbookimport_selectcontacts_title,
+#msg_cat_addressbookimport_thirdpartystatus_info,
+#msg_cat_addressbookimport_thirdpartystatus_title,
+#addressbookimport-thirdpartystatus-events div,
+#msg_cat_addressbookimport_importresults_title,
+#msg_cat_addressbookimport_importresults_info,
+#msg_cat_addressbookimport_importresults_section_added_info,
+#msg_cat_gift_confirm_delete_body {
 	.default-copy();
 }
 

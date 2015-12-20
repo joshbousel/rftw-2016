@@ -2,13 +2,15 @@ $(function() {
 	$doc = $(document);
 	
 	/////////////////////////////////
-	// UniversalForm Validaton     //
+	// Universal Form Validaton    //
 	/////////////////////////////////
 	
 	function validateEmail(email) {
 	    var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 	    return re.test(email);
 	}
+	
+	
 	
 	/////////////////////////////////
 	// Mobile Nav Button Toggle    //
@@ -29,6 +31,26 @@ $(function() {
 			$menuButtom.addClass("rftw-header__menu-button--is-open");
 		}
 	});
+	
+	/////////////////////////////////
+	// Select Virtual Runner       //
+	/////////////////////////////////
+	
+	$.urlParam = function(name){
+    	var results = new RegExp('[\\?&]' + name + '=([^&#]*)').exec(window.location.href);
+    	if (results==null){
+	    	return null;
+	    	} else{
+		    return results[1] || 0;
+		    }
+    	}
+	
+	if ($.urlParam('ptype')) {
+	    if ($.urlParam('ptype') == "virtual") {  
+	    	$("#fr_part_radio_1416").prop("checked", true);    
+		}
+	}
+	
 	
 	/////////////////////////////////
 	// Volunteer Form              //
