@@ -1,0 +1,175 @@
+<!-- Start Call Out Box -->
+<table class="callout" cellspacing="0" cellpadding="0" border="0" width="250" align="right" style="padding: 0; margin-left: 20px; width: 250px;">
+	<tr>
+		<td align="left" valign="top" style="font-size: 0px;">
+			<table cellpadding="0" cellspacing="0" border="0" background="http://e.wcs.org/rftw-2016/stationery/images/bg-callout.jpg" bgcolor="#f3f2f2" style="background: url('http://e.wcs.org/rftw-2016/stationery/images/bg-callout.jpg') #f3f2f2;">
+				<tr>
+					<td align="left" valign="top" style="text-align: left; padding: 18px;">
+						<div style="font-size: 14px; line-height: 22px;">
+							<p style="padding: 0 0 10px 0; margin: 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">Your Goal: 
+								<convio:choose>
+								  <convio:when title="Goal not blank" test="nempty" selected="selected">
+								    <convio:op><convio:session name="48" param="1180:goal"></convio:session></convio:op>
+								    <convio:then><convio:session name="48" param="1180:goal"></convio:session></convio:then>
+								  </convio:when>
+								  <convio:otherwise title="Goal blank">$0</convio:otherwise>
+								</convio:choose><br />
+								Your progress to-date:
+								<convio:session name="48" param="1180:dollars"></convio:session></span></p>
+								<p style="padding: 0 0 5px 0; margin: 0;"><span style="font-family: 'Brandon Grotesque', Helvetica, Arial, sans-serif; color: #019f5e; font-size: 20px; font-weight: bold; font-style: italic; letter-spacing: 1px;">NICE WORK!</span></p>
+								<p style="padding: 0 0 10px 0; margin: 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">Consider re-seting your goal and going the extra mile for gorillas.</span></p>
+								<p style="padding: 0 0 10px; margin: 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;"><a style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #02b4a4; font-size: 14px; font-style: normal; line-height: 22px; text-decoration: underline;" href="http://e.wcs.org/site/TRC/Events/RunfortheWildTeamraiser?fr_id=1180&amp;pg=center">Your participant center</a> login:</strong><br />
+									<convio:session name="1" param="user_name"></convio:session></span></p>
+								<p style="padding: 0; margin: 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">Don't forget to <a style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #02b4a4; font-size: 14px; font-style: normal; line-height: 22px; text-decoration: underline;" href="http://apps.facebook.com/bf-wcso/add/user/[[S1:cons_id]]/[[S42:0:fr-id]]/autoresponser">add the Facebook app</a> if you haven't yet!</span></p>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td height="15" style="font-size: 0px;">&nbsp;</td>
+	</tr>
+</table>
+
+<!-- End Call Out Box -->
+<p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">Dear <convio:session name="1" param="first_name"></convio:session>,</span></p>
+<p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">Congratulations! Our records show that you have reached your fundraising goal.</span></p>
+<p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;"><span>This is an amazing achievement and we'd like to take a moment to offer our applause!</span></span></p>
+<p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">But this isn't the end of the race. There's so much more you can do to ensure a future for Africa's gorillas &ndash; every dollar you raise will be put to good use to ensure the survival of the last beautiful, intelligent gorillas remaining in the wild.</span></p>
+<p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;"><strong>Now is a good time to <a style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #02b4a4; font-size: 14px; font-style: normal; line-height: 22px; text-decoration: underline;" href="http://e.wcs.org/site/TRC/Events/RunfortheWildTeamraiser?fr_id=1180&amp;pg=center">re-set your goal</a> to push yourself just a little further.</strong> Then, remind some of your friends and family whom you haven't heard from &ndash; and send out a few new invitations, using the email below.</span></p>
+<p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;"> <convio:choose>
+  <convio:when title="Dollars raised greater than 1500" test="eq" selected="selected">
+    <convio:op><convio:session name="48" param="1180:if-dollars-gt:1499.99"></convio:session></convio:op>
+    <convio:op>TRUE</convio:op>
+    <convio:then>
+<!-- Start >$1500 Code -->
+ 
+After all, you've already made amazing progress for gorillas &ndash; and won some great prizes!
+ 
+ <!-- End >$1500 Code -->  
+    </convio:then>
+  </convio:when>
+  <convio:when title="Dollars raised greater than or equal to 600, less than 1500" test="eq">
+    <convio:op><convio:session name="48" param="1180:if-dollars-gt:499.99"></convio:session></convio:op>
+    <convio:op>TRUE</convio:op>
+    <convio:then>
+ <!-- Start >$500 Code --> 
+ 
+After all, you could be well on your way to winning one of our top fundraiser prizes &ndash; you're just [[E130: 1500 [[S48:1180:dollars]] - currency]] away from your next prize, a fleece jacket plus breakfast at the zoo.
+ 
+<!-- End >$500 Code -->   
+    </convio:then>
+  </convio:when>
+  <convio:when title="Dollars raised greater than or equal to 275, less than 500" test="eq">
+    <convio:op><convio:session name="48" param="1180:if-dollars-gt:274.99"></convio:session></convio:op>
+    <convio:op>TRUE</convio:op>
+    <convio:then>
+<!-- Start >$275 Code -->
+   
+After all, you could be well on your way to winning one of our top fundraiser prizes &ndash; and you're just [[E130: 500 [[S48:1180:dollars]] - currency]] away from your next prize, a branded WCS beach towel.
+  
+<!-- End >$275 Code -->  
+    </convio:then>
+  </convio:when>
+  <convio:when title="Dollars raised greater than or equal to 125, less than 275" test="eq">
+    <convio:op><convio:session name="48" param="1180:if-dollars-gt:124.99"></convio:session></convio:op>
+    <convio:op>TRUE</convio:op>
+    <convio:then>
+ <!-- Start >$125 Code --> 
+After all, you could be well on your way to winning one of our top fundraiser prizes &ndash; and you're just [[E130: 275 [[S48:1180:dollars]] - currency]] away from your next prize, a cozy WCS blanket. 
+   <!-- End >$125 Code -->   
+    </convio:then>
+  </convio:when>
+  <convio:when title="Dollars raised greater than or equal to 60, less than 125" test="eq">
+    <convio:op><convio:session name="48" param="1180:if-dollars-gt:59.99"></convio:session></convio:op>
+    <convio:op>TRUE</convio:op>
+    <convio:then>
+ <!-- Start >$60 Code --> 
+  
+After all, you could be well on your way to winning one of our top fundraiser prizes &ndash; and you're just [[E130: 125 [[S48:1180:dollars]] - currency]] away from your next prize, a WCS water bottle.
+   
+   
+     <!-- End >$60 Code -->   
+   </convio:then>
+  </convio:when>
+  <convio:when title="Dollars raised greater than or equal to 30, less than 60" test="eq">
+    <convio:op><convio:session name="48" param="1180:if-dollars-gt:29.99"></convio:session></convio:op>
+    <convio:op>TRUE</convio:op>
+    <convio:then>
+ <!-- Start >$30 Code --> 
+After all, you could be well on your way to winning one of our top fundraiser prizes &ndash; and you're just [[E130: 60 [[S48:1180:dollars]] - currency]] away from your next prize, a cuddly gorilla plush.
+   
+      <!-- End >$30 Code --> 
+  </convio:then>
+  </convio:when>
+  <convio:when title="Dollars raised greater than or equal to 0, less than 30" test="eq">
+    <convio:op><convio:session name="48" param="1180:if-dollars-gt:0"></convio:session></convio:op>
+    <convio:op>TRUE</convio:op>
+    <convio:then>
+ <!-- Start >$0 Code --> 
+After all, you could be well on your way to winning one of our top fundraiser prizes &ndash; and you're just [[E130: 30 [[S48:1180:dollars]] - currency]] away from a fashionable WCS Run for the Wild t-shirt.
+     <!-- End >$0 Code --> 
+  
+  </convio:then>
+  </convio:when>
+  <convio:otherwise title="Dollars raised equal to zero or no content">
+  <!-- Start $0 Code --> 
+After all, you could be well on your way to winning one of our top fundraiser prizes &ndash; and you're just [[E130: 30 [[S48:1180:dollars]] - currency]] away from your next prize, a fashionable WCS Run for the Wild t-shirt.
+ 
+   <!-- End $0 Code --> 
+ </convio:otherwise>
+</convio:choose>
+</span></p>
+<p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">Thanks again for your support and keep up the good work!</span></p>
+<p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">Sincerely,</span></p>
+<p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">
+<img src="http://e.wcs.org/images/content/pagebuilder/12047.gif" alt="Kathi Schaeffer" /></span></p>
+<p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">Kathi Schaeffer<br />
+Director of Public Affairs<br />
+Wildlife Conservation Society</span></p>
+<p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">
+------------<br />
+DELETE THE ABOVE AND SEND THE BELOW TO 20 FRIENDS<br />
+------------</span></p>
+<p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">Hi
+&ndash;</span></p>
+<p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">Many
+of our closest relatives could disappear from the wild if we don't protect
+their rainforest homes. Faced with poaching and habitat destruction, Africa's
+gorillas are teetering on the brink of extinction.</span></p>
+<p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">Luckily,
+there's something we can do!</span></p>
+<p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">The
+Wildlife Conservation Society is using a wide range of tactics to save gorillas
+from human threats. Ecoguards protect populations
+of gorillas from poaching with active monitoring and patrolling, and WCS works
+with governments to establish protections for their habitats.</span></p>
+<p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">In
+fact, WCS has more scientists working with gorillas in the field than any other
+conservation organization.</span></p>
+<p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">Because
+I care about gorillas, I'm <strong>running in
+the WCS Run for the Wild at the Bronx Zoo on April 25.</strong></span></p>
+<p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;"><span style="font-size: 10pt;">Will you lend your support? <a style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #02b4a4; font-size: 14px; font-style: normal; line-height: 22px; text-decoration: underline;" href="http://e.wcs.org/site/Donation2?df_id=7902&amp;FR_ID=1150&amp;PROXY_ID=[[S1:CONS_ID]]&amp;7902.donation=form1&amp;PROXY_TYPE=20&s_src=2015_DON_RFTW">Your donation today will help fund proven, effective programs to protect gorillas &ndash; and help me meet my&nbsp;
+<convio:choose>
+  <convio:when title="Goal not blank" test="nempty" selected="selected">
+    <convio:op><convio:session name="48" param="1180:goal"></convio:session></convio:op>
+    <convio:then><convio:session name="48" param="1180:goal"></convio:session></convio:then>
+  </convio:when>
+  <convio:otherwise title="Goal blank">$0</convio:otherwise>
+</convio:choose> fundraising goal!</a></span></span></p>
+<p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">Even a small gift will make a big difference for families like this one:</span></p>
+
+<!-- Start Inline Image -->
+						
+<center>
+	<p style="padding: 0 0 10px 0; font-size: 0px;"><a href="http://e.wcs.org/site/Donation2?df_id=7902&amp;FR_ID=1150&amp;PROXY_ID=[[S1:CONS_ID]]&amp;7902.donation=form1&amp;PROXY_TYPE=20&s_src=2015_DON_RFTW"><img src="http://e.wcs.org/images/content/pagebuilder/Julie_Larsen_Maher_8574_Western_Lowland_Gorilla_and_Baby.jpg" border="0" alt="Julie Larsen Maher_8574_Western Lowland Gorilla and Baby_CON" width="476" height="317" class="responsive-image" /></a></p>
+</center>
+
+<!-- End Inline Image -->
+
+<p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">Thanks in advance for pitching in to help save gorillas! I can't wait to tell you about my run at the Bronx Zoo.</span></p>
+<p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">&ndash; <convio:session name="1" param="first_name"></convio:session></span></p>
+<p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">P.S If you're free on April 25, I'd love for you to join me for the run! <a style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #02b4a4; font-size: 14px; font-style: normal; line-height: 22px; text-decoration: underline;" href="http://e.wcs.org/site/TR/Events/RunfortheWildTeamraiser?sid=1401&amp;type=fr_informational&amp;pg=informational&amp;fr_id=1180">With your registration, you get free breakfast and admission to the zoo, an awesome run among the animals, and a chance to help protect gorillas and other wildlife &ndash; plus lots of cool prizes along the way. </a></span></p>
+<p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">P.P.S Not free but still want to participate? <a style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #02b4a4; font-size: 14px; font-style: normal; line-height: 22px; text-decoration: underline;" href="http://e.wcs.org/site/TR/Events/RunfortheWildTeamraiser?sid=1401&amp;type=fr_informational&amp;pg=informational&amp;fr_id=1180&s_src=2015_RFTW">You can register as a virtual runner, too!</a></span></p>
