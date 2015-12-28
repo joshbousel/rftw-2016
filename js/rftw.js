@@ -138,3 +138,36 @@ $(function() {
 		}
 	});
 });
+
+/////////////////////////////////
+// Typeahead                   //
+/////////////////////////////////
+
+Y.use('jquery-noconflict', function() {
+		
+	var species = new Bloodhound({
+		datumTokenizer: Bloodhound.tokenizers.whitespace,
+		queryTokenizer: Bloodhound.tokenizers.whitespace,
+		prefetch: '../rftw-2016/js/species.json'
+	});
+
+
+	function speciesDefaults(q, sync) {
+		if (q === '') {
+			sync(species.get('Elephants','Gorillas','Lions','Penguins','Sharks','Tigers','Vultures'));
+		}
+		
+		else {
+			species.search(q, sync);
+		}
+	}
+
+	jQuery('input[name="3255_11861_1_10644"]').typeahead({
+		minLength: 0,
+		highlight: true
+	}, {
+		name: 'species',
+		limit: 7,
+		source: speciesDefaults
+	});
+});

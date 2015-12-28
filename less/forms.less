@@ -97,3 +97,49 @@ div.responsive select {
 .rftw-form--volunteer {
 	margin: 35px auto 0;
 }
+
+/*
+* Twitter Typeahead
+*/
+
+.twitter-typeahead {
+	display: block !important;
+}
+
+.tt-input,
+input[name="3255_11861_8_9826"],
+input[name="3255_11861_9_9827"] {
+	margin: 5px 0 20px !important;
+}
+
+.tt-menu {
+    background: #fff;
+    border: 1px solid #afb4c3;
+    border-radius: 2px;
+    box-shadow: 0 0 3px 1px rgba(0,0,0,0.25);
+    margin: 4px 0;
+    
+    @media all and (max-width:@break-tablet) {
+		width: 100%;
+	}
+}
+
+.tt-selectable {
+	color: #838B9C;
+	min-width: 162px;
+    padding: 5px 15px;
+    transition: @default-transition;
+
+	&:hover {
+		color: #fff;
+		background: #475267;
+		
+		.tt-highlight {
+			color: #fff !important;
+		}
+	}
+	
+	.tt-highlight {
+		color: @blue-dark;
+	}
+}
