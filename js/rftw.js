@@ -148,7 +148,10 @@ Y.use('jquery-noconflict', function() {
 	var species = new Bloodhound({
 		datumTokenizer: Bloodhound.tokenizers.whitespace,
 		queryTokenizer: Bloodhound.tokenizers.whitespace,
-		prefetch: '../rftw-2016/js/species.json'
+		prefetch: {
+			ttl: 1,
+			url: '../rftw-2016/js/species.json'
+		}
 	});
 
 

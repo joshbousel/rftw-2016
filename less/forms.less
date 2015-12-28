@@ -126,12 +126,14 @@ input[name="3255_11861_9_9827"] {
 
 .tt-selectable {
 	color: #838B9C;
+	cursor: pointer;
+	cursor: hand;
 	min-width: 162px;
     padding: 5px 15px;
     transition: @default-transition;
 
 	&:hover {
-		color: #fff;
+		color: #fff !important;
 		background: #475267;
 		
 		.tt-highlight {
@@ -141,5 +143,6 @@ input[name="3255_11861_9_9827"] {
 	
 	.tt-highlight {
 		color: @blue-dark;
+		transition: @default-transition;
 	}
 }
