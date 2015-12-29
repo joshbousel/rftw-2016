@@ -6,48 +6,107 @@
 
 	.rftw-partners__group {
 		display: inline-block;
-		margin: 15px 50px;
+		margin: 15px 25px;
 		text-align: center;
 		vertical-align: top;
 		
+		&--additional {
+			display: none;
+		}
+		
 		&--featured {
-			.rftw-partners__group__logo {
+			.rftw-partners__group__partner {
+				height: 50px;
 				width: 140px;
 				
 				@media all and (max-width:@break-mobile) {
+					height: 40px;
 					width: 120px;
+				}
+			}
+			
+			.rftw-partners__group__logo {
+				@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+					width: 140px;
+				}
+				
+				@media all and (max-width:@break-mobile) {
+					@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+						width: 120px;
+					}
 				}
 			}
 		}
 		
 		&--presenting {
-			.rftw-partners__group__logo {
+			.rftw-partners__group__partner {
+				height: 115px;
 				width: 90px;
 				
 				@media all and (max-width:@break-mobile) {
+					height: 100px;
 					width: 80px;
+				}
+			}
+			
+			.rftw-partners__group__logo {
+				@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+					width: 90px;
+				}
+				
+				@media all and (max-width:@break-mobile) {
+					@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+						width: 80px;
+					}
 				}
 			}
 		}
 		
 		&--supporting {
-			.rftw-partners__group__logo {
+			.rftw-partners__group__partner {
+				height: 40px;
 				width: 90px;
 				
 				@media all and (max-width:@break-mobile) {
+					height: 30px;
 					width: 75px;
+				}
+			}
+			
+			.rftw-partners__group__logo {
+				@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+					width: 90px;
+					
+					&--abc {
+						width: 52px;
+					}
+				}
+				
+				@media all and (max-width:@break-mobile) {
+					@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+						width: 75px;
+						
+						&--abc {
+							width: 40px;
+						}
+					}
 				}
 			}
 		}
 		
 		&__logo {
 			height: auto;
+			max-height: 100%;
+			max-width: 100%;
 			vertical-align: middle;
 		}
 		
 		&__partner {
+			display: block;
 			float: left;
 			margin: 0 15px 20px;
+			text-align: center;
+			vertical-align: middle;
 			
 			&:nth-of-type(3) {
 					clear: both;
@@ -75,44 +134,121 @@
 		margin: 65px 0;
 		text-align: center;
 		
-		&--featured {
+		&--additional {
+			.rftw-partners__group__partner {
+				height: 40px;
+				width: 100px;
+				
+				@media all and (max-width:@break-mobile) {
+					height: 30px;
+					width: 80px;
+				}
+			}
+			
 			.rftw-partners__group__logo {
+				@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+					width: 100px;
+				}
+				
+				@media all and (max-width:@break-mobile) {
+					@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+						width: 80px;
+					}
+				}
+			}
+		}
+		
+		&--featured {
+			.rftw-partners__group__partner {
+				height: 65px;
 				width: 200px;
 				
 				@media all and (max-width:@break-mobile) {
+					height: 50px;
 					width: 150px;
+				}
+			}
+			
+			.rftw-partners__group__logo {
+				@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+					width: 200px;
+				}
+				
+				@media all and (max-width:@break-mobile) {
+					@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+						width: 150px;
+					}
 				}
 			}
 		}
 		
 		&--presenting {
-			.rftw-partners__group__logo {
+			.rftw-partners__group__partner {
+				height: 250px;
 				width: 200px;
 				
 				@media all and (max-width:@break-mobile) {
+					height: 150px;
 					width: 120px;
+				}
+			}
+			
+			.rftw-partners__group__logo {
+				@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+					width: 200px;
+				}
+				
+				@media all and (max-width:@break-mobile) {
+					@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+						width: 120px;
+					}
 				}
 			}
 		}
 		
 		&--supporting {
-			.rftw-partners__group__logo {
+			.rftw-partners__group__partner {
+				height: 50px;
 				width: 150px;
 				
 				@media all and (max-width:@break-mobile) {
+					height: 40px;
 					width: 120px;
+				}
+			}
+			
+			.rftw-partners__group__logo {
+				@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+					width: 150px;
+					
+					&--abc {
+						width: 65px;
+					}
+				}
+				
+				@media all and (max-width:@break-mobile) {
+					@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+						width: 120px;
+						
+						&--abc {
+							width: 54px;
+						}
+					}
 				}
 			}
 		}
 		
 		&__logo {
 			height: auto;
+			max-height: 100%;
+			max-width: 100%;
 			vertical-align: middle;
 		}
 		
 		&__partner {
 			display: inline-block;
 			margin: 20px;
+			text-align: center;
 		}
 	}
 	
