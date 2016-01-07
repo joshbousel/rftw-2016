@@ -157,7 +157,7 @@ Y.use('jquery-noconflict', function() {
 
 	function speciesDefaults(q, sync) {
 		if (q === '') {
-			sync(species.get('Elephants','Gorillas','Lions','Penguins','Sharks','Tigers','Vultures'));
+			sync(species.get('Elephants','Flamingos','Gorillas','Lions','Sharks','Turtles'));
 		}
 		
 		else {
@@ -170,7 +170,7 @@ Y.use('jquery-noconflict', function() {
 		highlight: true
 	}, {
 		name: 'species',
-		limit: 7,
+		limit: 6,
 		source: speciesDefaults
 	});
 });
