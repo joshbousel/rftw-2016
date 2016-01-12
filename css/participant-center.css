@@ -873,10 +873,10 @@ div.dashboard-bd div#sidebar ul.subnav li.selected a:hover {
     border-top: 1px solid #eee;
     width: 100%;
   }
-  .yui-skin-ux #hd-nav li:first-of-type {
+  .yui-skin-ux #hd-nav li#dashboard-nav-link {
     border-radius: 3px 3px 0 0 !important;
   }
-  .yui-skin-ux #hd-nav li#personalpage-nav-link {
+  .yui-skin-ux #hd-nav li#teampage-nav-link {
     border-bottom: 1px solid #eee;
     border-radius: 0 0 3px 3px !important;
   }
@@ -884,11 +884,11 @@ div.dashboard-bd div#sidebar ul.subnav li.selected a:hover {
 .yui-skin-ux #hd-nav li:hover {
   background: #eee;
 }
-.yui-skin-ux #hd-nav li:first-of-type {
+.yui-skin-ux #hd-nav li#dashboard-nav-link {
   border-left: 1px solid #eee;
   border-radius: 3px 0 0 3px !important;
 }
-.yui-skin-ux #hd-nav li#personalpage-nav-link {
+.yui-skin-ux #hd-nav li#teampage-nav-link {
   border-radius: 0 3px 3px 0;
 }
 .yui-skin-ux #hd-nav li a,
