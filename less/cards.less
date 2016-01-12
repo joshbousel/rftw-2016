@@ -1,11 +1,12 @@
 .rftw-card {
 	display: inline-block;
-	margin: 24px 24px 24px 0;
+	margin: 24px 19px 24px 0;
 	position: relative;
 	width: calc(~'25% - 18px');
+	vertical-align: top;
 	
-	&:nth-of-type(4n+1) {
-		margin: 24px 0 24px 0;
+	&:nth-of-type(4n+4) {
+		margin: 24px 0;
 	}
 	
 	&__action {
@@ -34,34 +35,42 @@
 		}
 	}
 	
+	&__text {
+		height: 100px;
+		
+		@media all and (max-width:@break-desktop) {
+			height: 135px;
+		}
+	}
+	
 	&__title {
 		background: url('@{image-path}bg-stone-green.png');
-		color: #fff;
+		color: #fff !important;
 		display: block;
 		font-family: @font-brandon;
-		font-size: 1rem;
+		font-size: 1rem !important;
 		font-style: italic;
 		font-weight: bold;
 		letter-spacing: 3px;
-		line-height: 1rem;
+		line-height: 1rem !important;
 		padding: 13px 0;
 		position: absolute;
-		text-align: center;
+		text-align: center !important;
 		text-transform: uppercase;
-		top: 75%;
+		top: 61%;
 		width: 100%;
 		-webkit-font-smoothing: antialiased;
 		
 		@media all and (max-width:@break-desktop) {
-			font-size: .875rem;
-			line-height: .875rem;
-			letter-spacing: 2px;
+			font-size: .875rem !important;
+			line-height: .875rem !important;
+			letter-spacing: 2px !important;
 			padding: 10px 0;
 			top: 68%;
 		}
 		
 		@media all and (max-width:@break-desktop) {
-			top: 70%;
+			top: 56%;
 		}
 		
 		@media all and (max-width:@break-mobile) {
@@ -97,7 +106,7 @@
 	@media all and (max-width:@break-tablet) {
 		width: calc(~'50% - 24px');
 		
-		&:nth-of-type(2n+1) {
+		&:nth-of-type(2n+2) {
 			margin: 24px 0 24px 0;
 		}
 	}

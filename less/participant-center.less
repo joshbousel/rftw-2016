@@ -77,7 +77,8 @@ div.ux-main div.dashboard-bd {
 	}
 }
 
-.yui-skin-ux .hidden-form:not(#addressbookimport_csv_form_container) {
+.yui-skin-ux .hidden-form:not(#addressbookimport_csv_form_container),
+#subnav_oci_link {
 	display: none !important;
 }
 
@@ -179,6 +180,22 @@ div#email-contacts-content div.search {
 	width: 100%;
 }
 
+#view-teammates-container,
+#view-teammates-table-container,
+#view-teammates-table {
+	width: 100%;
+}
+
+#view-teammates-table tr:nth-child(even) {
+	background: #eee;
+}
+
+div#team-info-block,
+#edit-team-info-block {
+	position: relative;
+    top: 20px;
+}
+
 /*********************************/
 /* Color Changes                 */
 /*********************************/
@@ -261,7 +278,8 @@ th.yui-dt-col-donations {
 }
 
 .yui-skin-ux button:not([class^="janrain"]):not(.email-wizard-recipients-actions-button), 
-.yui-skin-ux .yui-push-button.default {
+.yui-skin-ux .yui-push-button.default,
+.yui-skin-ux #sidebar .module a#msg_cat_team_page_team_edit_label {
 	.basic-button();
 	
 	&:hover {
@@ -284,7 +302,9 @@ th.yui-dt-col-donations {
 #cancel_shortcut,
 #msg_cat_contact_edit_cancel_link,
 #addressbookimport-selectcontacts-cancel,
-#addressbookimport-thirdpartystatus-cancel {
+#addressbookimport-thirdpartystatus-cance,
+#msg_cat_captains_message_cancel_link,
+#msg_cat_team_update_cancel_label {
 	.secondary-button();
 	
 	@media all and (max-width:@break-tablet) {
@@ -292,9 +312,23 @@ th.yui-dt-col-donations {
 	}
 }
 
+#msg_cat_team_update_cancel_label,
+#msg_cat_team_update_submit_label {
+	margin: 0 0 10px;
+	width: 100%;
+}
+
 .yui-skin-ux .actions button {
     margin: 0 10px 15px 0 !important;
 }
+
+#msg_cat_captains_message_cancel_link,
+#msg_cat_captains_message_save_button,
+#msg_cat_team_update_cancel_label,
+#msg_cat_team_update_submit_label {
+	margin-left: 0;
+}
+
 
 div#sidebar div#address_book_add div#add-contact-button-container button,
 .yui-skin-ux .addressbookimport-flow-actions button,
@@ -382,7 +416,8 @@ div#email-wizard-contacts button {
 
 #personal_page_title, 
 #company_page_title,
-.yui-skin-ux #sidebar .sidebar-form .label-field-wrap input {
+.yui-skin-ux #sidebar .sidebar-form .label-field-wrap input,
+#captainsMessageEditText {
     width: calc(~'100% - 27px');
 }
 
@@ -390,7 +425,8 @@ div#email-wizard-contacts button {
 .ux-main input, 
 .ux-main textarea,
 .yui-panel-container input,
-#contactedit-dialog-form input {
+#contactedit-dialog-form input,
+.yui-skin-ux #teampage-sidebar #new-team-name {
 	.default-field();
 }
 
@@ -475,7 +511,8 @@ div#personalpage-content-actions {
 	color: #fff !important;
 }
 
-#msg_cat_personal_page_view_label {
+#msg_cat_personal_page_view_label,
+#msg_cat_team_page_shortcut_view {
     font-style: normal;
     letter-spacing: 0;
     text-transform: capitalize;
@@ -513,8 +550,40 @@ div#email-contacts-content div.search label#msg_cat_search_contacts_text,
 #msg_cat_addressbookimport_importresults_title,
 #msg_cat_addressbookimport_importresults_info,
 #msg_cat_addressbookimport_importresults_section_added_info,
-#msg_cat_gift_confirm_delete_body {
+#msg_cat_gift_confirm_delete_body,
+#msg_cat_captains_message_header,
+#view-teammates-table span,
+#msg_cat_team_page_permalink,
+#teampage_shortcut_link,
+#team-name-field,
+#msg_cat_team_page_team_name_title,
+#msg_cat_team_page_company_name_title,
+#msg_cat_captains_message_empty {
 	.default-copy();
+}
+
+#team-name-field {
+	font-family: @font-lato;
+	font-style: normal;
+	font-weight: normal;
+	letter-spacing: 0;
+	margin: 0 0 15px;
+	text-transform: none;
+}
+
+#msg_cat_team_page_team_name_title,
+#msg_cat_team_page_company_name_title,
+#msg_cat_captains_message_header {
+	font-weight: bold;
+}
+
+.yui-skin-ux .captain-marker {
+	background: @blue-dark;
+	border-radius: 2px;
+	color: #fff !important;
+	font-family: @font-brandon;
+	font-size: .7rem !important;
+	line-height: .7rem !important;
 }
 
 /*********************************/
