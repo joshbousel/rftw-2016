@@ -8,7 +8,8 @@
 	width: 100%;
 }
 
-#findFriendForm {
+#findFriendForm,
+#teamFindFriendForm {
 	position: relative;
 }
 
@@ -18,9 +19,14 @@ div#find_participant button.search-button {
     left: 0px;
     top: 95px;
 	
-	#participant_find_search_text {
+	#participant_find_search_text,
+	#team_find_search_text {
 		display: inline-block;
 	}
+}
+
+#teamFindFriendForm button.search-button {
+	top: 47px !important;
 }
 
 #last_name_search_field {
@@ -33,19 +39,57 @@ div#find_participant button.search-button {
 	border: none;
 }
 
-#search_part_team ul li.ui-tabs-selected a {
-	.subheader;
-	color: @gold-base !important;
-	cursor: default;
-	
-	&:hover {
-		color: @gold-base !important;
+#search_part_team ul li {
+	@media all and (max-width:@break-tablet) {
+		float: none;
+		text-align: left;
+		
+		&:first-of-type {
+			margin: 0 0 20px;
+		}
 	}
 }
 
+#search_part_team ul li a {
+	color: @blue-dark !important;
+	font-family: @font-brandon;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1rem;
+    letter-spacing: 2px;
+    opacity: .75;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+	
+	&:after {
+		border-bottom: 1px solid @blue-dark;
+		content: '';
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		transition: @default-transition;
+		top: 8px;
+		width: 0%;
+	}
+	
+	&:hover {
+		opacity: 1;
+	}
+}
+
+#search_part_team ul li.ui-tabs-selected a {
+	opacity: 1;
+	
+	&:after {
+		width: 100%;
+	}
+}
+
+
 #search_mode_link_advanced,
 .section-sub-header.empty,
-#find_hdr_container {
+#find_hdr_container,
+#search_mode_link_advanced_team {
 	display: none;
 }
 
@@ -83,6 +127,11 @@ div#find_participant button.search-button {
 
 #find_participant div.list-component-row:last-of-type {
 	border-bottom: 1px solid #eee;
+}
+
+#search_part_team ul {
+	border-bottom: 1px solid #eee;
+    padding: 0 0 5px;
 }
 
 /*********************************/

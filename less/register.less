@@ -68,8 +68,13 @@ div#user_type_section_body div.required-indicator-legend {
 	display: none !important;
 }
 
-#entry .main-content, div#cons_info_component_container div#personal_info_section_one, div#cons_info_component_container div#personal_info_section_two, div#cons_info_component_container div#contact_info_section_one, div#cons_info_component_container div#contact_info_section_two, div#registration_options_page div#user_name_pword_container, div#registration_options_page div#privacy_opts_container, div#registration_options_page div#tribute_component_section_one, div#registration_options_page div#tribute_component_section_two, div#emergency_contact_container, div#gift_notice_optin, div#email_optin {
+#entry .main-content, div#cons_info_component_container div#personal_info_section_one, div#cons_info_component_container div#personal_info_section_two, div#cons_info_component_container div#contact_info_section_one, div#cons_info_component_container div#contact_info_section_two, div#registration_options_page div#user_name_pword_container, div#registration_options_page div#privacy_opts_container, div#registration_options_page div#tribute_component_section_one, div#registration_options_page div#tribute_component_section_two, div#emergency_contact_container, div#gift_notice_optin, div#email_optin, #team_find_new_team_attributes, #team_find_new_team_company, #team_find_existing_team_search_container {
 	width: 100%;
+}
+
+
+#team_find_existing_company_selection_container {
+	display: block;
 }
 
 div.reg-summary-thanks-common-container div.action-button-container {
@@ -84,6 +89,33 @@ div.reg-summary-thanks-common-container div.action-button-container .secondary-w
 	}
 }
 
+#team_find_registration_type_container {
+	text-align: left;
+}
+
+#team_find_page div#team_find_search_results_container {
+	background: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#team_find_page div.list-component-row {
+    background: transparent;
+    border-radius: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid #eee;
+    padding: 20px 10px;
+    position: relative;
+}
+
+div#team_find_search_results_container div.list-component-cell.list-component-cell-column-join-link {
+	right: 0;
+	position: absolute;
+}
+
 /*********************************/
 /* Typography Changes            */
 /*********************************/
@@ -96,6 +128,10 @@ div.registration-page-container div.sub-section-header,
 div.registration-page-container .section-header-text, 
 div#user_type_section_header .section-header-text {
 	.subheader
+}
+
+#team_find_page label {
+	.default-copy
 }
 
 /*********************************/
@@ -161,8 +197,18 @@ div#user_type_new_participant_registration_container #next_step {
 }
 
 div#user_type_new_participant_registration_container #next_step,
-div#user_type_login_login_container #user_type_login_login_button {
+div#user_type_login_login_container #user_type_login_login_button,
+div#team_find_page #fr_find_search,
+div#team_find_search_results_container div.list-component-cell-column-join-link a {
 	.basic-button;
+}
+
+div#team_find_search_results_container div.list-component-cell-column-join-link a {
+	min-width: 0;
+	
+	@media all and (max-width:@break-tablet) {
+		width: auto;
+	}
 }
 
 div.responsive button.next-step[disabled="disabled"] {
@@ -344,6 +390,13 @@ div#responsive_payment_typecc_type_row legend {
 	float: none;
 	margin: 0 0 5px;
 }
+
+#fr_co_list,
+#fr_team_name {
+	display: block;
+	margin: 5px 0;
+}
+
 
 /*********************************/
 /* Register Landing Page Styles  */

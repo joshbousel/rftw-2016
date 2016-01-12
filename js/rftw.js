@@ -10,8 +10,6 @@ $(function() {
 	    return re.test(email);
 	}
 	
-	
-	
 	/////////////////////////////////
 	// Mobile Nav Button Toggle    //
 	/////////////////////////////////
@@ -51,6 +49,17 @@ $(function() {
 		}
 	}
 	
+	/////////////////////////////////
+	// Team Header                 //
+	/////////////////////////////////
+	
+	if (($.urlParam('pg')) || ($.urlParam('page_type'))) {
+	    if (($.urlParam('pg') == "team") || ($.urlParam('page_type') == "fr_team_page")) {  
+	    	$teamName = $("#team_page_team_name");
+	    	$teamName.remove();
+	    	$("#team_page").prepend($teamName);
+		}
+	}
 	
 	/////////////////////////////////
 	// Volunteer Form              //
