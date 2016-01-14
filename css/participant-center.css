@@ -207,6 +207,9 @@ div#team-info-block,
   position: relative;
   top: 20px;
 }
+#bd-team-donation-history {
+  margin: 50px 0 0;
+}
 /*********************************/
 /* Color Changes                 */
 /*********************************/
@@ -378,7 +381,8 @@ th.yui-dt-col-donations {
 #addressbookimport-selectcontacts-cancel,
 #addressbookimport-thirdpartystatus-cance,
 #msg_cat_captains_message_cancel_link,
-#msg_cat_team_update_cancel_label {
+#msg_cat_team_update_cancel_label,
+#teampage_cancel_shortcut {
   border: 0;
   border-radius: 2px;
   background-color: transparent;
@@ -413,7 +417,8 @@ th.yui-dt-col-donations {
 #addressbookimport-selectcontacts-cancel:hover,
 #addressbookimport-thirdpartystatus-cance:hover,
 #msg_cat_captains_message_cancel_link:hover,
-#msg_cat_team_update_cancel_label:hover {
+#msg_cat_team_update_cancel_label:hover,
+#teampage_cancel_shortcut:hover {
   color: #fff !important;
   opacity: .75;
 }
@@ -427,7 +432,8 @@ th.yui-dt-col-donations {
   #addressbookimport-selectcontacts-cancel,
   #addressbookimport-thirdpartystatus-cance,
   #msg_cat_captains_message_cancel_link,
-  #msg_cat_team_update_cancel_label {
+  #msg_cat_team_update_cancel_label,
+  #teampage_cancel_shortcut {
     width: 100%;
   }
 }
@@ -440,7 +446,8 @@ th.yui-dt-col-donations {
 #addressbookimport-selectcontacts-cancel span,
 #addressbookimport-thirdpartystatus-cance span,
 #msg_cat_captains_message_cancel_link span,
-#msg_cat_team_update_cancel_label span {
+#msg_cat_team_update_cancel_label span,
+#teampage_cancel_shortcut span {
   font-family: 'Brandon Grotesque', helvetica, arial, sans-serif !important;
 }
 #quick-gift-cancel:hover,
@@ -452,7 +459,8 @@ th.yui-dt-col-donations {
 #addressbookimport-selectcontacts-cancel:hover,
 #addressbookimport-thirdpartystatus-cance:hover,
 #msg_cat_captains_message_cancel_link:hover,
-#msg_cat_team_update_cancel_label:hover {
+#msg_cat_team_update_cancel_label:hover,
+#teampage_cancel_shortcut:hover {
   color: #8C8C8C !important;
 }
 @media all and (max-width: 800px) {
@@ -465,7 +473,8 @@ th.yui-dt-col-donations {
   #addressbookimport-selectcontacts-cancel,
   #addressbookimport-thirdpartystatus-cance,
   #msg_cat_captains_message_cancel_link,
-  #msg_cat_team_update_cancel_label {
+  #msg_cat_team_update_cancel_label,
+  #teampage_cancel_shortcut {
     width: calc(100% - 33px);
   }
 }
@@ -623,10 +632,15 @@ div#email-wizard-contacts button {
   display: inline-block;
   text-align: left;
 }
+#company-select-list {
+  height: 39px;
+  max-width: 100%;
+}
 /*********************************/
 /* PC Typography Changes         */
 /*********************************/
-.yui-skin-ux h1 {
+.yui-skin-ux h1,
+#msg_cat_team_report_donation_history_label {
   color: #ac9167;
   font-family: 'Brandon Grotesque', helvetica, arial, sans-serif;
   font-size: 1.125rem;
@@ -759,7 +773,10 @@ div#email-contacts-content div.search label#msg_cat_search_contacts_text,
 #team-name-field,
 #msg_cat_team_page_team_name_title,
 #msg_cat_team_page_company_name_title,
-#msg_cat_captains_message_empty {
+#msg_cat_captains_message_empty,
+#team-roster td,
+#lower_team_donation_history_pagination_block span,
+#msg_cat_sent_sent_messages_search_label {
   color: #475267;
   font-family: 'Lato', helvetica, arial, sans-serif;
   font-size: 1rem;
@@ -784,6 +801,13 @@ div#email-contacts-content div.search label#msg_cat_search_contacts_text,
   font-family: 'Brandon Grotesque', helvetica, arial, sans-serif;
   font-size: .7rem !important;
   line-height: .7rem !important;
+}
+#msg_cat_team_report_change_goal_link,
+#msg_cat_change_goal_link {
+  text-transform: none;
+}
+.yui-skin-ux #email-contacts-content td .email-address {
+  color: #0bb6a7;
 }
 /*********************************/
 /* Progress Bar Changes          */
@@ -876,7 +900,8 @@ div.dashboard-bd div#sidebar ul.subnav li.selected a:hover {
   .yui-skin-ux #hd-nav li#dashboard-nav-link {
     border-radius: 3px 3px 0 0 !important;
   }
-  .yui-skin-ux #hd-nav li#teampage-nav-link {
+  .yui-skin-ux #hd-nav li:last-of-type,
+  .yui-skin-ux #hd-nav li.selected:last-of-type {
     border-bottom: 1px solid #eee;
     border-radius: 0 0 3px 3px !important;
   }
@@ -888,8 +913,8 @@ div.dashboard-bd div#sidebar ul.subnav li.selected a:hover {
   border-left: 1px solid #eee;
   border-radius: 3px 0 0 3px !important;
 }
-.yui-skin-ux #hd-nav li#teampage-nav-link {
-  border-radius: 0 3px 3px 0;
+.yui-skin-ux #hd-nav li:last-of-type {
+  border-radius: 0 3px 3px 0 !important;
 }
 .yui-skin-ux #hd-nav li a,
 .yui-skin-ux #hd-nav li a:link,

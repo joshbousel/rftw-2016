@@ -196,6 +196,10 @@ div#team-info-block,
     top: 20px;
 }
 
+#bd-team-donation-history {
+	margin: 50px 0 0;
+}
+
 /*********************************/
 /* Color Changes                 */
 /*********************************/
@@ -304,7 +308,8 @@ th.yui-dt-col-donations {
 #addressbookimport-selectcontacts-cancel,
 #addressbookimport-thirdpartystatus-cance,
 #msg_cat_captains_message_cancel_link,
-#msg_cat_team_update_cancel_label {
+#msg_cat_team_update_cancel_label,
+#teampage_cancel_shortcut {
 	.secondary-button();
 	
 	@media all and (max-width:@break-tablet) {
@@ -437,11 +442,17 @@ div#email-wizard-contacts button {
     text-align: left;
 }
 
+#company-select-list {
+	height: 39px;
+	max-width: 100%;
+}
+
 /*********************************/
 /* PC Typography Changes         */
 /*********************************/
 
-.yui-skin-ux h1 {
+.yui-skin-ux h1,
+#msg_cat_team_report_donation_history_label {
 	.subheader();
 }
 
@@ -558,7 +569,10 @@ div#email-contacts-content div.search label#msg_cat_search_contacts_text,
 #team-name-field,
 #msg_cat_team_page_team_name_title,
 #msg_cat_team_page_company_name_title,
-#msg_cat_captains_message_empty {
+#msg_cat_captains_message_empty,
+#team-roster td,
+#lower_team_donation_history_pagination_block span,
+#msg_cat_sent_sent_messages_search_label {
 	.default-copy();
 }
 
@@ -584,6 +598,16 @@ div#email-contacts-content div.search label#msg_cat_search_contacts_text,
 	font-family: @font-brandon;
 	font-size: .7rem !important;
 	line-height: .7rem !important;
+}
+
+
+#msg_cat_team_report_change_goal_link,
+#msg_cat_change_goal_link {
+	text-transform: none;	
+}
+
+.yui-skin-ux #email-contacts-content td .email-address {
+	color: @blue-base;
 }
 
 /*********************************/
@@ -691,7 +715,7 @@ div.dashboard-bd div#sidebar ul.subnav li {
 			border-radius: 3px 3px 0 0 !important;
 		}
 		
-		&#teampage-nav-link {
+		&:last-of-type, &.selected:last-of-type {
 			border-bottom: 1px solid #eee;
 			border-radius: 0 0 3px 3px !important;
 		}
@@ -706,8 +730,8 @@ div.dashboard-bd div#sidebar ul.subnav li {
 		border-radius: 3px 0 0 3px !important;
 	}
 	
-	&#teampage-nav-link {
-		border-radius: 0 3px 3px 0;
+	&:last-of-type {
+		border-radius: 0 3px 3px 0 !important;
 	}
 	
 	a, a:link, a:visited {
