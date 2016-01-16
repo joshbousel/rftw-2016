@@ -166,7 +166,7 @@ Y.use('jquery-noconflict', function() {
 
 	function speciesDefaults(q, sync) {
 		if (q === '') {
-			sync(species.get('Elephants','Flamingos','Gorillas','Lions','Sharks','Turtles'));
+			sync(species.get('elephants','flamingos','gorillas','lions','sharks','turtles'));
 		}
 		
 		else {
