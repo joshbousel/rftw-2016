@@ -48,7 +48,7 @@ div.cons-prof label,
 #login-div-content .banner-header {
 	.subheader();
 	background: transparent;
-	margin: 0 0 25px;
+	margin: 0;
 	padding: 0;
 }
 
@@ -88,6 +88,32 @@ form#EditCons {
 	
 	p {
 		margin: 0;
+	}
+}
+
+#login-div-content table {
+	@media all and (max-width:@break-tablet) {
+	    width: 100% !important;
+	}
+}
+
+#login-div-content td {
+	@media all and (max-width:@break-tablet) {
+	    display: block;
+		width: 100% !important;
+	}
+}
+
+#login-div-content .input-border td {
+	@media all and (max-width:@break-tablet) {
+		display: table-cell;
+	    width: auto !important;
+	}
+}
+
+#login-div-content div.right-block {
+	@media all and (max-width:@break-tablet) {
+	    float: none;
 	}
 }
 
