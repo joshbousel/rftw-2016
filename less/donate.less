@@ -40,18 +40,19 @@ div#find_participant button.search-button {
 }
 
 #search_part_team ul li {
+	#team_search_container {
+		display: none;
+	}
+	
 	@media all and (max-width:@break-tablet) {
 		float: none;
 		text-align: left;
-		
-		&:first-of-type {
-			margin: 0 0 20px;
-		}
 	}
 }
 
 #search_part_team ul li a {
 	color: @blue-dark !important;
+	cursor: default;
 	font-family: @font-brandon;
     font-size: 1rem;
     font-weight: bold;
