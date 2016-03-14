@@ -29,6 +29,22 @@ $(function() {
 			$menuButtom.addClass("rftw-header__menu-button--is-open");
 		}
 	});
+
+	/////////////////////////////////
+	// Lightbox Toggle             //
+	/////////////////////////////////
+	
+	$('.rftw-lightbox-toggle').on('click',function(e){
+		e.preventDefault();
+		var $body = $('body');
+		var lightboxClass = 'rftw-lightbox-open';
+		
+		if ($body.hasClass(lightboxClass)) {
+			$body.removeClass(lightboxClass);
+		} else {
+			$body.addClass(lightboxClass);
+		}
+	});
 	
 	/////////////////////////////////
 	// Select Virtual Runner       //
