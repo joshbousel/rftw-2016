@@ -18,7 +18,23 @@ body, html {
     border-radius: 2px;
     box-shadow: 0 0 4px 0 rgba(0,0,0,.25);
     padding: 20px;
-    width: 94%;
+    width: calc(~'100% - 45px');
+
+	&__photo {
+	    float: left;
+		height: auto;
+		margin: 0 20px 0 0;
+		width: 245px;
+		
+		@media all and (max-width:@break-tablet) {
+			width: 175px;
+		}
+		
+		@media all and (max-width:@break-mobile) {
+			margin: 0 0 10px;
+			width: 100%;
+		}
+	}
 }
 
 .rftw-container {

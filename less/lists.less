@@ -33,6 +33,49 @@
 	}
 }
 
+.rftw-overlay-list {
+    background: url('@{image-path}bg-stone-teal.png');
+    border-radius: 0 0 2px 2px;
+    left: 25px;
+    position: absolute;
+    top: 0;
+    
+    @media all and (max-width:@break-tablet) {
+		left: 0;
+		position: relative;
+		top: -2px;
+	}
+    
+    &__item {
+	    list-style: none;
+	    padding: 10px 25px 5px;
+	    text-align: left;
+	    
+	    &:last-of-type {
+		    padding: 10px 25px 15px;
+	    }
+    }
+    
+    &__item--header {
+		color: #fff;
+	    font-family: @font-brandon;
+		font-size: 1.5rem;
+		font-style: italic;
+		line-height: 1.5rem;
+		text-transform: uppercase;
+    }
+}
+
+.rftw-overlay-list__item__link,
+.rftw-content a.rftw-overlay-list__item__link {
+    color: #A6FBF5 !important;
+    font-family: @font-brandon;
+	font-size: 1.15rem;
+	font-weight: bold;
+	line-height: 1.15rem;
+	text-transform: uppercase;
+}
+
 .rftw-rules {
 	.rftw-list {
 		margin: 0px auto 25px;
