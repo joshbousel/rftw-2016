@@ -265,13 +265,16 @@ label[for="payment_typecc_exp_date_YEAR"] {
 	width: 0 !important;
 }
 
-#tr_show_gift_to_publicname,
-#tr_recognition_nameanonymousname {
+#tr_show_gift_to_publicname {
 	margin: 0 6px 0 13.25em;
 	
 	@media all and (max-width:@break-tablet) {
 		margin: 0 6px 0 0;
 	}
+}
+
+#tr_recognition_nameanonymousname {
+	margin: 0 6px 0 0;
 }
 
 div.responsive .donation-level-label-input-container {
@@ -448,3 +451,132 @@ div.donation-form-content .additional-entries {
 		}
 	}
 }
+
+/*********************************/
+/* Donation Level Buttons        */
+/*********************************/
+
+.responsive #level_standard_row .form-content .donation-levels {
+	display: block !important;
+	}
+
+.donation-level-container {
+	float: left;
+	
+	label {
+		margin: 0 10px 10px 0 !important;
+		width: auto !important;
+		}
+	}
+	
+.donation-level-label-input-container {
+	display: none !important;
+	}
+	
+.donation-level-label-container,
+.donation-level-amount-container,
+div.responsive .donation-level-container input[type='text'] {
+	background: #fff;
+	border: 2px solid #afb4c3;
+	border-radius: 4px;
+	color: @blue-dark;
+	cursor: pointer;
+	font-family: @font-lato;
+	padding: 10px 16px;
+	transition: all 0.2s ease-out;
+	text-transform: uppercase;	
+	vertical-align: top;
+	}
+
+div.responsive .donation-level-container input[type='text'] {
+	border: 2px solid #afb4c3; 
+    box-shadow: none;
+    display: block !important;
+    line-height: 20px;
+    margin: 0;
+    padding: 8px 16px;
+    text-align: center;
+    width: 85px !important;
+    -webkit-appearance: none;
+      
+	@media (max-width: 800px) {
+		width: 85px !important;
+		}
+	}	
+
+.donation-level-user-entered {
+	margin: 0 !important;
+	}
+
+.donation-level-container input[type='text']::-webkit-input-placeholder {
+	color: @blue-dark;
+	}
+
+.donation-level-container input[type='text']:-moz-placeholder { 
+	color: @blue-dark;
+	}
+
+.donation-level-container input[type='text']::-moz-placeholder { 
+	color: @blue-dark;
+	}
+
+.donation-level-container input[type='text']:-ms-input-placeholder {  
+	color: @blue-dark;
+	}
+
+.donation-level-container--is-active input[type='text']::-webkit-input-placeholder {
+	color: #afb4c3;
+	}
+
+.donation-level-container--is-active input[type='text']:-moz-placeholder { 
+	color: #afb4c3;
+	}
+
+.donation-level-container--is-active input[type='text']::-moz-placeholder { 
+	color: #afb4c3;
+	}
+
+.donation-level-container--is-active input[type='text']:-ms-input-placeholder {  
+	color: #afb4c3;
+	}
+	
+.donation-level-container--is-active input[type='text']:focus::-webkit-input-placeholder {
+	color: #afb4c3;
+	}
+
+.donation-level-container--is-active input[type='text']:focus:-moz-placeholder { 
+	color: #afb4c3;
+	}
+
+.donation-level-container--is-active input[type='text']:focus::-moz-placeholder { 
+	color: #afb4c3;
+	}
+
+.donation-level-container--is-active input[type='text']:focus:-ms-input-placeholder {  
+	color: #afb4c3;
+	}
+	
+div.responsive .donation-level-container input[type='text']:focus {
+	background: #fff;
+	color: @blue-dark;
+	outline: none;
+	}
+	
+.donation-level-container--is-active .donation-level-label-container,
+.donation-level-container--is-active .donation-level-amount-container,
+div.responsive .donation-level-container--is-active input[type='text'] {
+	background: @blue-dark;
+	border: 2px solid @blue-dark;
+	color: #fff;
+	}
+
+.donation-level-container-generic-repeat {
+	margin: 0;
+	}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+		.donation-level-container input[type='text'] {
+			margin: 4px;
+			padding: 6px 16px 12px;
+		}
+	}

@@ -66,6 +66,55 @@ $(function() {
 	}
 	
 	/////////////////////////////////
+	// 2017 Closed Message         //
+	/////////////////////////////////
+	
+    if ($.urlParam('fr_id') == "1190" && $.urlParam('pg') == "tfind") {  
+	    $(".appArea").css({ 'width' : '100%' }).html('<p class="rftw-centered">Registration for the 2017 Run for the Wild is temporarily closed and will open again in January.</p>');    
+	}
+	
+	/////////////////////////////////
+	// Donation Levels             //
+	/////////////////////////////////
+	
+	var activeClass = 'donation-level-container--is-active';
+	
+	$('input[name="level_standardexpanded"]').each(function(){
+		var $checkbox = $(this);
+		if ($checkbox.attr('checked') == 'checked') {
+			$container = $checkbox.closest('.donation-level-container');
+			$container.addClass(activeClass);
+			
+			if ($container.find('input[type="text"]').length) {
+				$amountField = $('.donation-level-container input[type="text"]');
+				
+				if ($amountField.val() == 'Other' || $amountField.val() == '') {
+					$amountField.focus();
+				}
+			}
+		}
+	});	
+			
+	$('.donation-level-label-container, .donation-level-amount-container').on('click',function(e){
+		removeLevelButtonActiveClass();
+		$(this).closest('.donation-level-container').addClass(activeClass);
+	});
+	
+	$('.donation-level-container input[type="text"]').on('focus',function(e){
+		removeLevelButtonActiveClass();
+		$(this).closest('.donation-level-container').addClass(activeClass);
+	});	
+	
+	$('.donation-level-container input[type="text"]').attr('placeholder', 'Other');
+	$('.donation-level-user-entered').parent().find('label').attr('style', 'display: none !important');
+	
+	function removeLevelButtonActiveClass() {
+		$('.donation-level-container').each(function(){
+			$(this).removeClass(activeClass);
+		});
+	}
+	
+	/////////////////////////////////
 	// Team Header                 //
 	/////////////////////////////////
 	
@@ -190,7 +239,7 @@ Y.use('jquery-noconflict', function() {
 		}
 	}
 
-	jQuery('input[name="3255_11861_1_10644"]').typeahead({
+	jQuery('input[name="3255_14170_1_11170"]').typeahead({
 		minLength: 0,
 		highlight: true
 	}, {
