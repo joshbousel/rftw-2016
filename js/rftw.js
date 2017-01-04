@@ -61,7 +61,7 @@ $(function() {
 	
 	if ($.urlParam('ptype')) {
 	    if ($.urlParam('ptype') == "virtual") {  
-	    	$("#fr_part_radio_1416").prop("checked", true);    
+	    	$("#fr_part_radio_1436").prop("checked", true);    
 		}
 	}
 	
