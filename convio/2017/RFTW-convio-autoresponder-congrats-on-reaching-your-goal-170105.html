@@ -20,8 +20,8 @@
 								Your progress to-date:
 								<convio:session name="48" param="1190:dollars"></convio:session></strong></span></p>
 <p style="padding: 0 0 5px 0; margin: 0;"><span style="font-family: 'Brandon Grotesque', Helvetica, Arial, sans-serif; color: #019f5e; font-size: 20px; font-weight: bold; font-style: italic; letter-spacing: 1px;">Nice Work!</span></p>
-<p style="padding: 0 0 10px 0; margin: 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">Consider re-seting your goal and going the extra mile for [[?xx::x[[S1:custom_string28]]x::wildlife::[[S1:custom_string28]]]].</span></p>
-<p style="padding: 0 0 10px; margin: 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;"><a style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #02b4a4; font-size: 14px; font-style: normal; line-height: 22px; text-decoration: underline;" href="http://e.wcs.org/site/TRC/Events/RunfortheWildTeamraiser?fr_id=1190&amp;pg=center">Your participant center</a> login:<br />
+<p style="padding: 0 0 10px 0; margin: 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">Consider re-setting your goal and going the extra mile for [[?xx::x[[S1:custom_string28]]x::wildlife::[[S1:custom_string28]]]].</span></p>
+<p style="padding: 0 0 10px; margin: 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;"><a style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #02b4a4; font-size: 14px; font-style: normal; line-height: 22px; text-decoration: underline;" href="http://e.wcs.org/site/TR?fr_id=1190&pg=informational&type=fr_informational&sid=1460">Your participant center</a> login:<br />
 									<convio:session name="1" param="user_name"></convio:session></span></p>
 <p style="padding: 0 0 5px 0; margin: 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">Don't forget to <strong><span style="text-decoration: underline;"><a style="font-weight: bold; color: #0b6e83;" href="
 https://apps.facebook.com/bf-wcso/">add the Facebook app</a></span></strong> if you haven't yet!</span></p>
@@ -41,7 +41,7 @@ https://apps.facebook.com/bf-wcso/">add the Facebook app</a></span></strong> if 
 <p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">Dear <convio:session name="1" param="first_name"></convio:session>,</span></p>
 <p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">Congratulations! Our records show that you have reached your fundraising goal!</span></p>
 <p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;"><span>But this isn't the end of the road. There's so much more you can do to ensure a future for threatened species all over the world &ndash; every dollar you raise will be put to good use to ensure the survival of our most treasured wildlife.</span></span></p>
-<p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;"><strong>Now is a good time to <a style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #02b4a4; font-size: 14px; font-style: normal; line-height: 22px; text-decoration: underline;" href="http://e.wcs.org/site/TRC/Events/RunfortheWildTeamraiser?fr_id=1190&amp;pg=center">re-set your goal</a>&nbsp;to push yourself a little further.</strong> Then, remind some of your friends and family whom you haven&rsquo;t heard from use the links below to send an email or share on Facebook.</span></p>
+<p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;"><strong>Now is a good time to <a style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #02b4a4; font-size: 14px; font-style: normal; line-height: 22px; text-decoration: underline;" href="http://e.wcs.org/site/TR?fr_id=1190&pg=informational&type=fr_informational&sid=1460">re-set your goal</a>&nbsp;to push yourself a little further.</strong> Then, remind some of your friends and family whom you haven&rsquo;t heard from use the links below to send an email or share on Facebook.</span></p>
 <p><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;">
 <convio:choose xmlns="http://www.convio.com">
  <convio:when title="Dollars raised greater than 1500" test="eq" selected="selected">
@@ -55,13 +55,24 @@ After all, you've already made amazing progress for [[?xx::x[[S1:custom_string28
  <!-- End >$1500 Code -->  
     </convio:then>
  </convio:when>
- <convio:when title="Dollars raised greater than or equal to 600, less than 1500" test="eq">
+ <convio:when title="Dollars raised greater than or equal to 1000, less than 1500" test="eq">
+   <convio:op><convio:session name="48" param="1190:if-dollars-gt:999.99"></convio:session></convio:op>
+   <convio:op>TRUE</convio:op>
+   <convio:then>
+ <!-- Start >$1000 Code --> 
+ 
+After all, you could be well on your way to winning one of our top fundraiser prizes &ndash; you're just [[E130: 1500 [[S48:1190:dollars]] - currency]] away from your next prize, a VIP brunch.
+ 
+<!-- End >$1000 Code -->   
+    </convio:then>
+  </convio:when>
+ <convio:when title="Dollars raised greater than or equal to 600, less than 1000" test="eq">
    <convio:op><convio:session name="48" param="1190:if-dollars-gt:599.99"></convio:session></convio:op>
    <convio:op>TRUE</convio:op>
    <convio:then>
  <!-- Start >$600 Code --> 
  
-After all, you could be well on your way to winning one of our top fundraiser prizes &ndash; you're just [[E130: 1500 [[S48:1190:dollars]] - currency]] away from your next prize, a VIP brunch and a $50 Modell's gift card.
+After all, you could be well on your way to winning one of our top fundraiser prizes &ndash; you're just [[E130: 1500 [[S48:1190:dollars]] - currency]] away from your next prize, two Bronx Zoo Total Experience tickets.
  
 <!-- End >$600 Code -->   
     </convio:then>
@@ -72,7 +83,7 @@ After all, you could be well on your way to winning one of our top fundraiser pr
    <convio:then>
 <!-- Start >$275 Code -->
    
-After all, you could be well on your way to winning one of our top fundraiser prizes &ndash; and you're just [[E130: 600 [[S48:1190:dollars]] - currency]] away from your next prize, a runner's pack.
+After all, you could be well on your way to winning one of our top fundraiser prizes &ndash; and you're just [[E130: 600 [[S48:1190:dollars]] - currency]] away from your next prize, a yoga mat.
   
 <!-- End >$275 Code -->  
     </convio:then>
@@ -83,7 +94,7 @@ After all, you could be well on your way to winning one of our top fundraiser pr
    <convio:then>
  <!-- Start >$125 Code --> 
 
-After all, you could be well on your way to winning one of our top fundraiser prizes &ndash; and you're just [[E130: 300 [[S48:1190:dollars]] - currency]] away from your next prize, a cooling towl. 
+After all, you could be well on your way to winning one of our top fundraiser prizes &ndash; and you're just [[E130: 300 [[S48:1190:dollars]] - currency]] away from your next prize, a tote bag. 
 
    <!-- End >$125 Code -->   
     </convio:then>
@@ -94,7 +105,7 @@ After all, you could be well on your way to winning one of our top fundraiser pr
    <convio:then>
  <!-- Start >$60 Code --> 
   
-After all, you could be well on your way to winning one of our top fundraiser prizes &ndash; and you're just [[E130: 150 [[S48:1190:dollars]] - currency]] away from your next prize, a tote bag.
+After all, you could be well on your way to winning one of our top fundraiser prizes &ndash; and you're just [[E130: 150 [[S48:1190:dollars]] - currency]] away from your next prize, a water bottle.
    
    
      <!-- End >$60 Code -->   
@@ -106,7 +117,7 @@ After all, you could be well on your way to winning one of our top fundraiser pr
    <convio:then>
  <!-- Start >$30 Code --> 
 
-You're just [[E130: 75 [[S48:1190:dollars]] - currency]] away from your next prize, a cuddly cheetah plush.
+You're just [[E130: 75 [[S48:1190:dollars]] - currency]] away from your next prize, your choice of a cuddly plush.
    
       <!-- End >$30 Code --> 
   </convio:then>
