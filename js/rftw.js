@@ -127,6 +127,12 @@ $(function() {
 	}
 	
 	/////////////////////////////////
+	// Checkout Copy               //
+	/////////////////////////////////
+	
+	$('#FriendraiserUserWaiver #another_button span').html("Register Team Members");
+	
+	/////////////////////////////////
 	// Volunteer Form              //
 	/////////////////////////////////
 	
