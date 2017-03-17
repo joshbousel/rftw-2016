@@ -127,6 +127,27 @@ $(function() {
 	}
 	
 	/////////////////////////////////
+	// Friendbuy Conversion        //
+	/////////////////////////////////
+	
+	if ($.urlParam('pg')) {
+	    if ($.urlParam('pg') == 'rthanks') { 
+		    var id = new Date().valueOf();			
+			var totalAmount = $('#total_amt').html().substr(1);
+			var email = $('#email_sent_msg_email').html().slice(0, -1);
+			
+			window['friendbuy'] = window['friendbuy'] || [];
+		    window['friendbuy'].push(['track', 'order',
+		      {
+		          id: ''+id+'', //INPUT ORDER ID
+		          amount: ''+totalAmount+'', //INPUT ORDER AMOUNT
+		          email: ''+email+'' //INPUT EMAIL
+		      }
+		    ]);
+		}
+	}
+		    
+	/////////////////////////////////
 	// Checkout Copy               //
 	/////////////////////////////////
 	
