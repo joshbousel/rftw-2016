@@ -1,0 +1,109 @@
+.rftw-card {
+	display: inline-block;
+	margin: 24px 24px 24px 0;
+	position: relative;
+	width: calc(~'25% - 18px');
+	
+	&:nth-of-type(4n+1) {
+		margin: 24px 0 24px 0;
+	}
+	
+	&__action {
+		clear: both;
+		width: 95%;
+		
+		@media all and (max-width:@break-mobile) {
+			margin: 30px 0 0 6px;
+			width: 80%;
+		}
+	}
+	
+	&__header {
+		margin: 0 0 10px;
+		position: relative;
+		width: 100%;
+	}
+	
+	&__image {
+		height: auto;
+		width: 100%;
+		
+		@media all and (max-width:@break-mobile) {
+			float: left;
+			width: 36%;
+		}
+	}
+	
+	&__title {
+		background: url('@{image-path}bg-stone-green.png');
+		color: #fff;
+		display: block;
+		font-family: @font-brandon;
+		font-size: 1rem;
+		font-style: italic;
+		font-weight: bold;
+		letter-spacing: 3px;
+		line-height: 1rem;
+		padding: 13px 0;
+		position: absolute;
+		text-align: center;
+		text-transform: uppercase;
+		top: 75%;
+		width: 100%;
+		-webkit-font-smoothing: antialiased;
+		
+		@media all and (max-width:@break-desktop) {
+			font-size: .875rem;
+			line-height: .875rem;
+			letter-spacing: 2px;
+			padding: 10px 0;
+			top: 68%;
+		}
+		
+		@media all and (max-width:@break-desktop) {
+			top: 70%;
+		}
+		
+		@media all and (max-width:@break-mobile) {
+			font-size: 1rem;
+			line-height: 1rem;
+			margin: 0 0 15px 0;
+			position: relative;
+		}
+	}
+	
+	p {
+		font-size: .9375rem;
+		line-height: 1.5625rem;
+		
+		@media all and (max-width:@break-mobile) {
+			margin: -6px 0 0 42.85%;
+			width: 57%;
+		}
+	}
+	
+	.rftw-button__action--second-line {
+		@media all and (max-width:@break-desktop) {
+			font-size: 1rem;
+			line-height: 1rem;
+		}
+		
+		@media all and (max-width:@break-mobile) {
+			font-size: 1.25rem;
+			line-height: 1.25rem;
+		}
+	}
+	
+	@media all and (max-width:@break-tablet) {
+		width: calc(~'50% - 24px');
+		
+		&:nth-of-type(2n+1) {
+			margin: 24px 0 24px 0;
+		}
+	}
+	
+	@media all and (max-width:@break-mobile) {
+		margin: 0 0 24px 0; 
+		width: 100%;
+	}
+}

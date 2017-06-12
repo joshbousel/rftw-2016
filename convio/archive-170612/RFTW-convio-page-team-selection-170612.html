@@ -1,0 +1,81 @@
+[[U0:page=Register for the 2017 Run for the Wild]]
+<div>
+<convio:choose>
+  <convio:when title="fr_tm_opt is new" test="eq" selected="selected">
+    <convio:op><convio:session name="334" param="fr_tm_opt"></convio:session></convio:op>
+    <convio:op>new</convio:op>
+    <convio:then>
+<h3 class="rftw-centered">April 29th, 2017</h3>
+<h3>Start a Team</h3>
+<p>Start a team to make tracks for wildlife - your team can consist of your family, friends, and/or co-workers. You'll be the Team Captain in charge of creating the team name, recruiting members, and establishing a fundraising goal. <strong>You'll also set up two fundraising pages, one for yourself and one for the team.</strong></p>
+<p>Begin by entering your team name and fundraising goal in the box at the bottom of this page. Then, complete your registration form. <strong>Once you have submitted your own registration, you will have the opportunity to register additional teammates.</strong></p>
+<p>Next, set up a team page to start fundraising! The suggested fundraising goal is $300 per team member or $1,500 per team, and the more you raise, the more prizes you'll be eligible to receive. You can even kick-start your fundraising by making a donation to help wildlife with your registration.</p>
+<p>Note: If you would like to join an existing team rather than start your own, please <a href="https://secure3.convio.net/wcs/site/TRR?pg=tfind&fr_id=1190">click here</a>.</p>
+<p><strong>*Remember, fundraising prizes are awarded to individuals, not teams.</strong></p>
+</convio:then>
+  </convio:when>
+  <convio:otherwise>
+<h3 class="rftw-centered">April 29th, 2017</h3>
+<h3>Join a Team</h3>
+<p>To join an existing team consisting of your family, friends, and/or co-workers, enter its name (or the first few letters) in the "Team Name" field at the bottom of this page. Then click on the "Search for a Team" button at the bottom left. Scroll through the results that appear beneath it to select the team you would like to join.
+</p>
+</convio:otherwise>
+</convio:choose></div>
+<div id="teamOptions">
+</div>
+<script type="text/javascript">// <![CDATA[
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {
+    window.onload = function() {
+      if (oldonload) {
+        oldonload();
+      }
+      func();
+    }
+  }
+}
+document.getElementsByClassName = function(class_name) {
+    var docList = this.all || this.getElementsByTagName('*');
+    var matchArray = new Array();
+
+    /*Create a regular expression object for class*/
+    var re = new RegExp("(?:^|\\s)"+class_name+"(?:\\s|$)");
+    for (var i = 0; i < docList.length; i++) {
+        if (re.test(docList[i].className) ) {
+            matchArray[matchArray.length] = docList[i];
+        }
+    }
+
+    return matchArray;
+}//eof annonymous function
+
+
+function hideJoinStart()
+{
+        var boxes=document.getElementsByClassName('appSubArea');
+        boxes[2].style.display="none";
+}
+addLoadEvent(hideJoinStart);
+// ]]></script>
+<div id="_mcePaste" class="mcePaste" style="position: absolute; left: -10000px; top: 160px; width: 1px; height: 1px; overflow: hidden;">
+<p class="MsoNormal">Hello all, </p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><a href="PageServer?pagename=RFTW_homepage">http://e.wcs.org/site/PageServer?pagename=RFTW_homepage</a></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">Just wanted to pass along the link for the 2015 RFTW
+website. The site is still in beta as we work through some remaining issues
+before going live. When you have time tomorrow, can you look through the
+website for any copy errors, links needing updating, incorrect pricing, etc. </p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">Any issues you may find please send them directly to me and
+I&rsquo;ll have them updated. </p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">Also, if you would like to go through the full registration
+process, use discount code &ldquo;TESTWCS&rdquo; for 100% off. </p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">Thanks,</p>
+<p class="MsoNormal">Dan</p>
+</div>

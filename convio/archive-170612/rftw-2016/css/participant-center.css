@@ -1,0 +1,960 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Regular.eot');
+  src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Regular.woff2') format('woff2'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Regular.woff') format('woff'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Italic.eot');
+  src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Italic.eot?#iefix') format('embedded-opentype'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Italic.woff2') format('woff2'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Italic.woff') format('woff'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Italic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Bold.eot');
+  src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Bold.woff2') format('woff2'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Bold.woff') format('woff'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-BoldItalic.eot');
+  src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-BoldItalic.eot?#iefix') format('embedded-opentype'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-BoldItalic.woff2') format('woff2'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-BoldItalic.woff') format('woff'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/Lato-BoldItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/Brandon_reg-webfont.eot');
+  src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/Brandon_reg-webfont.eot?#iefix') format('embedded-opentype'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/Brandon_reg-webfont.woff') format('woff'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/Brandon_reg-webfont.ttf') format('truetype'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/Brandon_reg-webfont.svg#BrandonGrotesqueRegularRg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/brandon_blk-webfont.eot');
+  src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/brandon_blk-webfont.eot?#iefix') format('embedded-opentype'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/brandon_blk-webfont.woff') format('woff'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/brandon_blk-webfont.ttf') format('truetype'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/brandon_blk-webfont.svg#brandon_grotesqueblack') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/brandongrotesque-blackitalic-webfont.eot');
+  src: url('https://secure3.convio.net/wcs/rftw-2016/fonts/brandongrotesque-blackitalic-webfont.eot?#iefix') format('embedded-opentype'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/brandongrotesque-blackitalic-webfont.woff2') format('woff2'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/brandongrotesque-blackitalic-webfont.woff') format('woff'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/brandongrotesque-blackitalic-webfont.ttf') format('truetype'), url('https://secure3.convio.net/wcs/rftw-2016/fonts/brandongrotesque-blackitalic-webfont.svg#brandon_grotesqueblack_italic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+/*********************************/
+/* PC Layout Changes             */
+/*********************************/
+html,
+body {
+  background-color: #fff !important;
+  color: #0bb6a7;
+  font-family: 'Lato', helvetica, arial, sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  max-width: 100%;
+  width: 100%;
+}
+#doc2.yui-t5 {
+  max-width: 100%;
+  width: 100%;
+}
+#yui-main {
+  width: 75% !important;
+}
+@media all and (max-width: 450px) {
+  #yui-main {
+    width: 100% !important;
+  }
+}
+.yui-skin-ux .ux-hd-row {
+  margin-top: 0px;
+  text-align: center;
+}
+div.ux-main div.dashboard-bd {
+  background-color: #eee;
+  border: none;
+}
+.yui-skin-ux .fundraising-progress .section {
+  background: transparent;
+  border: 0;
+  font-family: 'Lato', helvetica, arial, sans-serif;
+}
+#bd-what-next .what-next-icon {
+  margin: 0 10px 0 0 !important;
+  vertical-align: top;
+}
+#bd-what-next .what-next-message-container {
+  width: calc(100% - 56px);
+}
+.yui-skin-ux .yui-dt th,
+.yui-skin-ux .yui-dt td {
+  border: 0;
+  padding: 10px 5px !important;
+}
+.yui-skin-ux .yui-dt tr td:first-child,
+.yui-skin-ux .yui-dt tr th.yui-dt-first {
+  border: 0;
+}
+@media all and (max-width: 800px) {
+  .nav_container span:nth-child(2) {
+    display: none;
+  }
+}
+.yui-skin-ux .hidden-form:not(#addressbookimport_csv_form_container),
+#subnav_oci_link {
+  display: none !important;
+}
+div#email-wizard-preview-body {
+  overflow: auto;
+}
+@media all and (max-width: 800px) {
+  .email-wizard #email-compose-content-actions,
+  div#personalpage-content-actions {
+    text-align: center;
+  }
+}
+@media all and (max-width: 800px) {
+  .ux-block2 .page-form .content-actions {
+    margin: 0;
+  }
+}
+.yui-skin-ux #contacts-table-info-block,
+#addressbookimport-importcandidatecontacts-list {
+  width: 100% !important;
+  overflow: auto;
+}
+@media all and (max-width: 800px) {
+  .yui-skin-ux .thumbnail {
+    display: block;
+    float: none;
+  }
+}
+@media all and (max-width: 800px) {
+  .yui-skin-ux .media form {
+    margin: 15px 0 0 0;
+  }
+}
+.yui-skin-ux #page-form .radio-section {
+  margin: 0;
+}
+.yui-skin-ux #page-form .radio-section #payment-radio-choices {
+  margin: 0 0 0 15px;
+}
+#ui-dialog-buttonset {
+  width: calc(100% - 23px);
+}
+@media all and (max-width: 800px) {
+  #ui-dialog-buttonset button {
+    width: calc(100% - 5px);
+  }
+}
+@media all and (max-width: 800px) {
+  div#email-contacts-content div.search {
+    width: 100%;
+  }
+  div#email-contacts-content div.search button {
+    width: 100%;
+  }
+  div#email-contacts-content div.search input {
+    width: calc(100% - 26px) !important;
+  }
+}
+@media all and (max-width: 800px) {
+  #contactedit-dialog-form {
+    padding: 0 15px !important;
+    width: 100%;
+  }
+}
+#contactedit-dialog-form input {
+  margin: 0 0 15px 5px !important;
+}
+@media all and (max-width: 800px) {
+  #contactedit-dialog-form input {
+    width: calc(100% - 46px) !important;
+  }
+}
+#contactedit-dialog-form label {
+  margin: 0 0 0 5px !important;
+}
+@media all and (max-width: 800px) {
+  #contactedit-dialog-form label {
+    width: 100%;
+  }
+}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+  float: none !important;
+  padding: 0 15px !important;
+  width: 100%;
+}
+#view-teammates-container,
+#view-teammates-table-container,
+#view-teammates-table {
+  width: 100%;
+}
+#view-teammates-table tr:nth-child(even) {
+  background: #eee;
+}
+div#team-info-block,
+#edit-team-info-block {
+  position: relative;
+  top: 20px;
+}
+#bd-team-donation-history {
+  margin: 50px 0 0;
+}
+/*********************************/
+/* Color Changes                 */
+/*********************************/
+#bd-what-next .what-next-answer-item,
+div.ux-main div#yui-main div#content {
+  border: 1px solid #eee;
+}
+#bd-what-next .what-next-answer-item.what-next-completed {
+  border: 1px solid #eee;
+  background: #eee;
+}
+#bd-what-next .what-next-icon {
+  color: #0bb6a7;
+}
+.yui-skin-ux .yui-dt thead {
+  background: #475267;
+}
+.track-progress li {
+  background-color: #85DBD3;
+}
+.track-progress li > span:before {
+  border-left-color: #85DBD3;
+}
+.track-progress li.email-wizard-nav-selected > span,
+.track-progress li.addressbookimport-wizard-nav-selected > span,
+.track-progress li.email-wizard-nav-selected:hover > span,
+.track-progress li.email-wizard-nav-unselected:hover > span {
+  background-color: #0bb6a7;
+}
+.track-progress li.email-wizard-nav-selected + li > span:before,
+.track-progress li.addressbookimport-wizard-nav-selected + li > span:before,
+.track-progress li.email-wizard-nav-selected:hover + li > span:before,
+.track-progress li.email-wizard-nav-unselected:hover + li > span:before {
+  border-left-color: #0bb6a7;
+}
+.yui-skin-ux .permalink_block {
+  background: #F9F9F9;
+  border: 1px solid #D8D8D8;
+  overflow: hidden;
+}
+th.yui-dt-col-email,
+th.yui-dt-col-donations {
+  background-color: #3F485A;
+}
+/*********************************/
+/* Button Changes                */
+/*********************************/
+.yui-skin-ux div.primary-action {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  width: calc(100% - 38px);
+}
+.yui-skin-ux div.primary-action a,
+.yui-skin-ux #sidebar div.primary-action a {
+  border: 0;
+  border-radius: 2px;
+  background-color: transparent;
+  background-image: url('https://secure3.convio.net/wcs/rftw-2016/images/bg-stone-teal.png') !important;
+  background-repeat: repeat;
+  color: #fff !important;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Brandon Grotesque', helvetica, arial, sans-serif !important;
+  font-size: 1.25rem;
+  font-style: italic;
+  height: auto;
+  letter-spacing: 1px;
+  line-height: 1.25rem;
+  padding: 8px 20px;
+  transition: all 0.1s ease-out;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  width: auto;
+  vertical-align: top;
+  width: 100%;
+}
+.yui-skin-ux div.primary-action a:hover,
+.yui-skin-ux #sidebar div.primary-action a:hover {
+  color: #fff !important;
+  opacity: .75;
+}
+@media all and (max-width: 800px) {
+  .yui-skin-ux div.primary-action a,
+  .yui-skin-ux #sidebar div.primary-action a {
+    width: 100%;
+  }
+}
+.yui-skin-ux div.primary-action a span,
+.yui-skin-ux #sidebar div.primary-action a span {
+  font-family: 'Brandon Grotesque', helvetica, arial, sans-serif !important;
+}
+.yui-skin-ux div.primary-action a:hover,
+.yui-skin-ux #sidebar div.primary-action a:hover {
+  color: #fff !important;
+}
+.yui-skin-ux div.primary-action a span,
+.yui-skin-ux #sidebar div.primary-action a span {
+  background: transparent !important;
+  padding: 0 !important;
+}
+.yui-skin-ux button:not([class^="janrain"]):not(.email-wizard-recipients-actions-button),
+.yui-skin-ux .yui-push-button.default,
+.yui-skin-ux #sidebar .module a#msg_cat_team_page_team_edit_label {
+  border: 0;
+  border-radius: 2px;
+  background-color: transparent;
+  background-image: url('https://secure3.convio.net/wcs/rftw-2016/images/bg-stone-teal.png') !important;
+  background-repeat: repeat;
+  color: #fff !important;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Brandon Grotesque', helvetica, arial, sans-serif !important;
+  font-size: 1.25rem;
+  font-style: italic;
+  height: auto;
+  letter-spacing: 1px;
+  line-height: 1.25rem;
+  padding: 8px 20px;
+  transition: all 0.1s ease-out;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  width: auto;
+  vertical-align: top;
+}
+.yui-skin-ux button:not([class^="janrain"]):not(.email-wizard-recipients-actions-button):hover,
+.yui-skin-ux .yui-push-button.default:hover,
+.yui-skin-ux #sidebar .module a#msg_cat_team_page_team_edit_label:hover {
+  color: #fff !important;
+  opacity: .75;
+}
+@media all and (max-width: 800px) {
+  .yui-skin-ux button:not([class^="janrain"]):not(.email-wizard-recipients-actions-button),
+  .yui-skin-ux .yui-push-button.default,
+  .yui-skin-ux #sidebar .module a#msg_cat_team_page_team_edit_label {
+    width: 100%;
+  }
+}
+.yui-skin-ux button:not([class^="janrain"]):not(.email-wizard-recipients-actions-button) span,
+.yui-skin-ux .yui-push-button.default span,
+.yui-skin-ux #sidebar .module a#msg_cat_team_page_team_edit_label span {
+  font-family: 'Brandon Grotesque', helvetica, arial, sans-serif !important;
+}
+.yui-skin-ux button:not([class^="janrain"]):not(.email-wizard-recipients-actions-button):hover,
+.yui-skin-ux .yui-push-button.default:hover,
+.yui-skin-ux #sidebar .module a#msg_cat_team_page_team_edit_label:hover {
+  color: #fff !important;
+}
+@media all and (max-width: 800px) {
+  .yui-skin-ux button:not([class^="janrain"]):not(.email-wizard-recipients-actions-button),
+  .yui-skin-ux .yui-push-button.default,
+  .yui-skin-ux #sidebar .module a#msg_cat_team_page_team_edit_label {
+    width: calc(100% - 33px);
+  }
+}
+.ui-button-icon-secondary.ui-icon-triangle-1-e {
+  display: none;
+}
+#quick-gift-cancel,
+.yui-skin-ux .yui-push-button:not(.default),
+#msg_cat_add_contacts_cancel_link,
+#addressbookimport-selectsource-cancel,
+#cancel_shortcut,
+#msg_cat_contact_edit_cancel_link,
+#addressbookimport-selectcontacts-cancel,
+#addressbookimport-thirdpartystatus-cance,
+#msg_cat_captains_message_cancel_link,
+#msg_cat_team_update_cancel_label,
+#teampage_cancel_shortcut {
+  border: 0;
+  border-radius: 2px;
+  background-color: transparent;
+  background-image: url('https://secure3.convio.net/wcs/rftw-2016/images/bg-stone-teal.png') !important;
+  background-repeat: repeat;
+  color: #fff !important;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Brandon Grotesque', helvetica, arial, sans-serif !important;
+  font-size: 1.25rem;
+  font-style: italic;
+  height: auto;
+  letter-spacing: 1px;
+  line-height: 1.25rem;
+  padding: 8px 20px;
+  transition: all 0.1s ease-out;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  width: auto;
+  vertical-align: top;
+  background: #eee !important;
+  color: #8C8C8C !important;
+}
+#quick-gift-cancel:hover,
+.yui-skin-ux .yui-push-button:not(.default):hover,
+#msg_cat_add_contacts_cancel_link:hover,
+#addressbookimport-selectsource-cancel:hover,
+#cancel_shortcut:hover,
+#msg_cat_contact_edit_cancel_link:hover,
+#addressbookimport-selectcontacts-cancel:hover,
+#addressbookimport-thirdpartystatus-cance:hover,
+#msg_cat_captains_message_cancel_link:hover,
+#msg_cat_team_update_cancel_label:hover,
+#teampage_cancel_shortcut:hover {
+  color: #fff !important;
+  opacity: .75;
+}
+@media all and (max-width: 800px) {
+  #quick-gift-cancel,
+  .yui-skin-ux .yui-push-button:not(.default),
+  #msg_cat_add_contacts_cancel_link,
+  #addressbookimport-selectsource-cancel,
+  #cancel_shortcut,
+  #msg_cat_contact_edit_cancel_link,
+  #addressbookimport-selectcontacts-cancel,
+  #addressbookimport-thirdpartystatus-cance,
+  #msg_cat_captains_message_cancel_link,
+  #msg_cat_team_update_cancel_label,
+  #teampage_cancel_shortcut {
+    width: 100%;
+  }
+}
+#quick-gift-cancel span,
+.yui-skin-ux .yui-push-button:not(.default) span,
+#msg_cat_add_contacts_cancel_link span,
+#addressbookimport-selectsource-cancel span,
+#cancel_shortcut span,
+#msg_cat_contact_edit_cancel_link span,
+#addressbookimport-selectcontacts-cancel span,
+#addressbookimport-thirdpartystatus-cance span,
+#msg_cat_captains_message_cancel_link span,
+#msg_cat_team_update_cancel_label span,
+#teampage_cancel_shortcut span {
+  font-family: 'Brandon Grotesque', helvetica, arial, sans-serif !important;
+}
+#quick-gift-cancel:hover,
+.yui-skin-ux .yui-push-button:not(.default):hover,
+#msg_cat_add_contacts_cancel_link:hover,
+#addressbookimport-selectsource-cancel:hover,
+#cancel_shortcut:hover,
+#msg_cat_contact_edit_cancel_link:hover,
+#addressbookimport-selectcontacts-cancel:hover,
+#addressbookimport-thirdpartystatus-cance:hover,
+#msg_cat_captains_message_cancel_link:hover,
+#msg_cat_team_update_cancel_label:hover,
+#teampage_cancel_shortcut:hover {
+  color: #8C8C8C !important;
+}
+@media all and (max-width: 800px) {
+  #quick-gift-cancel,
+  .yui-skin-ux .yui-push-button:not(.default),
+  #msg_cat_add_contacts_cancel_link,
+  #addressbookimport-selectsource-cancel,
+  #cancel_shortcut,
+  #msg_cat_contact_edit_cancel_link,
+  #addressbookimport-selectcontacts-cancel,
+  #addressbookimport-thirdpartystatus-cance,
+  #msg_cat_captains_message_cancel_link,
+  #msg_cat_team_update_cancel_label,
+  #teampage_cancel_shortcut {
+    width: calc(100% - 33px);
+  }
+}
+#msg_cat_team_update_cancel_label,
+#msg_cat_team_update_submit_label {
+  margin: 0 0 10px;
+  width: 100%;
+}
+.yui-skin-ux .actions button {
+  margin: 0 10px 15px 0 !important;
+}
+#msg_cat_captains_message_cancel_link,
+#msg_cat_captains_message_save_button,
+#msg_cat_team_update_cancel_label,
+#msg_cat_team_update_submit_label {
+  margin-left: 0;
+}
+@media all and (max-width: 800px) {
+  div#sidebar div#address_book_add div#add-contact-button-container button,
+  .yui-skin-ux .addressbookimport-flow-actions button,
+  .ux-block2 .page-form .content-actions button {
+    margin: 0 0 15px 0;
+    float: none;
+    width: 100% !important;
+  }
+}
+div#email-contacts-content span#groups_menu_container button#groupsMenuButton-button,
+span#detailsGroupsMenuButton button#detailsGroupsMenuButton-button {
+  color: #0BB6A3 !important;
+  background-image: none !important;
+  font-family: 'Lato', helvetica, arial, sans-serif !important;
+  font-size: .875rem;
+  text-transform: capitalize;
+  font-style: normal;
+  letter-spacing: 0;
+  text-decoration: none;
+  transition: all 0.1s ease-out;
+  -webkit-font-smoothing: auto;
+  white-space: nowrap;
+}
+.yui-dialog .yui-push-button:not(.default) button {
+  background-image: none !important;
+  color: #8C8C8C !important;
+}
+.yui-dialog .yui-push-button:not(.default) button:hover {
+  color: #8C8C8C !important;
+}
+.yui-panel-container.yui-dialog span.default button {
+  background: transparent !important;
+}
+#acknowledge_contact_gift_no_email_dialog_c .yui-push-button:first-of-type {
+  margin: 0 10px 0 0;
+}
+div#email-wizard-contacts button {
+  margin-right: 15px;
+}
+#confirm_delete_draft_dialog .yui-push-button,
+#confirm_sent_delete_dialog .yui-push-button,
+#new-group-dialog_c .yui-push-button,
+#yui-gen3_c .yui-push-button,
+#details-new-group-dialog .yui-push-button {
+  margin: 0 0 10px 0;
+  width: calc(100% - 43px);
+}
+@media all and (max-width: 800px) {
+  #gift-add-content button {
+    width: 100% !important;
+  }
+}
+@media all and (max-width: 800px) {
+  #email-wizard-contacts button {
+    margin: 0 0 15px 0;
+    width: 100% !important;
+  }
+}
+/*********************************/
+/* Sidebard Changes             */
+/*********************************/
+#sidebar {
+  width: 25% !important;
+}
+@media all and (max-width: 450px) {
+  #sidebar {
+    width: 100% !important;
+  }
+}
+/*********************************/
+/* Form Changes                  */
+/*********************************/
+#personal_page_title,
+#company_page_title,
+.yui-skin-ux #sidebar .sidebar-form .label-field-wrap input,
+#captainsMessageEditText {
+  width: calc(100% - 27px);
+}
+.ux-main select,
+.ux-main input,
+.ux-main textarea,
+.yui-panel-container input,
+#contactedit-dialog-form input,
+.yui-skin-ux #teampage-sidebar #new-team-name {
+  background: #FBFBFB;
+  border: 1px solid #AFB4C3;
+  border-radius: 2px;
+  box-shadow: 0 0;
+  color: #475267;
+  font-family: 'Lato', helvetica, arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1rem;
+  margin: 0 10px 0 0;
+  padding: 6px 12px;
+  transition: all 0.1s ease-out;
+}
+@media all and (max-width: 800px) {
+  .ux-main select,
+  .ux-main input,
+  .ux-main textarea,
+  .yui-panel-container input,
+  #contactedit-dialog-form input,
+  .yui-skin-ux #teampage-sidebar #new-team-name {
+    display: block;
+    margin: 0 0 10px;
+    width: calc(100% - 26px);
+  }
+  .ux-main select[type="radio"],
+  .ux-main input[type="radio"],
+  .ux-main textarea[type="radio"],
+  .yui-panel-container input[type="radio"],
+  #contactedit-dialog-form input[type="radio"],
+  .yui-skin-ux #teampage-sidebar #new-team-name[type="radio"],
+  .ux-main select[type="checkbox"],
+  .ux-main input[type="checkbox"],
+  .ux-main textarea[type="checkbox"],
+  .yui-panel-container input[type="checkbox"],
+  #contactedit-dialog-form input[type="checkbox"],
+  .yui-skin-ux #teampage-sidebar #new-team-name[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    vertical-align: -webkit-baseline-middle;
+  }
+}
+.ux-main select:focus,
+.ux-main input:focus,
+.ux-main textarea:focus,
+.yui-panel-container input:focus,
+#contactedit-dialog-form input:focus,
+.yui-skin-ux #teampage-sidebar #new-team-name:focus {
+  border: 1px solid #475267;
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.25);
+  outline: none;
+}
+.yui-skin-ux .page-form label {
+  float: none;
+  margin: 0 0 5px 0;
+  display: inline-block;
+  text-align: left;
+}
+#company-select-list {
+  height: 39px;
+  max-width: 100%;
+}
+/*********************************/
+/* PC Typography Changes         */
+/*********************************/
+.yui-skin-ux h1,
+#msg_cat_team_report_donation_history_label {
+  color: #ac9167;
+  font-family: 'Brandon Grotesque', helvetica, arial, sans-serif;
+  font-size: 1.125rem;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 1.125rem;
+  letter-spacing: 3px;
+  margin: 35px auto 10px;
+  max-width: 750px;
+  text-align: left;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+}
+.yui-skin-ux .bd-progress h3 {
+  font-family: 'Lato', helvetica, arial, sans-serif;
+  font-size: 1rem;
+}
+.yui-skin-ux .tiny-block {
+  font-size: .875rem;
+  text-transform: uppercase;
+}
+#bd-what-next .what-next-message-container .what-next-type {
+  color: #0bb6a7;
+  font-family: 'Lato', helvetica, arial, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+#bd-what-next .what-next-message-container .what-next-message {
+  font-family: 'Lato', helvetica, arial, sans-serif;
+  font-size: .875rem;
+  line-height: 1.25rem;
+}
+.yui-skin-ux .yui-dt thead th div,
+.yui-skin-ux .yui-dt thead th div a,
+.yui-skin-ux .yui-dt td div,
+div#email-contacts-content div#contacts-actions a {
+  font-family: 'Lato', helvetica, arial, sans-serif;
+  font-size: .875rem;
+}
+.yui-skin-ux #sidebar a,
+.yui-skin-ux a,
+.yui-skin-ux a:link {
+  color: #0bb6a7;
+  font-family: 'Lato', helvetica, arial, sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.1s ease-out;
+}
+.yui-skin-ux #sidebar a:hover,
+.yui-skin-ux a:hover,
+.yui-skin-ux a:link:hover {
+  color: #11dfcd !important;
+}
+.yui-skin-ux #sidebar a:hover,
+.yui-skin-ux a:hover,
+.yui-skin-ux a:link:hover {
+  text-decoration: none;
+}
+.email-wizard #email-compose-content-actions a,
+div#personalpage-content-actions a {
+  color: #0bb6a7;
+  font-family: 'Lato', helvetica, arial, sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.1s ease-out;
+  display: inline-block;
+  margin: 10px 0 15px 22px;
+}
+.email-wizard #email-compose-content-actions a:hover,
+div#personalpage-content-actions a:hover {
+  color: #11dfcd !important;
+}
+#email-compose-templates h3,
+#addressbookimport_importresults_section_added_header {
+  background: #475267 !important;
+  font-family: 'Lato', helvetica, arial, sans-serif;
+  font-size: 1rem;
+}
+.yui-skin-ux .yui-panel .hd,
+.ui-draggable .ui-dialog-titlebar {
+  color: #475267;
+  font-family: 'Lato', helvetica, arial, sans-serif;
+  font-size: 1rem;
+  background: #475267;
+  color: #fff !important;
+}
+#msg_cat_personal_page_view_label,
+#msg_cat_team_page_shortcut_view {
+  font-style: normal;
+  letter-spacing: 0;
+  text-transform: capitalize;
+}
+.email-wizard #email-template-container label,
+.yui-skin-ux #page-form p.form-field .width-label,
+#gift-add-content #gift-add-content-form #addl_gift_options label,
+.yui-skin-ux #msg_cat_gift_label,
+.yui-skin-ux #page-form #msg_cat_gift_payment_type_label,
+.yui-skin-ux #page-form #payment-radio-choices label,
+.yui-dialog .bd label,
+.yui-skin-ux #sidebar .sidebar-form .label-field-wrap label,
+#ux-block2 p,
+#personalpage_permalink_block .page-setting-detail span,
+#personalpage_permalink_block .page-setting-detail label,
+.yui-skin-ux .page-form label,
+#msg_cat_personal_page_photo_video_select_label,
+#msg_cat_use_media_type_photos_label,
+#msg_cat_use_media_type_video_label,
+#msg_cat_personal_video_url_label,
+div#email-contacts-content div.search label#msg_cat_search_contacts_text,
+.yui-skin-ux #sidebar.yui-b .side-block,
+#msg_cat_contacts_acknowledge_contact_gift_no_email_body,
+#contact_email,
+#msg_cat_drafts_confirm_delete_body,
+#msg_cat_sent_confirm_delete_body,
+#msg_cat_addressbookimport_selectcontacts_info,
+#msg_cat_addressbookimport_selectcontacts_option_all_2,
+#msg_cat_addressbookimport_selectcontacts_option_some,
+#msg_cat_addressbookimport_selectcontacts_title,
+#msg_cat_addressbookimport_thirdpartystatus_info,
+#msg_cat_addressbookimport_thirdpartystatus_title,
+#addressbookimport-thirdpartystatus-events div,
+#msg_cat_addressbookimport_importresults_title,
+#msg_cat_addressbookimport_importresults_info,
+#msg_cat_addressbookimport_importresults_section_added_info,
+#msg_cat_gift_confirm_delete_body,
+#msg_cat_captains_message_header,
+#view-teammates-table span,
+#msg_cat_team_page_permalink,
+#teampage_shortcut_link,
+#team-name-field,
+#msg_cat_team_page_team_name_title,
+#msg_cat_team_page_company_name_title,
+#msg_cat_captains_message_empty,
+#team-roster td,
+#lower_team_donation_history_pagination_block span,
+#msg_cat_sent_sent_messages_search_label {
+  color: #475267;
+  font-family: 'Lato', helvetica, arial, sans-serif;
+  font-size: 1rem;
+}
+#team-name-field {
+  font-family: 'Lato', helvetica, arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0;
+  margin: 0 0 15px;
+  text-transform: none;
+}
+#msg_cat_team_page_team_name_title,
+#msg_cat_team_page_company_name_title,
+#msg_cat_captains_message_header {
+  font-weight: bold;
+}
+.yui-skin-ux .captain-marker {
+  background: #475267;
+  border-radius: 2px;
+  color: #fff !important;
+  font-family: 'Brandon Grotesque', helvetica, arial, sans-serif;
+  font-size: .7rem !important;
+  line-height: .7rem !important;
+}
+#msg_cat_team_report_change_goal_link,
+#msg_cat_change_goal_link {
+  text-transform: none;
+}
+.yui-skin-ux #email-contacts-content td .email-address {
+  color: #0bb6a7;
+}
+/*********************************/
+/* Progress Bar Changes          */
+/*********************************/
+div.progress-bar-outer {
+  background-color: #eee;
+  background-image: none;
+  border: 0;
+  width: 100%;
+}
+div.progress-bar-inner {
+  background-image: url('https://secure3.convio.net/wcs/rftw-2016/images//bg-stone-teal.png') !important;
+  border: 0;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/*********************************/
+/* Sidebar Tabs                  */
+/*********************************/
+div.dashboard-bd div#sidebar ul.subnav li {
+  background: transparent;
+  border-bottom: 1px solid #D8D8D8;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+div.dashboard-bd div#sidebar ul.subnav li:first-of-type {
+  border-top: 1px solid #D8D8D8;
+}
+div.dashboard-bd div#sidebar ul.subnav li a {
+  background: #EEEEEE;
+  color: #475267;
+  display: inline-block;
+  font-family: 'Brandon Grotesque', helvetica, arial, sans-serif;
+  font-size: .9375rem;
+  font-weight: bold;
+  line-height: .9375rem;
+  padding: 10px 0 10px 15px;
+  text-transform: uppercase;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+div.dashboard-bd div#sidebar ul.subnav li a:hover {
+  color: #fff !important;
+  background: #475267;
+}
+div.dashboard-bd div#sidebar ul.subnav li.selected a {
+  background: #fff;
+}
+div.dashboard-bd div#sidebar ul.subnav li.selected a:hover {
+  background: #fff;
+  color: #475267 !important;
+}
+/*********************************/
+/* Tabs to Nav                   */
+/*********************************/
+.yui-skin-ux #hd-nav {
+  display: inline-block;
+  float: none;
+  font-size: 0;
+  margin: 0 auto 45px;
+}
+@media all and (max-width: 450px) {
+  .yui-skin-ux #hd-nav {
+    width: 98%;
+  }
+}
+.yui-skin-ux #hd-nav li {
+  background-color: transparent;
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-top: 1px solid #eee;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  transition: all 0.1s ease-out;
+}
+@media all and (max-width: 450px) {
+  .yui-skin-ux #hd-nav li {
+    border-bottom: 0;
+    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;
+    border-top: 1px solid #eee;
+    width: 100%;
+  }
+  .yui-skin-ux #hd-nav li#dashboard-nav-link {
+    border-radius: 3px 3px 0 0 !important;
+  }
+  .yui-skin-ux #hd-nav li:last-of-type,
+  .yui-skin-ux #hd-nav li.selected:last-of-type {
+    border-bottom: 1px solid #eee;
+    border-radius: 0 0 3px 3px !important;
+  }
+}
+.yui-skin-ux #hd-nav li:hover {
+  background: #eee;
+}
+.yui-skin-ux #hd-nav li#dashboard-nav-link {
+  border-left: 1px solid #eee;
+  border-radius: 3px 0 0 3px !important;
+}
+.yui-skin-ux #hd-nav li:last-of-type {
+  border-radius: 0 3px 3px 0 !important;
+}
+.yui-skin-ux #hd-nav li a,
+.yui-skin-ux #hd-nav li a:link,
+.yui-skin-ux #hd-nav li a:visited {
+  color: #475267 !important;
+  font-family: 'Brandon Grotesque', helvetica, arial, sans-serif;
+  font-size: .9375rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 5px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+}
+@media all and (max-width: 800px) {
+  .yui-skin-ux #hd-nav li a,
+  .yui-skin-ux #hd-nav li a:link,
+  .yui-skin-ux #hd-nav li a:visited {
+    font-size: .8125rem;
+  }
+}
+@media all and (max-width: 450px) {
+  .yui-skin-ux #hd-nav li a,
+  .yui-skin-ux #hd-nav li a:link,
+  .yui-skin-ux #hd-nav li a:visited {
+    font-size: .9375rem;
+  }
+}
+.yui-skin-ux #hd-nav li.selected {
+  background-color: #475267;
+  border-bottom: 1px solid #475267;
+  border-right: 1px solid #475267;
+  border-top: 1px solid #475267;
+  border-radius: 0;
+  color: #fff !important;
+  margin: 0;
+}
+.yui-skin-ux #hd-nav li.selected:hover {
+  background: #475267;
+}
+.yui-skin-ux #hd-nav li.selected a {
+  color: #fff !important;
+}

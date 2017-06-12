@@ -1,0 +1,73 @@
+<!-- Start Call Out Box -->
+<table class="callout" style="padding: 0; margin-left: 20px; width: 250px;" border="0" cellspacing="0" cellpadding="0" width="250" align="right">
+	<tbody>
+		<tr>
+			<td style="font-size: 0px;" align="left" valign="top">
+				
+				<table style="background: url(http://e.wcs.org/rftw-2016/stationery/images/bg-callout.jpg) #f3f2f2;" border="0" cellspacing="0" cellpadding="0" bgcolor="#f3f2f2" background="http://e.wcs.org/rftw-2016/stationery/images/bg-callout.jpg">
+					<tbody>
+						<tr>
+							<td style="text-align: left; padding: 18px;" align="left" valign="top">
+								<div style="font-size: 14px; line-height: 22px;">
+									<p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;"><strong>You're registered</strong> &mdash; now get started on that fundraising goal!&nbsp;</span></p>
+									<p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;"><strong>Remember, all adult participants must raise at least $30 by race day!&nbsp;</strong></strong><span>&nbsp;&mdash;&nbsp;Plus, you can win a host of other prizes when	you help widlife.</span></p>
+									<p align="center"><img src="http://e.wcs.org/rftw-2016/stationery/images/prize-list.gif" alt="2017 WCS Run for the Wild Prizes" width="177" height="403" /></p>
+									<p style="padding: 0 0 10px 0;"><span style="font-family: 'Lato', Helvetica, Arial, sans-serif; color: #475267; font-size: 14px; line-height: 22px;"><a style="color: #0b6e83; font-weight: bold; font-size: 14px;" href="http://e.wcs.org/site/TR?fr_id=1190&pg=informational&type=fr_informational&sid=1460">Login to your participant center and get started.</a><br /><br />
+										User name:<br />
+										<convio:session name="1" param="user_name"></convio:session><br /><span style="font-size: 13px; line-height: normal;"><br /></span></p>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td style="font-size: 0px;" height="15">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+<!-- End Call Out Box -->
+<p>
+Dear <convio:session name="1" param="first_name"></convio:session>, </p>
+<p>Thank
+you for signing up for the 6th annual Run for the Wild at the Bronx Zoo. Get ready for a fun-filled day of activity!</p>
+<p>But
+before race day, you have some preparation to do. Here's <strong>a quick checklist of things you'll want to do to make sure you're ready</strong>
+and making tracks to save wildlife from now till April 29!&nbsp;</p>
+<p>Don't
+wait to start your fundraising &ndash; <span style="color: #ff0000;"><strong>all adult participants must raise at least $30 by race day</strong> <strong>in order to participate.</strong></span></p>
+<p>In addition to participation in the run, you'll also get a fashionable WCS Run for the Wild t-shirt and admission to the Bronx Zoo for the day.</p>
+<p>Raise even more and you could earn several fabulous prizes. The clock is ticking, so get started TODAY!</p>
+<ol>
+<li>Start by visiting your personal participant&nbsp;center and <strong><span style="text-decoration: underline;"><a style="font-weight: bold; color: #0b6e83;" href="http://e.wcs.org/site/TR?fr_id=1190&pg=informational&type=fr_informational&sid=1460">customizing your personal page</a></span></strong>.
+You'll find all kinds of fundraising tips and great tools there. Bookmark that
+page and visit often.</li>
+<li><strong><span style="text-decoration: underline;"><a style="font-weight: bold; color: #0b6e83;" href="http://e.wcs.org/site/Donation2?df_id=11083&amp;FR_ID=1150&amp;PROXY_ID=[[S1:CONS_ID]]&amp;11083.donation=form1&amp;PROXY_TYPE=20">Kick-start your
+fundraising effort by making a small gift to yourself</a></span></strong>&nbsp;Remember, all adult participants must raise $30
+by race day &ndash; and when you hit $30,&nbsp;
+you'll have earned a free, commemorative race shirt! And think of the
+difference you'll be making for wildlife. Even a $10 donation will show your
+friends and family that you're committed to securing a future for wildlife and wild places.</li>
+<li>Customize your fundraising goal &ndash; your friends
+and family are going to be motivated to help you hit it so be sure to set your
+sights high for wildlife! <strong><span style="text-decoration: underline;"><a style="font-weight: bold; color: #0b6e83;" href="http://e.wcs.org/site/TR?fr_id=1190&pg=informational&type=fr_informational&sid=1460">Head to your participant center</a></span></strong><a style="font-weight: bold; color: #0b6e83;"></a> and you'll see your goal of <convio:choose>
+  <convio:when title="Goal not blank" test="nempty" selected="selected">
+    <convio:op><convio:session name="48" param="1130:goal"></convio:session></convio:op>
+    <convio:then><convio:session name="48" param="1130:goal"></convio:session></convio:then>
+  </convio:when>
+  <convio:otherwise title="Goal blank">$0</convio:otherwise>
+</convio:choose>
+ displayed beneath
+the Fundraising Progress bar. Just click &ldquo;change&rdquo; and enter your new goal
+level!</li>
+<!--<li><a style="font-weight: bold; color: #0b6e83;" href="http://apps.facebook.com/bf-wcso/add/user/[[S1:cons_id]]/[[S42:0:fr-id]]/autoresponser" target="_blank">Add our simple Facebook App</a> and put your profile to work to help you meet your fundraising goal. It will help you build momentum among your friends in the lead up to race day.</li>-->
+</ol>
+<p>Good luck in your efforts and we can't wait to see you on April 29!</p>
+<p>Sincerely,
+</p>
+<p>&nbsp;</p>
+<p><span>Kathi
+Schaeffer<br />
+Assistant Director of Public Affairs<br />
+Wildlife Conservation Society</span></p>

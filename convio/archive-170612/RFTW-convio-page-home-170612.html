@@ -1,0 +1,79 @@
+<!--<p>Get started today by <a href="http://apps.facebook.com/bf-wcso/add/user/[[S1:cons_id]]/[[S42:0:fr-id]]/ParticipantCenter" target="_blank">installing the Facebook App</a> to kick-start your fundraising!<br> <a href="http://apps.facebook.com/bf-wcso/add/user/[[S1:cons_id]]/[[S42:0:fr-id]]/ParticipantCenter" target="_blank"> <img src="../images/content/pagebuilder/Facebook%20small.gif"  alt="Facebook_small"  border="0"  /></a></P>-->
+
+<convio:choose>
+  <convio:when title="Dollars raised greater than 3000" test="eq" selected="selected">
+    <convio:op><convio:session name="48" param="1120:if-dollars-gt:2999.99"></convio:session></convio:op>
+    <convio:op>TRUE</convio:op>
+    <convio:then>
+<!-- Start >$3000 Code -->
+ 
+<span style="font-weight: bold !important;">Congratulations, you've won all of the prizes! Keep up the great work.</span>
+ 
+<!-- End >$3000 Code --> 
+	</convio:then>
+  </convio:when>
+  <convio:when title="Dollars raised greater than 1500, less than 3000" test="eq">
+    <convio:op><convio:session name="48" param="1120:if-dollars-gt:1499.99"></convio:session></convio:op>
+    <convio:op>TRUE</convio:op>
+    <convio:then>
+<!-- Start >$1500 Code -->
+<p style="margin-bottom: 1em;"><span style="font-family: Arial, Helvetica, sans-serif; color: #000000;"><span style="font-weight: bold !important;"><span style="color: #ff0000;">Congratulations, you've met the minimum fundraising requirement!</span> But did you know you're [[E130: 3000 [[S48:1140:dollars]] - currency]] away from earning another prize?</span> It's true! Raise another [[E130: 3000 [[S48:1140:dollars]] - currency]] and you'll earn an unique animal experience. Keep it up! </span></p>
+<!-- End >$1500 Code --> 
+	</convio:then>
+  </convio:when>
+  <convio:when title="Dollars raised greater than or equal to 600, less than 1500" test="eq">
+    <convio:op><convio:session name="48" param="1120:if-dollars-gt:599.99"></convio:session></convio:op>
+    <convio:op>TRUE</convio:op>
+    <convio:then>
+ <!-- Start >$600 Code -->
+<p style="margin-bottom: 1em;"><span style="font-family: Arial, Helvetica, sans-serif; color: #000000;"><span style="font-weight: bold !important;"><span style="color: #ff0000;">Congratulations, you've met the minimum fundraising requirement!</span> But did you know you're [[E130: 1500 [[S48:1140:dollars]] - currency]] away from earning another prize?</span> It's true! Raise another [[E130: 1500 [[S48:1140:dollars]] - currency]] and you'll earn a VIP breakfast, a ride on the monorail, and a session with a special elephant guest speaker. Keep it up! </span></p>
+<!-- End >$600 Code -->  
+	</convio:then>
+  </convio:when>
+  <convio:when title="Dollars raised greater than or equal to 275, less than 600" test="eq">
+    <convio:op><convio:session name="48" param="1120:if-dollars-gt:274.99"></convio:session></convio:op>
+    <convio:op>TRUE</convio:op>
+    <convio:then>
+<!-- Start >$275 Code -->
+<p style="margin-bottom: 1em;"><span style="font-family: Arial, Helvetica, sans-serif; color: #000000;"><span style="font-weight: bold !important;"><span style="color: #ff0000;">Congratulations, you've met the minimum fundraising requirement!</span> But did you know you're just [[E130: 600 [[S48:1140:dollars]] - currency]] away from earning another prize?</span> It's true! Raise another [[E130: 600 [[S48:1140:dollars]] - currency]] and you'll earn an elephant tote bag. Keep it up! </span></p>
+<!-- End >$275 Code --> 
+	</convio:then>
+  </convio:when>
+  <convio:when title="Dollars raised greater than or equal to 125, less than 275" test="eq">
+    <convio:op><convio:session name="48" param="1120:if-dollars-gt:124.99"></convio:session></convio:op>
+    <convio:op>TRUE</convio:op>
+    <convio:then>
+ <!-- Start >$125 Code -->
+<p style="margin-bottom: 1em;"><span style="font-family: Arial, Helvetica, sans-serif; color: #000000;"><span style="font-weight: bold !important;"><span style="color: #ff0000;">Congratulations, you've met the minimum fundraising requirement!</span> But did you know you're just [[E130: 275 [[S48:1140:dollars]] - currency]] away from earning another prize?</span> It's true! Raise another [[E130: 275 [[S48:1140:dollars]] - currency]] and you'll earn a $25 gift card to Jackrabbit Sports and an elephant snow globe. Keep it up! </span></p>
+<!-- End >$125 Code -->  
+	</convio:then>
+  </convio:when>
+  <convio:when title="Dollars raised greater than or equal to 60, less than 125" test="eq">
+    <convio:op><convio:session name="48" param="1120:if-dollars-gt:59.99"></convio:session></convio:op>
+    <convio:op>TRUE</convio:op>
+    <convio:then>
+ <!-- Start >$60 Code -->
+<p style="margin-bottom: 1em;"><span style="font-family: Arial, Helvetica, sans-serif; color: #000000;"><span style="font-weight: bold !important;"><span style="color: #ff0000;">Congratulations, you've met the minimum fundraising requirement!</span> But did you know you're just [[E130: 125 [[S48:1140:dollars]] - currency]] away from earning another prize?</span> It's true! Raise another [[E130: 125 [[S48:1140:dollars]] - currency]] and you'll earn a cuddly elephant plush. Keep it up! </span></p>
+<!-- End >$60 Code -->  
+   </convio:then>
+  </convio:when>
+  <convio:when title="Dollars raised greater than or equal to 30, less than 60" test="eq">
+    <convio:op><convio:session name="48" param="1120:if-dollars-gt:29.99"></convio:session></convio:op>
+    <convio:op>TRUE</convio:op>
+    <convio:then>
+ <!-- Start >$30 Code -->
+<p style="margin-bottom: 1em;"><span style="font-family: Arial, Helvetica, sans-serif; color: #000000;"><span style="font-weight: bold !important;"><span style="color: #ff0000;">Congratulations, you've met the minimum fundraising requirement!</span> But did you know you're just [[E130: 60 [[S48:1140:dollars]] - currency]] away from earning another prize?</span> It's true! Raise another [[E130: 60 [[S48:1140:dollars]] - currency]] and you'll earn a Dr. Seuss's <em>Horton Hears a Who</em> pop-up book. Keep it up! </span></p>
+<!-- End >$30 Code -->
+  </convio:then>
+  </convio:when>
+  <convio:when title="Dollars raised greater than or equal to 0, less than 30" test="eq">
+    <convio:op><convio:session name="48" param="1120:if-dollars-gt:0"></convio:session></convio:op>
+    <convio:op>TRUE</convio:op>
+    <convio:then>
+ <!-- Start >$0 Code -->
+<div align="left">
+<p style="margin-bottom: 1em;"><span style="font-family: Arial, Helvetica, sans-serif; color: #000000;"><span style="font-weight: bold !important;">IMPORTANT UPDATE: <span style="color: #ff0000;">You're just [[E130: 30 [[S48:1140:dollars]] - currency]] from meeting the fundraising requirement for all participants aged 16+!</span></span> Remember, adult participants must raise $30 in order to run &ndash; you'll also be getting a t-shirt and free general admission to the zoo on race day! </span></p>
+<convio:session name="51" param="Reus_BF_participantcenter_page"></convio:session></div>
+</convio:then>
+  </convio:when>
+</convio:choose>
